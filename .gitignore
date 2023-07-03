@@ -7,5 +7,5 @@
 /UserSettings/*
 Assembly-CSharp.csproj
 /.vscode/*
-/Assets/ThirdParty/
+/Assets/Third Party/
 /Builds/*
