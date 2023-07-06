@@ -1,11 +1,8 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using RPG.Core;
 using RPG.Game.Animation;
 using RPG.Movement;
 using UnityEngine;
-using UnityEngine.AI;
 
 namespace RPG.Combat {
     public class Fighter : MonoBehaviour, IAction
@@ -13,8 +10,13 @@ namespace RPG.Combat {
         [SerializeField] float attackRange = 3.5f;
         [SerializeField] float timeBetweenAttacks = 3f;
         [SerializeField] float weaponDamage = 5f;
-        CombatTarget target;
+        GameObject target;
         bool canAttack = true;
+        Mover mover;
+
+        void Start() {
+            mover = GetComponent<Mover>();
+        }
 
         void Update() {
             ChaseTarget();
@@ -28,7 +30,7 @@ namespace RPG.Combat {
             canAttack = true;
         }
 
-        public void SelectTarget(CombatTarget target) {
+        public void SelectTarget(GameObject target) {
             this.target = target;
              GetComponent<ActionScheduler>().StartAction(this);
         }
@@ -48,13 +50,14 @@ namespace RPG.Combat {
             if (target) {
                 if (Vector3.Distance(transform.position, target.transform.position) <= attackRange)
                 {
-                    GetComponent<Mover>().Stop();
+                    mover.Stop();
                     if (canAttack) {
                         StartCoroutine(AttackBehavior());
                     }
                 }
                 else {
-                    GetComponent<Mover>().MoveTo(target.transform.position);
+                    mover.MoveTo(target.transform.position);
+                    GetComponent<Animator>().SetTrigger(AnimationStates.STOP_ATTACK);
                 }
             }
         }

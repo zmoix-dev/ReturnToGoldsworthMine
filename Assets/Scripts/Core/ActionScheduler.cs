@@ -8,10 +8,16 @@ namespace RPG.Core {
         IAction currentAction;
         public void StartAction(IAction action) {
             if (currentAction != null && currentAction != action) {
-                print("Stopping action: "  + action.ToString());
                 currentAction.Stop();
             }
             currentAction = action;
+        }
+
+        public void StopCurrentAction() {
+            if (currentAction != null) {
+                currentAction.Stop();
+                currentAction = null;
+            }
         }
     }
 }

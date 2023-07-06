@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1461685541518201651, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: attackRange
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: maxHealth
       value: 20
@@ -106,6 +110,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5019d385599a7384d94bc076ce15debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2083786543654544290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977643499239539219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c95457e7d96b64cb02f123d4ebabd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aggroRadius: 8
+  suspicionTime: 2
+  path: {fileID: 0}
+  guardDestinationTolerance: 1
+  patrolSpeed: 1.5
+  chaseSpeed: 5.67
+--- !u!114 &5644245487838197096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977643499239539219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16339c9965ddd904bbd464f6b10d756d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!195 &5977643499239539221
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -116,10 +150,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 4
+  m_Acceleration: 50
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 5000
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
