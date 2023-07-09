@@ -19,13 +19,37 @@ PrefabInstance:
       propertyPath: timeBetweenAttacks
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2083786543654544290, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: wanderRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083786543654544290, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: waitAtWaypoint
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083786543654544290, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: waitAtDestination
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083786543654544290, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: enemyFaction.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083786543654544290, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: enemyFaction.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4983253209936693232, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: maxHealth
-      value: 25
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539219, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_Name
       value: Enemy_Orc_Fighter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5977643499239539219, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539220, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_RootOrder

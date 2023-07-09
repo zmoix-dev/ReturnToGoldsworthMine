@@ -27,11 +27,19 @@ namespace RPG.Movement {
             GetComponent<ActionScheduler>().StartAction(this);
         }
 
+        public Vector3 StartMoveAction(Vector3 destination, float wanderRadius) {
+            float xWander = UnityEngine.Random.Range(-wanderRadius, wanderRadius);
+            float zWander = UnityEngine.Random.Range(-wanderRadius, wanderRadius);
+            destination.x += xWander;
+            destination.z += zWander;
+            StartMoveAction(destination);
+            return destination;
+        }
+
         public void MoveTo(Vector3 destination) {
             navAgent.isStopped = false;
             GetComponent<NavMeshAgent>().destination = destination;
         }
-
 
         private void UpdateAnimator()
         {

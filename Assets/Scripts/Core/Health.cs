@@ -17,7 +17,6 @@ namespace RPG.Core {
 
         public void TakeDamage(float damage) {
             currentHealth = Mathf.Max(currentHealth - damage, 0);
-            print(name + ": " + currentHealth);
             if (currentHealth == 0 && !isDead)
             {
                 HandleDeath();

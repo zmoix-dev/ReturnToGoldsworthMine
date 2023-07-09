@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using RPG.Combat;
 using RPG.Core;
 using RPG.Movement;
@@ -8,7 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 namespace RPG.Control.Enemy {
-    public class EnemyController : MonoBehaviour
+    public class NPCController : MonoBehaviour
     {
         [SerializeField] float aggroRadius = 5f;
         [SerializeField] float suspicionTime = 2f;
@@ -16,26 +14,20 @@ namespace RPG.Control.Enemy {
         [SerializeField] float guardDestinationTolerance = 2f;
         [SerializeField] float patrolSpeed = 2.5f;
         [SerializeField] float chaseSpeed = 4f;
-        [SerializeField] float waitAtDestination = 4f;
-        [SerializeField] float wanderRadius = 0f;
-        [SerializeField] UnitType.UnitTypes[] enemyFaction;
+        [SerializeField] float waitAtWaypoint = 4f;
+        [SerializeField] UnitType.UnitTypes enemyFaction;
 
         Vector3 guardDestination;
-        Vector3 wanderGuardDestination;
         int guardDestinationIndex;
         Fighter fighter;
         Mover mover;
-        List<GameObject> enemies;
+        GameObject[] enemies;
         NavMeshAgent navMeshAgent;
         bool isChasing = false;
         bool isWaiting = false;
 
         void Start() {
-            enemies = new List<GameObject>();
-            foreach (UnitType.UnitTypes type in enemyFaction) {
-                enemies.AddRange(GameObject.FindGameObjectsWithTag(UnitType.GetUnitType(type)));    
-            }
-            
+            enemies = GameObject.FindGameObjectsWithTag(UnitType.GetUnitType(enemyFaction));
             fighter = GetComponent<Fighter>();
             mover = GetComponent<Mover>();
             navMeshAgent = GetComponent<NavMeshAgent>();
@@ -44,7 +36,6 @@ namespace RPG.Control.Enemy {
                 // Start guard at random point on path
                 guardDestinationIndex = UnityEngine.Random.Range(0, path.GetWaypointCount());
                 guardDestination = path.GetWaypoint(guardDestinationIndex);
-                wanderGuardDestination = guardDestination;
                 transform.position = guardDestination;
                 // Set next patrol destination
                 guardDestination = path.GetWaypoint(++guardDestinationIndex);
@@ -65,7 +56,9 @@ namespace RPG.Control.Enemy {
 
         private void HandleChase()
         {
-            if (isChasing) return;
+            // if engaged with something, continue engaging with that something
+            if (isChasing) { return; }
+
             foreach (GameObject enemy in enemies) {
                 if(CanAttack(enemy))
                 {
@@ -79,16 +72,19 @@ namespace RPG.Control.Enemy {
                 else {
                     if (!isWaiting) {
                         StartCoroutine(PatrolBehavior());
-                    } 
+                    }
                 }
             }
         }
 
-        private bool CanAttack(GameObject enemy)
+        private bool CanAttack(GameObject target)
         {
-            return FindTargetDistance(enemy) <= aggroRadius &&
-                enemy.GetComponent<Health>() != null &&
-                !enemy.GetComponent<Health>().IsDead;
+            return FindEnemyDistance(target) <= aggroRadius && IsTargetAlive(target);    
+        }
+
+        private bool IsTargetAlive(GameObject target) {
+            return target.GetComponent<Health>() != null &&
+                !target.GetComponent<Health>().IsDead;
         }
 
         private IEnumerator PursueBehavior(GameObject enemy)
@@ -97,8 +93,8 @@ namespace RPG.Control.Enemy {
             fighter.SelectTarget(enemy);
             isChasing = true;
             while (isChasing) {
-                isChasing = CanAttack(enemy);
                 yield return new WaitForEndOfFrame();
+                isChasing = CanAttack(enemy);
             }
         }
 
@@ -115,13 +111,14 @@ namespace RPG.Control.Enemy {
         {
             navMeshAgent.speed = patrolSpeed;
             if (path != null) {
-                if (AtWaypoint(wanderGuardDestination)) {
+                if (AtWaypoint()) {
                     isWaiting = true;
-                    yield return new WaitForSeconds(waitAtDestination);
-                    isWaiting = false;  
-                    wanderGuardDestination = mover.StartMoveAction(guardDestination, wanderRadius);
+                    yield return new WaitForSeconds(waitAtWaypoint);
+                    guardDestination = path.GetWaypoint(++guardDestinationIndex);
+                    isWaiting = false;
                 }
             }
+            mover.StartMoveAction(guardDestination);
         }
 
         private bool AtWaypoint()
@@ -129,25 +126,18 @@ namespace RPG.Control.Enemy {
             return Vector3.Distance(transform.position, guardDestination) <= guardDestinationTolerance;
         }
 
-        private bool AtWaypoint(Vector3 waypoint)
+        private float FindEnemyDistance(GameObject enemy)
         {
-            return Vector3.Distance(transform.position, waypoint) <= guardDestinationTolerance;
-        }
-
-        private float FindTargetDistance(GameObject target)
-        {
-            if (!target) {
+            if (!enemy) {
                 return float.MaxValue;
             }
-            return Vector3.Distance(transform.position, target.transform.position);
+            return Vector3.Distance(transform.position, enemy.transform.position);
         }
 
         // Called by Unity
         private void OnDrawGizmos() {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, aggroRadius);
-            Gizmos.color = Color.magenta;
-            Gizmos.DrawWireSphere(transform.position, wanderRadius);
         }
     }
 }
