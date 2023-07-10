@@ -129,9 +129,15 @@ namespace RPG.Control.Enemy {
             return Vector3.Distance(transform.position, guardDestination) <= guardDestinationTolerance;
         }
 
-        private bool AtWaypoint(Vector3 waypoint)
+        private bool AtWaypoint(Vector3 waypoint, bool ignoreY = true)
         {
-            return Vector3.Distance(transform.position, waypoint) <= guardDestinationTolerance;
+            if (ignoreY) {
+                Vector2 newPosition = new Vector2(transform.position.x, transform.position.z);
+                Vector2 newWaypoint = new Vector2(waypoint.x, waypoint.z);
+                return Vector2.Distance(newPosition, newWaypoint) <= guardDestinationTolerance;
+            } else {
+                return Vector3.Distance(transform.position, waypoint) <= guardDestinationTolerance;
+            }
         }
 
         private float FindTargetDistance(GameObject target)
@@ -147,7 +153,7 @@ namespace RPG.Control.Enemy {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, aggroRadius);
             Gizmos.color = Color.magenta;
-            Gizmos.DrawWireSphere(transform.position, wanderRadius);
+            Gizmos.DrawWireSphere(path.GetWaypoint(0), wanderRadius);
         }
     }
 }
