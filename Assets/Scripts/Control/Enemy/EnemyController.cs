@@ -18,7 +18,7 @@ namespace RPG.Control.Enemy {
         [SerializeField] float chaseSpeed = 4f;
         [SerializeField] float waitAtDestination = 4f;
         [SerializeField] float wanderRadius = 0f;
-        [SerializeField] UnitType.UnitTypes[] enemyFaction;
+        [SerializeField] UnitType.Type[] enemyFaction;
 
         Vector3 guardDestination;
         Vector3 wanderGuardDestination;
@@ -32,8 +32,8 @@ namespace RPG.Control.Enemy {
 
         void Start() {
             enemies = new List<GameObject>();
-            foreach (UnitType.UnitTypes type in enemyFaction) {
-                enemies.AddRange(GameObject.FindGameObjectsWithTag(UnitType.GetUnitType(type)));    
+            foreach (UnitType.Type type in enemyFaction) {
+                enemies.AddRange(GameObject.FindGameObjectsWithTag(UnitType.GetType(type)));    
             }
             
             fighter = GetComponent<Fighter>();
@@ -149,7 +149,7 @@ namespace RPG.Control.Enemy {
         }
 
         // Called by Unity
-        private void OnDrawGizmosSelected() {
+        private void OnDrawGizmos() {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, aggroRadius);
             // Gizmos.color = Color.magenta;

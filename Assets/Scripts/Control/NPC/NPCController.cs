@@ -15,7 +15,7 @@ namespace RPG.Control.Enemy {
         [SerializeField] float patrolSpeed = 2.5f;
         [SerializeField] float chaseSpeed = 4f;
         [SerializeField] float waitAtWaypoint = 4f;
-        [SerializeField] UnitType.UnitTypes enemyFaction;
+        [SerializeField] UnitType.Type enemyFaction;
 
         Vector3 guardDestination;
         int guardDestinationIndex;
@@ -27,7 +27,7 @@ namespace RPG.Control.Enemy {
         bool isWaiting = false;
 
         void Start() {
-            enemies = GameObject.FindGameObjectsWithTag(UnitType.GetUnitType(enemyFaction));
+            enemies = GameObject.FindGameObjectsWithTag(UnitType.GetType(enemyFaction));
             fighter = GetComponent<Fighter>();
             mover = GetComponent<Mover>();
             navMeshAgent = GetComponent<NavMeshAgent>();

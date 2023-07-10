@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using RPG.Control;
+using RPG.Core;
 using UnityEngine;
 
 public class Lootable : MonoBehaviour
@@ -8,6 +8,6 @@ public class Lootable : MonoBehaviour
     GameObject player;
 
     void Start(){ 
-        player = GameObject.FindWithTag(UnitType.GetUnitType(UnitType.UnitTypes.PLAYER));
+        player = GameObject.FindWithTag(UnitType.GetType(UnitType.Type.PLAYER));
     }
 }
