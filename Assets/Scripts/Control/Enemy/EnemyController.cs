@@ -152,8 +152,8 @@ namespace RPG.Control.Enemy {
         private void OnDrawGizmos() {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, aggroRadius);
-            Gizmos.color = Color.magenta;
-            Gizmos.DrawWireSphere(path.GetWaypoint(0), wanderRadius);
+            // Gizmos.color = Color.magenta;
+            // Gizmos.DrawWireSphere(path.GetWaypoint(0), wanderRadius);
         }
     }
 }

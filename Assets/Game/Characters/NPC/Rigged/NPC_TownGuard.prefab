@@ -19,9 +19,13 @@ PrefabInstance:
       propertyPath: timeBetweenAttacks
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: maxHealth
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 6104649892051543376, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: NPC_TownGuard (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6104649892051543376, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: m_TagString
@@ -37,15 +41,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6104649892051543383, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -60.00017
+      value: 97.66
       objectReference: {fileID: 0}
     - target: {fileID: 6104649892051543383, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 61.197582
+      value: 53.00824
       objectReference: {fileID: 0}
     - target: {fileID: 6104649892051543383, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -50.00169
+      value: 105.74
       objectReference: {fileID: 0}
     - target: {fileID: 6104649892051543383, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: m_LocalRotation.w
