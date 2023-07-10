@@ -149,7 +149,7 @@ namespace RPG.Control.Enemy {
         }
 
         // Called by Unity
-        private void OnDrawGizmos() {
+        private void OnDrawGizmosSelected() {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, aggroRadius);
             // Gizmos.color = Color.magenta;
