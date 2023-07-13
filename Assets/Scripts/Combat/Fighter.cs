@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using RPG.Core;
 using RPG.Game.Animation;
@@ -7,15 +8,16 @@ using UnityEngine;
 namespace RPG.Combat {
     public class Fighter : MonoBehaviour, IAction
     {
-        [SerializeField] float attackRange = 3.5f;
-        [SerializeField] float timeBetweenAttacks = 3f;
-        [SerializeField] float weaponDamage = 5f;
-        GameObject target;
+        [SerializeField] Transform handTransform;
+        [SerializeField] Weapon weapon;
+       
+        GameObject target = null;
         bool canAttack = true;
         Mover mover;
 
         void Start() {
             mover = GetComponent<Mover>();
+            EquipWeapon();
         }
 
         void Update() {
@@ -37,8 +39,8 @@ namespace RPG.Combat {
 
         // Animation Event
         void OnAnimFrameHit() {
-            if (target) {
-                target.GetComponent<Health>().TakeDamage(weaponDamage);
+            if (target != null) {
+                target.GetComponent<Health>().TakeDamage(weapon.WeaponDamage);
                 if (target.GetComponent<Health>().IsDead) {
                     Stop();
                 }
@@ -47,8 +49,8 @@ namespace RPG.Combat {
 
         private void ChaseTarget()
         {
-            if (target) {
-                if (Vector3.Distance(transform.position, target.transform.position) <= attackRange)
+            if (target != null) {
+                if (Vector3.Distance(transform.position, target.transform.position) <= weapon.AttackRange)
                 {
                     mover.Stop();
                     if (canAttack) {
@@ -68,8 +70,17 @@ namespace RPG.Combat {
             GetComponent<Animator>().ResetTrigger(AnimationStates.STOP_ATTACK);
             GetComponent<Animator>().SetTrigger(AnimationStates.ATTACK);
             canAttack = false;
-            yield return new WaitForSeconds(timeBetweenAttacks);
+            yield return new WaitForSeconds(weapon.TimeBetweenAttacks);
             canAttack = true;
+        }
+
+        private void EquipWeapon()
+        {
+            if (weapon) {
+                weapon.Spawn(handTransform, GetComponent<Animator>());
+            } else {
+                Debug.LogError($"No weapon equipped to Fighter on {name}.");
+            }
         }
     }
 }

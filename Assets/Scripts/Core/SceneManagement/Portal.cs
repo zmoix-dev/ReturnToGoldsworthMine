@@ -33,9 +33,12 @@ namespace RPG.SceneManagement {
             }
             TransitionFader fader = FindObjectOfType<TransitionFader>();
             yield return fader.FadeOut(fadeOutTime);
+            FindObjectOfType<SavingWrapper>().Save();
             DontDestroyOnLoad(gameObject);
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
+            FindObjectOfType<SavingWrapper>().Load();
             SpawnPlayer(GetDestinationPortal());
+            FindObjectOfType<SavingWrapper>().Save();
             yield return new WaitForSeconds(fadeWaitTime);
             yield return fader.FadeIn(fadeInTime);
             Destroy(gameObject);

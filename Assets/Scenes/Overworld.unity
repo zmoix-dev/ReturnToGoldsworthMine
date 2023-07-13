@@ -1679,6 +1679,10 @@ PrefabInstance:
       propertyPath: path
       value: 
       objectReference: {fileID: 850778247}
+    - target: {fileID: 6741995732378281472, guid: b424a4b541df2a64b952111e4f259221, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 4fa6d934-8b80-4285-a77e-d3599d5ff853
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b424a4b541df2a64b952111e4f259221, type: 3}
 --- !u!4 &1499185088 stripped
@@ -1816,6 +1820,10 @@ PrefabInstance:
       propertyPath: path
       value: 
       objectReference: {fileID: 1868843807}
+    - target: {fileID: 3881849327946558461, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
+      propertyPath: uniqueIdentifier
+      value: e9bf5e30-f506-4dd5-93d4-ecad335dce7d
+      objectReference: {fileID: 0}
     - target: {fileID: 7917608746370157138, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
       propertyPath: m_Name
       value: Enemy_Orc
@@ -1876,6 +1884,10 @@ PrefabInstance:
     - target: {fileID: 3499013352413366538, guid: 14132fc0c0003514f9667bbd7f4ce180, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574494044657526073, guid: 14132fc0c0003514f9667bbd7f4ce180, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 21b975a7-8418-43d1-add8-52459131aae6
       objectReference: {fileID: 0}
     - target: {fileID: 8577077655108468015, guid: 14132fc0c0003514f9667bbd7f4ce180, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2479,6 +2491,10 @@ PrefabInstance:
       propertyPath: path
       value: 
       objectReference: {fileID: 433052614}
+    - target: {fileID: 4591512996144944541, guid: 59f0bb7cae2ea094f8270f02baea3faf, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 5a41487c-b9c0-441e-99b9-398e23310ac8
+      objectReference: {fileID: 0}
     - target: {fileID: 7460128048251384882, guid: 59f0bb7cae2ea094f8270f02baea3faf, type: 3}
       propertyPath: m_Name
       value: Enemy_Orc_Fighter
@@ -2770,6 +2786,10 @@ PrefabInstance:
     - target: {fileID: 4244978921590169205, guid: a683ca65ed3ef174baf03f5cd1cc6a8e, type: 3}
       propertyPath: m_Name
       value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122116838076170202, guid: a683ca65ed3ef174baf03f5cd1cc6a8e, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 015ea779-f4e1-4d24-8bb7-7bc6a3e1e6f4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a683ca65ed3ef174baf03f5cd1cc6a8e, type: 3}
