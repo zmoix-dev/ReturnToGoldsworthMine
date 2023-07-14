@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
   m_Name: Orcish_Club
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 0}
+  animatorOverride: {fileID: 22100000, guid: 718b2b63729b90f469cd331d183ec96d, type: 2}
   weaponPrefab: {fileID: 262581078112279361, guid: 5bf314703098da449b471febe7ee7b81, type: 3}
-  weaponDamage: 5
+  weaponDamage: 3
   attackRange: 3
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 3

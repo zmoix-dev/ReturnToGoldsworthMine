@@ -28,16 +28,30 @@ namespace RPG.Control {
                 fighter.enabled = false;
                 mover.enabled = false;
             }
-            if (InteractWithCombat()) return;
+            
+            RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
+            if (InteractWithWeapon(hits)) return;
+            if (InteractWithCombat(hits)) return;
             if (InteractWithMovement()) return;
         }
 
-        private bool InteractWithCombat()
+        private bool InteractWithWeapon(RaycastHit[] hits) {
+            foreach (RaycastHit hit in hits) {
+                WeaponPickup target = hit.transform.GetComponent<WeaponPickup>();
+                if (!target) continue;
+                GameObject targetObject = target.gameObject;
+                if (Input.GetMouseButtonDown(0)) {
+                    fighter.EquipWeapon(target);
+                }
+                return true;        
+            }
+            return false;
+        }
+
+        private bool InteractWithCombat(RaycastHit[] hits)
         {
-            RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
             foreach (RaycastHit hit in hits) {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-
                 if (!target || target.GetComponent<Health>().IsDead) continue;
                 GameObject targetObject = target.gameObject;
                 if (Input.GetMouseButtonDown(0)) {

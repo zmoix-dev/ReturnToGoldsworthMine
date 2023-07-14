@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
   m_Name: Unarmed
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 0}
+  animatorOverride: {fileID: 22100000, guid: ed176d095e8e3f24796f746c2e581b2c, type: 2}
   weaponPrefab: {fileID: 0}
-  weaponDamage: 1
+  weaponDamage: 3
   attackRange: 2.5
   timeBetweenAttacks: 2
