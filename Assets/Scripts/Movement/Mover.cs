@@ -16,6 +16,7 @@ namespace RPG.Movement {
 
         void Update()
         {
+            if (GetComponent<Health>().IsDead) return;
             UpdateAnimator();
         }
 

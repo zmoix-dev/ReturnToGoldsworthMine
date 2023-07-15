@@ -47,9 +47,9 @@ namespace RPG.Control.Enemy {
         void Update()
         {
             if (GetComponent<Health>().IsDead) {
-                this.enabled = false;
                 fighter.enabled = false;
                 mover.enabled = false;
+                this.enabled = false;
             }
             HandleChase();
         }

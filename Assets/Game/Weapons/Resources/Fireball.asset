@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
-  m_Name: Orcish_Bow
+  m_Name: Fireball
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 22100000, guid: 2ec83979456188e4a995dbba4509cb8d, type: 2}
+  animatorOverride: {fileID: 22100000, guid: 3adefcfcccb6b794cb1f812381f2ba71, type: 2}
   weaponPrefab: {fileID: 0}
-  weaponDamage: 4
-  attackRange: 15
-  timeBetweenAttacks: 1
+  weaponDamage: 12
+  attackRange: 20
+  timeBetweenAttacks: 5
+  projectile: {fileID: 522347350936379566, guid: 1b1c416f0fd6e774ab2dc4deaeccffc6, type: 3}

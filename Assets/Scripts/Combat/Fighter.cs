@@ -3,14 +3,16 @@ using System.Collections;
 using RPG.Core;
 using RPG.Game.Animation;
 using RPG.Movement;
+using RPG.Saving;
 using UnityEngine;
 
 namespace RPG.Combat {
-    public class Fighter : MonoBehaviour, IAction
+    public class Fighter : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] Transform handTransform;
-        [SerializeField] Weapon defaultWeapon;
+        [SerializeField] Weapon defaultWeapon = null;
         Weapon equippedWeapon;
+        GameObject equippedWeaponObject;
        
         GameObject target = null;
         bool canAttack = true;
@@ -18,7 +20,10 @@ namespace RPG.Combat {
 
         void Start() {
             mover = GetComponent<Mover>();
-            EquipWeapon(defaultWeapon);
+            if (equippedWeapon == null) {
+                EquipWeapon(defaultWeapon);
+            }
+            
         }
 
         void Update() {
@@ -41,9 +46,13 @@ namespace RPG.Combat {
         // Animation Event
         void OnAnimFrameHit() {
             if (target != null) {
-                target.GetComponent<Health>().TakeDamage(equippedWeapon.WeaponDamage);
                 if (target.GetComponent<Health>().IsDead) {
                     Stop();
+                }
+                if (equippedWeapon.HasProjectile()) {
+                     equippedWeapon.LaunchProjectile(handTransform, target.GetComponent<Health>());
+                } else {
+                    target.GetComponent<Health>().TakeDamage(equippedWeapon.WeaponDamage);
                 }
             }
         }
@@ -88,13 +97,30 @@ namespace RPG.Combat {
         public void EquipWeapon(WeaponPickup pickup)
         {
             if (pickup) {
+                if (equippedWeapon) {
+                    DestroyEquippedWeapon();
+                }
                 Weapon weapon = pickup.Weapon;
                 equippedWeapon = weapon;
-                weapon.Spawn(handTransform, GetComponent<Animator>());
+                equippedWeaponObject = weapon.Spawn(handTransform, GetComponent<Animator>());
                 Destroy(pickup.gameObject);
             } else {
                 Debug.LogError($"No weapon equipped to Fighter on {name}.");
             }
+        }
+
+        private void DestroyEquippedWeapon() {
+            Destroy(equippedWeaponObject);
+        }
+
+        public object CaptureState()
+        {
+            return equippedWeapon.name;
+        }
+
+        public void RestoreState(object state)
+        {
+            EquipWeapon(Resources.Load<Weapon>(state as string));
         }
     }
 }

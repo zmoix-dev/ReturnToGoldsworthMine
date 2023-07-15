@@ -128,6 +128,9 @@ MonoBehaviour:
   guardDestinationTolerance: 1
   patrolSpeed: 1.5
   chaseSpeed: 5.67
+  waitAtDestination: 4
+  wanderRadius: 0
+  enemyFaction: 
 --- !u!114 &5644245487838197096
 MonoBehaviour:
   m_ObjectHideFlags: 0

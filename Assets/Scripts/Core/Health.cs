@@ -28,6 +28,9 @@ namespace RPG.Core {
         {
             isDead = true;
             GetComponent<Animator>().SetTrigger(AnimationStates.DEAD);
+            if (GetComponent<Rigidbody>()) {
+                GetComponent<Rigidbody>().isKinematic = true;
+            }
             GetComponent<ActionScheduler>().StopCurrentAction();
         }
 

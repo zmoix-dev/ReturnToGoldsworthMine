@@ -58,6 +58,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1525402702191969372, guid: 510eab53e53b1164ebfb2442acc88ff6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 510eab53e53b1164ebfb2442acc88ff6, type: 3}
+--- !u!4 &2504151159164260577 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1525402702182623958, guid: 510eab53e53b1164ebfb2442acc88ff6, type: 3}
+  m_PrefabInstance: {fileID: 4029553550464547383}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8221166260039094572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73,6 +78,14 @@ PrefabInstance:
       propertyPath: defaultWeapon
       value: 
       objectReference: {fileID: 11400000, guid: 5cfc4bc10af1d1144a28954042ff8684, type: 2}
+    - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 2504151159164260577}
+    - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: defaultWeaponName
+      value: Orcish_Bow
+      objectReference: {fileID: 0}
     - target: {fileID: 2083786543654544290, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: aggroRadius
       value: 25
@@ -91,7 +104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539219, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_Name
-      value: Enemy_Orc_Archer (1)
+      value: Enemy_Orc_Archer
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539219, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_TagString
