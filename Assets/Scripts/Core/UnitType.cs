@@ -11,6 +11,7 @@ namespace RPG.Core {
             return types[index % types.Length];
         }
 
+        [System.Serializable]
         public enum Type {
             PLAYER = 0,
             ALLY = 1,

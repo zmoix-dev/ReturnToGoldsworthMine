@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: defaultWeaponName
       value: Sword
       objectReference: {fileID: 0}
+    - target: {fileID: 3123514169944055922, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: unitType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6104649892051543376, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: m_Name
       value: NPC_TownGuard

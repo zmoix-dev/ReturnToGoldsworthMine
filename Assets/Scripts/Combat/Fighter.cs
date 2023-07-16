@@ -4,6 +4,7 @@ using RPG.Core;
 using RPG.Game.Animation;
 using RPG.Movement;
 using RPG.Saving;
+using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Combat {
@@ -43,6 +44,10 @@ namespace RPG.Combat {
              GetComponent<ActionScheduler>().StartAction(this);
         }
 
+        public GameObject GetTarget() {
+            return target;
+        }
+
         // Animation Event
         void OnAnimFrameHit() {
             if (target != null) {
@@ -50,9 +55,9 @@ namespace RPG.Combat {
                     Stop();
                 }
                 if (equippedWeapon.HasProjectile()) {
-                     equippedWeapon.LaunchProjectile(handTransform, target.GetComponent<Health>());
+                     equippedWeapon.LaunchProjectile(handTransform, target.GetComponent<Health>(), gameObject);
                 } else {
-                    target.GetComponent<Health>().TakeDamage(equippedWeapon.WeaponDamage);
+                    target.GetComponent<Health>().TakeDamage(gameObject, equippedWeapon.WeaponDamage);
                 }
             }
         }

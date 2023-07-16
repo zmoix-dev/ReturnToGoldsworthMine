@@ -3,28 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Game.Animation;
 using RPG.Saving;
+using RPG.Core;
 
-namespace RPG.Core {
+namespace RPG.Stats {
     public class Health : MonoBehaviour, ISaveable
     {
-        [SerializeField] float maxHealth = 100f;
         [SerializeField] float currentHealth;
         bool isDead = false;
         public bool IsDead { get { return isDead; }}
 
         void Start() {
-            currentHealth = maxHealth;
+            currentHealth = GetComponent<BaseStats>().GetHealth();
         }
 
-        public void TakeDamage(float damage) {
+        public float GetHealthPercentage() {
+            return 100 * (currentHealth / GetComponent<BaseStats>().GetHealth());
+        }
+
+        public void TakeDamage(GameObject attacker, float damage) {
             currentHealth = Mathf.Max(currentHealth - damage, 0);
             if (currentHealth == 0 && !isDead)
             {
-                HandleDeath();
+                HandleDeath(attacker);
             }
         }
 
-        private void HandleDeath()
+        private void HandleDeath(GameObject attacker)
         {
             isDead = true;
             GetComponent<Animator>().SetTrigger(AnimationStates.DEAD);
@@ -32,6 +36,12 @@ namespace RPG.Core {
                 GetComponent<Rigidbody>().isKinematic = true;
             }
             GetComponent<ActionScheduler>().StopCurrentAction();
+
+            if (attacker && attacker.GetComponent<Experience>()) {
+                float experience = GetComponent<BaseStats>().GetExperienceReward();
+                attacker.GetComponent<Experience>().GrantExperience(experience);    
+            }
+            
         }
 
         public object CaptureState()
@@ -43,7 +53,7 @@ namespace RPG.Core {
         {
             currentHealth = (float) state;
             if (currentHealth == 0) {
-                HandleDeath();
+                HandleDeath(null);
             }
         }
     }

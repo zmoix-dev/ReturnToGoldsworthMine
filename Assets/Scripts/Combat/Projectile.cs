@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using RPG.Core;
+using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Combat {
@@ -14,6 +15,7 @@ namespace RPG.Combat {
         [SerializeField] float lingerAfterHit = 2f;
 
         Health target = null;
+        GameObject attacker = null;
         float damage;
 
         void Start() {
@@ -33,14 +35,15 @@ namespace RPG.Combat {
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
 
-        public void SetTarget(Health target, float damage) {
+        public void SetTarget(Health target, GameObject attacker, float damage) {
             this.target = target;
             this.damage = damage;
+            this.attacker = attacker;
         }
 
         void OnTriggerEnter(Collider other) {
             if (other.GetComponent<Health>() != target || target.IsDead) return;
-            target.TakeDamage(damage);
+            target.TakeDamage(attacker, damage);
 
             speed = 0;
 

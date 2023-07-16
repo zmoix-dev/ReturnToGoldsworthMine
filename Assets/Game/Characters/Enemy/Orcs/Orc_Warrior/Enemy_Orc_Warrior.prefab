@@ -66,7 +66,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 777782733591290812, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: uniqueIdentifier
-      value: 87343c4e-eac4-4b5c-93e1-3207e08138e7
+      value: b5706047-8cbc-4aea-bd39-764ca5f8dff8
       objectReference: {fileID: 0}
     - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: weapon
@@ -116,6 +116,14 @@ PrefabInstance:
       propertyPath: enemyFaction.Array.data[1]
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3248285253997512497, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: unitType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248285253997512497, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: characterClass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4983253209936693232, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: maxHealth
       value: 50
@@ -146,15 +154,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539220, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 71.24414
+      value: 63.654633
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539220, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539220, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.239876
+      value: 15.21801
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539220, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_LocalRotation.w
