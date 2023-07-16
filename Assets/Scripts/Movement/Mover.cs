@@ -11,7 +11,7 @@ namespace RPG.Movement {
     {
         NavMeshAgent navAgent;
         
-        void Start() {
+        void Awake() {
             navAgent = GetComponent<NavMeshAgent>();
         }
 

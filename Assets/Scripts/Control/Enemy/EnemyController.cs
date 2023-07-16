@@ -31,15 +31,17 @@ namespace RPG.Control.Enemy {
         bool isChasing = false;
         bool isWaiting = false;
 
-        void Start() {
+        private void Awake() {
+            fighter = GetComponent<Fighter>();
+            mover = GetComponent<Mover>();
+            navMeshAgent = GetComponent<NavMeshAgent>();
+        }
+
+        private void Start() {
             enemies = new List<GameObject>();
             foreach (UnitType.Type type in enemyFaction) {
                 enemies.AddRange(GameObject.FindGameObjectsWithTag(UnitType.GetType(type)));    
             }
-            
-            fighter = GetComponent<Fighter>();
-            mover = GetComponent<Mover>();
-            navMeshAgent = GetComponent<NavMeshAgent>();
             
             if (path != null) {
                 // Start guard at random point on path
@@ -53,8 +55,7 @@ namespace RPG.Control.Enemy {
             }
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (GetComponent<Health>().IsDead) {
                 this.enabled = false;

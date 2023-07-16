@@ -18,13 +18,27 @@ namespace RPG.Stats {
 
         int currentLevel = 0;
 
-        void Start() {
+        Experience experience;
+
+        private void Awake() {
+            experience = GetComponent<Experience>();
+        }
+
+        private void OnEnable() {
+            if (experience) {
+                experience.onExperienceGained += CheckLevel;
+            }
+        }
+
+        private void OnDisable() {
+            if (experience) {
+                experience.onExperienceGained -= CheckLevel;
+            }
+        }
+
+        private void Start() {
             if (unitType.Equals(UnitType.Type.PLAYER)) {
-                Experience experience = GetComponent<Experience>();
                 currentLevel = CalculateLevel();
-                if (experience) {
-                    experience.onExperienceGained += CheckLevel;
-                }
             } else {
                 currentLevel = startingLevel;
             }
@@ -72,7 +86,7 @@ namespace RPG.Stats {
         }
 
         public int CalculateLevel() {
-            float currentExp = GetComponent<Experience>().GetExperience();
+            float currentExp = experience.GetExperience();
             float expNeeded = -1;
             int level = 1;
             do {

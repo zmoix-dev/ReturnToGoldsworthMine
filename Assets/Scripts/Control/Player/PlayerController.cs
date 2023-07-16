@@ -11,14 +11,14 @@ namespace RPG.Control {
         Mover mover;
         Health health;
 
-        void Start() {
+        private void Awake() {
             fighter = GetComponent<Fighter>();
             mover = GetComponent<Mover>();
             health = GetComponent<Health>();
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (health.IsDead) {
                 this.enabled = false;

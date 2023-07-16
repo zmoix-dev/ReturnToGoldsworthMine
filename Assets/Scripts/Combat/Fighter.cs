@@ -20,15 +20,17 @@ namespace RPG.Combat {
         bool canAttack = true;
         Mover mover;
 
-        void Start() {
+        private void Awake() {
             mover = GetComponent<Mover>();
+        }
+
+        private void Start() {
             if (equippedWeapon == null) {
                 EquipWeapon(defaultWeapon);
             }
-            
         }
 
-        void Update() {
+        private void Update() {
             ChaseTarget();
         }
 

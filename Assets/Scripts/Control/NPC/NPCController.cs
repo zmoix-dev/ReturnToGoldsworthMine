@@ -27,12 +27,14 @@ namespace RPG.Control.Enemy {
         bool isChasing = false;
         bool isWaiting = false;
 
-        void Start() {
+        private void Awake() {
             enemies = GameObject.FindGameObjectsWithTag(UnitType.GetType(enemyFaction));
             fighter = GetComponent<Fighter>();
             mover = GetComponent<Mover>();
             navMeshAgent = GetComponent<NavMeshAgent>();
-            
+        }
+
+        private void Start() {
             if (path != null) {
                 // Start guard at random point on path
                 guardDestinationIndex = UnityEngine.Random.Range(0, path.GetWaypointCount());
@@ -44,8 +46,7 @@ namespace RPG.Control.Enemy {
             }
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (GetComponent<Health>().IsDead) {
                 fighter.enabled = false;
