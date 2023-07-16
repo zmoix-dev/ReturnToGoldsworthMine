@@ -8,16 +8,23 @@ using RPG.Core;
 namespace RPG.Stats {
     public class Health : MonoBehaviour, ISaveable
     {
-        [SerializeField] float currentHealth;
+        [Range(0,1)]
+        [SerializeField] float levelUpMinHealthPct = 0.75f;
+        float currentHealth = -1f;
         bool isDead = false;
         public bool IsDead { get { return isDead; }}
 
         void Start() {
-            currentHealth = GetComponent<BaseStats>().GetHealth();
+            // Fixes race condition with RestoreState
+            GetComponent<BaseStats>().onLevelUp += RegenerateHealth;
+            if (currentHealth < 0) {
+                currentHealth = GetComponent<BaseStats>().GetStat(StatsType.Health);
+            }
+            
         }
 
         public float GetHealthPercentage() {
-            return 100 * (currentHealth / GetComponent<BaseStats>().GetHealth());
+            return 100 * (currentHealth / GetComponent<BaseStats>().GetStat(StatsType.Health));
         }
 
         public void TakeDamage(GameObject attacker, float damage) {
@@ -26,6 +33,10 @@ namespace RPG.Stats {
             {
                 HandleDeath(attacker);
             }
+        }
+
+        public void RegenerateHealth() {
+            currentHealth = Mathf.Max(GetComponent<BaseStats>().GetStat(StatsType.Health) * levelUpMinHealthPct, currentHealth);
         }
 
         private void HandleDeath(GameObject attacker)

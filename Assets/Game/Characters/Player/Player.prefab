@@ -70,6 +70,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5855021617509153570, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: levelUpVfx
+      value: 
+      objectReference: {fileID: 19800000, guid: f0db825cfc4733a448aea20ca9497811, type: 3}
+    - target: {fileID: -5855021617509153570, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: shouldUseModifiers
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1461685541518201651, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: weapon
       value: 
@@ -94,6 +102,10 @@ PrefabInstance:
       propertyPath: weaponOverride
       value: 
       objectReference: {fileID: 22100000, guid: 4c158c654c73d5d4b83be1bae28d0464, type: 2}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: levelUpMinHealthPct
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 5863169880228690635, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: m_Name
       value: Model
@@ -184,17 +196,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
---- !u!114 &1095829772463032164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7089954656918152486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61c18f4fb2a585e43b5596c95f59e19c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingLevel: 1
-  characterClass: 0

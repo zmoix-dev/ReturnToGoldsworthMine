@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using RPG.Core;
@@ -10,9 +11,53 @@ namespace RPG.Stats {
         [SerializeField] int startingLevel = 1;
         [SerializeField] UnitType.Type unitType;
         [SerializeField] Progression progression = null;
+        [SerializeField] ParticleSystem levelUpVfx = null;
+        [SerializeField] bool shouldUseModifiers = false;
 
-        public float GetHealth() {
-            return progression.GetStat(unitType, StatsType.Health, startingLevel);
+        public event Action onLevelUp;
+
+        int currentLevel = 0;
+
+        void Start() {
+            if (unitType.Equals(UnitType.Type.PLAYER)) {
+                Experience experience = GetComponent<Experience>();
+                currentLevel = CalculateLevel();
+                if (experience) {
+                    experience.onExperienceGained += CheckLevel;
+                }
+            } else {
+                currentLevel = startingLevel;
+            }
+        }
+
+        void CheckLevel() {
+            int newLevel = CalculateLevel();
+            if (newLevel > currentLevel)
+            {
+                currentLevel = newLevel;
+                LevelUpEffect();
+                onLevelUp();
+            }
+        }
+
+        private void LevelUpEffect()
+        {
+            ParticleSystem vfxDestroy = Instantiate(levelUpVfx, transform);
+            Destroy(vfxDestroy, 1f);
+        }
+
+        public float GetStat(StatsType stat)
+        {
+            float baseStat = GetBaseStat(stat);
+            float addMod = GetAdditiveModifiers(stat);
+            float pctMod = GetPercentageModifiers(stat);
+            if (shouldUseModifiers) {
+                Debug.Log($"{stat.ToString()}: ({baseStat} + {addMod}) * {pctMod}");
+            }
+            
+
+
+            return (GetBaseStat(stat) + GetAdditiveModifiers(stat)) * GetPercentageModifiers(stat);
         }
 
         public float GetExperienceReward() {
@@ -20,6 +65,13 @@ namespace RPG.Stats {
         }
 
         public int GetLevel() {
+            if (currentLevel < 1) {
+                currentLevel = CalculateLevel();
+            }
+            return currentLevel;
+        }
+
+        public int CalculateLevel() {
             float currentExp = GetComponent<Experience>().GetExperience();
             float expNeeded = -1;
             int level = 1;
@@ -31,6 +83,33 @@ namespace RPG.Stats {
                 level++;
             } while (expNeeded != -1);
             return --level;
+        }
+
+        private float GetBaseStat(StatsType stat)
+        {
+            return progression.GetStat(unitType, stat, currentLevel);
+        }
+
+        private float GetAdditiveModifiers(StatsType stat) {
+            if (!shouldUseModifiers) return 0;
+            float total = 0;
+            foreach (IModifierProvider provider in GetComponents<IModifierProvider>()) {
+                foreach (float modifier in provider.GetAdditiveModifiers(stat)) {
+                    total += modifier;
+                }
+            }
+            return total;
+        }
+
+        private float GetPercentageModifiers(StatsType stat) {
+            if (!shouldUseModifiers) return 1;
+            float total = 1;
+            foreach (IModifierProvider provider in GetComponents<IModifierProvider>()) {
+                foreach (float modifier in provider.GetPercentageModifiers(stat)) {
+                    total += modifier;
+                }
+            }
+            return total;
         }
     }
 }

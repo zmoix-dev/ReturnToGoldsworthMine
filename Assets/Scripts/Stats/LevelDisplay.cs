@@ -19,7 +19,7 @@ namespace RPG.Stats {
         // Update is called once per frame
         void Update()
         {
-            display.text = $"{baseStats.GetLevel()}";
+            display.text = $"{baseStats.CalculateLevel()}";
         }
 
     }

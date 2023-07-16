@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using RPG.Core;
 using RPG.Game.Animation;
 using RPG.Movement;
@@ -8,7 +9,7 @@ using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Combat {
-    public class Fighter : MonoBehaviour, IAction, ISaveable
+    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {
         [SerializeField] Transform handTransform;
         [SerializeField] Weapon defaultWeapon = null;
@@ -39,6 +40,20 @@ namespace RPG.Combat {
             canAttack = true;
         }
 
+        public IEnumerable<float> GetAdditiveModifiers(StatsType stat)
+        {
+            if (stat.Equals(StatsType.Damage)) {
+                yield return equippedWeapon.WeaponDamage;
+            }
+        }
+
+        public IEnumerable<float> GetPercentageModifiers(StatsType stat)
+        {
+            if (stat.Equals(StatsType.Damage)) {
+                yield return equippedWeapon.PctModifier;
+            }
+        }
+
         public void SelectTarget(GameObject target) {
             this.target = target;
              GetComponent<ActionScheduler>().StartAction(this);
@@ -53,11 +68,13 @@ namespace RPG.Combat {
             if (target != null) {
                 if (target.GetComponent<Health>().IsDead) {
                     Stop();
+                    return;
                 }
+                float damageCalc = GetComponent<BaseStats>().GetStat(StatsType.Damage);
                 if (equippedWeapon.HasProjectile()) {
-                     equippedWeapon.LaunchProjectile(handTransform, target.GetComponent<Health>(), gameObject);
+                     equippedWeapon.LaunchProjectile(handTransform, target.GetComponent<Health>(), gameObject, damageCalc);
                 } else {
-                    target.GetComponent<Health>().TakeDamage(gameObject, equippedWeapon.WeaponDamage);
+                    target.GetComponent<Health>().TakeDamage(gameObject, equippedWeapon.WeaponDamage * damageCalc);
                 }
             }
         }
