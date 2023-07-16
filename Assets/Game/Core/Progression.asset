@@ -20,6 +20,10 @@ MonoBehaviour:
       - 50
       - 75
       - 100
+    - statsType: 2
+      values:
+      - 20
+      - 50
   - unitType: 1
     stats:
     - statsType: 0
