@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.33
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 0.5
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.11000001
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -138,6 +138,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (188)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -208,6 +216,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
   m_PrefabInstance: {fileID: 977735774}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &11276717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1401316903240601397, guid: 4a4de16e1daa8cd4c82c3d9c2c088a17, type: 3}
+  m_PrefabInstance: {fileID: 1580922847}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &12056755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -218,6 +231,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -289,6 +310,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (170)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 170
@@ -358,6 +387,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (179)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -433,6 +470,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -514,6 +559,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 75
@@ -568,6 +621,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &71865798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5393876351522750822, guid: 04f058725febaeb4a98a7163d7850435, type: 3}
+  m_PrefabInstance: {fileID: 815739825}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &74679891 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3933604548890929638, guid: 5a9a4121773672a478666ef04e4a733f, type: 3}
@@ -598,7 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7917608746370157141, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: 7917608746370157141, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -722,6 +780,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (199)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 199
@@ -796,6 +862,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (191)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -979,6 +1053,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -1033,6 +1115,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &110753184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5393876351522750822, guid: 04f058725febaeb4a98a7163d7850435, type: 3}
+  m_PrefabInstance: {fileID: 945584145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &115171517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1401316903240601397, guid: 4a4de16e1daa8cd4c82c3d9c2c088a17, type: 3}
+  m_PrefabInstance: {fileID: 1956889289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &116814561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1043,6 +1135,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -1259,6 +1359,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (153)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 144
@@ -1323,6 +1431,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -1389,6 +1505,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -1443,6 +1567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &150071382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6895769852094189610, guid: d021398a5e023cd4ba751d8a97c66155, type: 3}
+  m_PrefabInstance: {fileID: 1601559177}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &150956186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 374142620155095051, guid: 43965156925a22e49882e40ab0072e31, type: 3}
@@ -1463,6 +1592,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -1624,6 +1761,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (192)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -2031,6 +2176,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -2100,6 +2253,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -3744,6 +3905,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3819,6 +3988,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (143)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 154
@@ -3889,6 +4066,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -3953,6 +4138,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (147)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -4052,6 +4245,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -4117,6 +4318,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (167)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 166
@@ -4181,6 +4390,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
   m_PrefabInstance: {fileID: 1427623994}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &285390963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7428362658212091614, guid: aeedbce07bacc7e4280f0f6cfe281c83, type: 3}
+  m_PrefabInstance: {fileID: 1029978312}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &288159988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7460128048251384885, guid: 59f0bb7cae2ea094f8270f02baea3faf, type: 3}
@@ -4196,6 +4410,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -4333,6 +4555,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 66
@@ -4387,6 +4617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &312199160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 318408062246138480, guid: cc3856d12a5c8b74c83d1d838509b058, type: 3}
+  m_PrefabInstance: {fileID: 1778779371}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322790290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4438,6 +4673,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (181)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -4509,6 +4752,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 119
@@ -4579,6 +4830,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 99
@@ -4643,6 +4902,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (144)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -4727,7 +4994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8516227351784039333, guid: a24140a4f1bfec04db157867edbb5c28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.08
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8516227351784039333, guid: a24140a4f1bfec04db157867edbb5c28, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4839,6 +5106,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -4904,6 +5179,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (113)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 124
@@ -4968,6 +5251,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -5105,6 +5396,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (145)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 152
@@ -5194,7 +5493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1095999597431249734, guid: 69bff5870c29b5a4bb7ae1f53c93f972, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -3.02
       objectReference: {fileID: 0}
     - target: {fileID: 1095999597431249734, guid: 69bff5870c29b5a4bb7ae1f53c93f972, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5255,6 +5554,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -5321,6 +5628,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 87
@@ -5385,6 +5700,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -5522,6 +5845,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -5586,6 +5917,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (158)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -5657,6 +5996,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (111)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 126
@@ -5722,6 +6069,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (157)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 140
@@ -5786,6 +6141,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (115)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -5923,6 +6286,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (164)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 169
@@ -5987,6 +6358,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -6093,6 +6472,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (121)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 116
@@ -6157,6 +6544,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -6228,6 +6623,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 92
@@ -6292,6 +6695,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (132)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -6367,6 +6778,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (185)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -7964,6 +8383,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -8028,6 +8455,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -8094,6 +8529,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (138)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 159
@@ -8159,6 +8602,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -8223,6 +8674,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -8293,6 +8752,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -8436,6 +8903,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 121
@@ -8516,6 +8991,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (180)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 180
@@ -8591,6 +9074,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -8655,6 +9146,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (146)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -8725,6 +9224,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (204)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -8801,6 +9308,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 77
@@ -8865,6 +9380,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -8931,6 +9454,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 86
@@ -8995,6 +9526,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -9070,6 +9609,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (177)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -9160,6 +9707,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -12492,19 +13047,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5189970917482536503, guid: a44103078731e87459dcbbce06d1ac19, type: 3}
   m_PrefabInstance: {fileID: 196402872}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &610834974
-BoxCollider:
+--- !u!64 &610834977
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422494514}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.8522611, y: 2.9433594, z: 6.7943797}
-  m_Center: {x: -0.000028520823, y: 1.4233348, z: 0}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -631736654634542093, guid: d310072b5c896ce44bbc04e33ea344d9, type: 3}
 --- !u!1001 &616146958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12515,6 +13071,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -12591,6 +13155,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (135)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 162
@@ -12660,6 +13232,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (105)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -12866,6 +13446,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (172)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 172
@@ -12940,6 +13528,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
   m_PrefabInstance: {fileID: 1234142203}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &683484467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4412864156511592178, guid: 49dea26a76dd37240aa91af209e78c28, type: 3}
+  m_PrefabInstance: {fileID: 408081571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &683484470
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683484467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -817580871459710600, guid: 54f5f76d66a3d1542ae1cd28e89f846f, type: 3}
 --- !u!1001 &684584452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12950,6 +13557,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -13089,6 +13704,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (151)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -13278,6 +13901,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -13332,6 +13963,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &701777288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1484142503260921604, guid: 3df9bf5e685a3eb41b956a18bb84ddbc, type: 3}
+  m_PrefabInstance: {fileID: 2134971530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &704140497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13342,6 +13978,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (168)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -13408,6 +14052,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -13473,6 +14125,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 79
@@ -13532,6 +14192,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1745614209931564431, guid: 4a4de16e1daa8cd4c82c3d9c2c088a17, type: 3}
   m_PrefabInstance: {fileID: 1580922847}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &716519585
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11276717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5736092945123498040, guid: 14aa1ef924b910a41ac6a8b62dfe705f, type: 3}
 --- !u!4 &716601340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
@@ -13547,6 +14221,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -13613,6 +14295,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -13667,6 +14357,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &725765569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3319064880490008071, guid: e8eeb2e099802fc449a2ba3dfc24f73d, type: 3}
+  m_PrefabInstance: {fileID: 2127663132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &725765572
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725765569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4436338779141936936, guid: 90a5fee4f0ecbee4986aa4d774e0c0d5, type: 3}
 --- !u!4 &729757571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
@@ -13682,6 +14391,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -13855,6 +14572,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (129)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 108
@@ -13920,6 +14645,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -13974,10 +14707,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &786479962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7728905775483308355, guid: 5091ed161b8eb824480ff8dbe1fb6fa2, type: 3}
+  m_PrefabInstance: {fileID: 826600560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &786479965
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786479962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5699639365541054516, guid: 9e46055198f85954a8247843ba7aef9e, type: 3}
 --- !u!4 &788900864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4244978921590169202, guid: a683ca65ed3ef174baf03f5cd1cc6a8e, type: 3}
   m_PrefabInstance: {fileID: 295657405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &798772817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4412864156511592178, guid: 49dea26a76dd37240aa91af209e78c28, type: 3}
+  m_PrefabInstance: {fileID: 1061015800}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &801556299
 PrefabInstance:
@@ -13989,6 +14746,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -14055,6 +14820,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (169)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 164
@@ -14120,6 +14893,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -14184,6 +14965,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (187)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -14607,6 +15396,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 100
@@ -14677,6 +15474,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (178)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 178
@@ -14746,6 +15551,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (189)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -14821,6 +15634,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (205)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -14923,7 +15744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1090124953287485642, guid: cc3856d12a5c8b74c83d1d838509b058, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.31
+      value: -1.35
       objectReference: {fileID: 0}
     - target: {fileID: 1090124953287485642, guid: cc3856d12a5c8b74c83d1d838509b058, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15025,6 +15846,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1095999597431249734, guid: 69bff5870c29b5a4bb7ae1f53c93f972, type: 3}
   m_PrefabInstance: {fileID: 885819774}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &886486373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5393876351522750822, guid: 04f058725febaeb4a98a7163d7850435, type: 3}
+  m_PrefabInstance: {fileID: 853005154}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &890100740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15035,6 +15861,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (149)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -15100,6 +15934,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (202)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -15175,6 +16017,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -15617,6 +16467,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -15758,6 +16616,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (200)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 200
@@ -15827,6 +16693,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -15974,6 +16848,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (154)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 143
@@ -16049,6 +16931,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (141)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 156
@@ -16114,6 +17004,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 88
@@ -16178,6 +17076,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (194)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -16330,6 +17236,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (163)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 134
@@ -16395,6 +17309,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 90
@@ -16459,6 +17381,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -16581,6 +17511,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (184)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -16713,6 +17651,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (201)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 201
@@ -16772,11 +17718,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
   m_PrefabInstance: {fileID: 1023895231}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1024278140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1043401451505578673, guid: 43965156925a22e49882e40ab0072e31, type: 3}
+  m_PrefabInstance: {fileID: 826507499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1024278143
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024278140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2482273588397742347, guid: f4b4f0f79d01a38479ef7e2076076ca8, type: 3}
 --- !u!4 &1025892773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4724616145495432156, guid: 04f058725febaeb4a98a7163d7850435, type: 3}
   m_PrefabInstance: {fileID: 945584145}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1025892776
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110753184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7734745557505447985, guid: 11932c6c3072f8342bce457544fee373, type: 3}
 --- !u!1001 &1029713750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16787,6 +17766,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (174)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -16915,6 +17902,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (171)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 171
@@ -17042,6 +18037,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (175)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 175
@@ -17122,7 +18125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7917608746370157141, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5717621
+      value: 1.06
       objectReference: {fileID: 0}
     - target: {fileID: 7917608746370157141, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17168,6 +18171,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -17243,6 +18254,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (102)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -17365,6 +18384,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (122)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -17506,6 +18533,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 103
@@ -17570,6 +18605,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (137)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -17636,6 +18679,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -17700,6 +18751,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (114)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -17832,6 +18891,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (203)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 203
@@ -17912,6 +18979,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -17977,6 +19052,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (166)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 167
@@ -18036,6 +19119,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1745614209931564431, guid: 4a4de16e1daa8cd4c82c3d9c2c088a17, type: 3}
   m_PrefabInstance: {fileID: 1956889289}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1137821201
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115171517}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5736092945123498040, guid: 14aa1ef924b910a41ac6a8b62dfe705f, type: 3}
 --- !u!1001 &1138173550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18046,6 +19143,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -18117,6 +19222,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (165)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 168
@@ -18181,6 +19294,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -18262,6 +19383,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -18331,6 +19460,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -18451,6 +19588,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1095999597431249734, guid: 69bff5870c29b5a4bb7ae1f53c93f972, type: 3}
   m_PrefabInstance: {fileID: 1161667924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1174657520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 639330693006615818, guid: 103ee9b62eafe014fa3faf17d99eca8f, type: 3}
+  m_PrefabInstance: {fileID: 1203028482}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1175536616
 PrefabInstance:
@@ -18597,6 +19739,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 131
@@ -18733,6 +19883,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (126)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 111
@@ -18797,6 +19955,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -18942,6 +20108,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 94
@@ -19006,6 +20180,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (182)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -19142,6 +20324,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4724616145495432156, guid: 04f058725febaeb4a98a7163d7850435, type: 3}
   m_PrefabInstance: {fileID: 815739825}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1255912401
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71865798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7734745557505447985, guid: 11932c6c3072f8342bce457544fee373, type: 3}
 --- !u!4 &1259674528 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
@@ -19157,6 +20353,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -19212,6 +20416,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &1267105235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3319064880490008071, guid: e8eeb2e099802fc449a2ba3dfc24f73d, type: 3}
+  m_PrefabInstance: {fileID: 689196168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1267105238
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267105235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4436338779141936936, guid: 90a5fee4f0ecbee4986aa4d774e0c0d5, type: 3}
 --- !u!4 &1267357927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2638232893061045373, guid: df8a2d480e98b9449b3a8c7c608f1adb, type: 3}
@@ -19232,6 +20455,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (195)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -19308,6 +20539,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 98
@@ -19372,6 +20611,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (127)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -19438,6 +20685,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 80
@@ -19492,6 +20747,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &1287957450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9035460050616711455, guid: a24140a4f1bfec04db157867edbb5c28, type: 3}
+  m_PrefabInstance: {fileID: 341595533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1287957453
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287957450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6318779487325681379, guid: 6a2330527a6b6f04c8074e2adad40da3, type: 3}
 --- !u!4 &1288759769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
@@ -19517,6 +20791,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -19572,6 +20854,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+--- !u!1 &1299201491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7544654574076143273, guid: e30decdf9eae27141a2540dc27113db4, type: 3}
+  m_PrefabInstance: {fileID: 1068658978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1301428896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
@@ -19654,6 +20941,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (136)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 161
@@ -19718,6 +21013,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -19840,6 +21143,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Hill02_A
       objectReference: {fileID: 0}
+    - target: {fileID: 7727986355109585581, guid: de1a4f4edbae4644bba561c3e3126f31, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727986355109585581, guid: de1a4f4edbae4644bba561c3e3126f31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de1a4f4edbae4644bba561c3e3126f31, type: 3}
 --- !u!4 &1334689895 stripped
@@ -19867,6 +21178,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -20012,6 +21331,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (133)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -21700,6 +23027,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -21765,6 +23100,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (128)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 109
@@ -21829,6 +23172,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (124)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -21914,6 +23265,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (152)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -22042,6 +23401,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (131)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 106
@@ -22112,6 +23479,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 73
@@ -22176,6 +23551,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (196)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -22246,6 +23629,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (161)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -22369,6 +23760,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -22490,6 +23889,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -22632,6 +24039,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (183)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -22782,6 +24197,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -22857,6 +24280,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -22921,6 +24352,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (159)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -23043,6 +24482,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2293294363878180286, guid: 3df9bf5e685a3eb41b956a18bb84ddbc, type: 3}
   m_PrefabInstance: {fileID: 2134971530}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1493928324
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701777288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2495950873521760156, guid: 112dc5a548bb6884a9d1252bf34f4f97, type: 3}
 --- !u!1 &1497071245
 GameObject:
   m_ObjectHideFlags: 3
@@ -23154,6 +24607,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (156)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 141
@@ -23228,6 +24689,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (140)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -23351,6 +24820,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -23415,6 +24892,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -23481,6 +24966,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (123)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 114
@@ -23540,6 +25033,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
   m_PrefabInstance: {fileID: 12056755}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1557907946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 318408062246138480, guid: cc3856d12a5c8b74c83d1d838509b058, type: 3}
+  m_PrefabInstance: {fileID: 885439204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1557907949
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557907946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2240477632224386932, guid: 9e4f2d8ceb808234696c7282d9bdc883, type: 3}
 --- !u!1001 &1560109038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23550,6 +25062,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (142)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -23616,6 +25136,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -23680,6 +25208,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -23820,6 +25356,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (130)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 107
@@ -23939,6 +25483,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a4de16e1daa8cd4c82c3d9c2c088a17, type: 3}
+--- !u!1 &1581907677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4412864156511592178, guid: 49dea26a76dd37240aa91af209e78c28, type: 3}
+  m_PrefabInstance: {fileID: 1175536616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1581907680
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581907677}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -817580871459710600, guid: 54f5f76d66a3d1542ae1cd28e89f846f, type: 3}
 --- !u!4 &1582476502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
@@ -24011,6 +25574,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (176)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -24213,6 +25784,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -24343,6 +25922,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -24550,6 +26137,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -24690,6 +26285,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (110)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -26296,6 +27899,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -26365,6 +27976,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -26451,6 +28070,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -26515,6 +28142,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -26745,6 +28380,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 101
@@ -26821,6 +28464,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -26885,6 +28536,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (150)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -27017,6 +28676,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -27212,6 +28879,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2369922755707933496, guid: ab0f3a2a9d9109f459e9d9e6a297dc01, type: 3}
   m_PrefabInstance: {fileID: 1724149854}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1726046270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7727986355109585581, guid: de1a4f4edbae4644bba561c3e3126f31, type: 3}
+  m_PrefabInstance: {fileID: 1333465109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1731260846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27222,6 +28894,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (162)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -27287,6 +28967,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -28888,6 +30576,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (193)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 193
@@ -28952,6 +30648,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4724616145495432156, guid: 04f058725febaeb4a98a7163d7850435, type: 3}
   m_PrefabInstance: {fileID: 853005154}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1757653298
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886486373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7734745557505447985, guid: 11932c6c3072f8342bce457544fee373, type: 3}
 --- !u!1001 &1764134466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29023,6 +30733,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3924451932526937160, guid: 49dea26a76dd37240aa91af209e78c28, type: 3}
   m_PrefabInstance: {fileID: 1061015800}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1772488446
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798772817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -817580871459710600, guid: 54f5f76d66a3d1542ae1cd28e89f846f, type: 3}
 --- !u!1001 &1773525553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29033,6 +30757,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (108)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -29098,6 +30830,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -29573,6 +31313,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (125)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 112
@@ -29810,6 +31558,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -29880,6 +31636,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 83
@@ -29939,6 +31703,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1090124953287485642, guid: cc3856d12a5c8b74c83d1d838509b058, type: 3}
   m_PrefabInstance: {fileID: 1778779371}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1870740045
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312199160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2240477632224386932, guid: 9e4f2d8ceb808234696c7282d9bdc883, type: 3}
 --- !u!1001 &1872558820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29949,6 +31727,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (120)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -30030,6 +31816,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (134)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 163
@@ -30094,6 +31888,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -30160,6 +31962,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -30225,6 +32035,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (160)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 137
@@ -30289,6 +32107,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (186)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -30365,6 +32191,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (155)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 142
@@ -30429,6 +32263,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7203560312797527059, guid: e30decdf9eae27141a2540dc27113db4, type: 3}
   m_PrefabInstance: {fileID: 1068658978}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1904856008
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299201491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5949818489499811872, guid: 42ae44a61ce312744ae8aeef36501057, type: 3}
 --- !u!4 &1905307827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
@@ -30454,6 +32302,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -30520,6 +32376,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -30585,6 +32449,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (148)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 149
@@ -30649,6 +32521,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (173)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -30724,25 +32604,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1938141589}
   - component: {fileID: 1938141588}
-  - component: {fileID: 1938141587}
+  - component: {fileID: 1938141590}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!154 &1938141587
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938141586}
-  m_Material: {fileID: 0}
-  m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: dc3a2162b0af85d48a1e57f3d8547872, type: 2}
-  m_EnableTreeColliders: 1
 --- !u!218 &1938141588
 Terrain:
   m_ObjectHideFlags: 0
@@ -30792,6 +32661,17 @@ Transform:
   m_Father: {fileID: 1034256405}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!154 &1938141590
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938141586}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 0}
+  m_EnableTreeColliders: 1
 --- !u!1001 &1942420960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30858,6 +32738,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
   m_PrefabInstance: {fileID: 248009301}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1953556616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1043401451505578673, guid: 43965156925a22e49882e40ab0072e31, type: 3}
+  m_PrefabInstance: {fileID: 443077246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1953556619
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953556616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2482273588397742347, guid: f4b4f0f79d01a38479ef7e2076076ca8, type: 3}
 --- !u!1001 &1956889289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30937,6 +32836,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 257984238678818736, guid: 103ee9b62eafe014fa3faf17d99eca8f, type: 3}
   m_PrefabInstance: {fileID: 1203028482}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1959587066
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174657520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4642650360215343849, guid: e41e544363cd39941aa1710af8d5a1ee, type: 3}
 --- !u!1001 &1966454791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30947,6 +32860,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -31017,6 +32938,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -31118,6 +33047,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (139)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -31250,6 +33187,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (190)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -32897,6 +34842,37 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 7917608746370157142, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
   m_PrefabInstance: {fileID: 2006034754}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2007203414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2007203415}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2007203415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007203414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 68.09, y: 53.01, z: 74.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2007239693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32907,6 +34883,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -32972,6 +34956,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -33042,6 +35034,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (117)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -33122,6 +35122,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7808407051045063780, guid: aeedbce07bacc7e4280f0f6cfe281c83, type: 3}
   m_PrefabInstance: {fileID: 1029978312}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2041991526
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285390963}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2565419503648151167, guid: 0b6d18f2e70a35f48bc9a54e58ad124f, type: 3}
 --- !u!1001 &2044333785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33132,6 +35146,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -33335,6 +35357,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -33471,6 +35501,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -33535,6 +35573,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (119)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -33606,6 +35652,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (198)
       objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
       value: 198
@@ -33670,11 +35724,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
   m_PrefabInstance: {fileID: 338376819}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2084039270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3944204971693645965, guid: a7908ff99ef48784bbed8b5d44db968d, type: 3}
+  m_PrefabInstance: {fileID: 1657875021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2084039273
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084039270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3835205568718595055, guid: 3c44e0548be44234db20d2050e27f45c, type: 3}
+--- !u!1 &2086148217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7651233761279887711, guid: ac766c1f14f2590449e6d5c4b8dc299e, type: 3}
+  m_PrefabInstance: {fileID: 1942420960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2086148220
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086148217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5682342171648535384, guid: 69a753dd6047337448d26e8a8874d1ad, type: 3}
 --- !u!4 &2088876531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6123033512097106576, guid: d021398a5e023cd4ba751d8a97c66155, type: 3}
   m_PrefabInstance: {fileID: 1601559177}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2088876534
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150071382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3324849142383358197, guid: 298ae23ad23f3dc479da75a81f130092, type: 3}
 --- !u!1 &2090765548 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7917608746370157138, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
@@ -33700,6 +35806,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (197)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -33937,6 +36051,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6950323103057524759, guid: de1a4f4edbae4644bba561c3e3126f31, type: 3}
   m_PrefabInstance: {fileID: 1333465109}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2129616611
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726046270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4523240135290541045, guid: 0128a745374748347ae0ff194d919c30, type: 3}
+--- !u!1 &2132195508 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 639330693006615818, guid: 103ee9b62eafe014fa3faf17d99eca8f, type: 3}
+  m_PrefabInstance: {fileID: 1474288676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2132195511
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132195508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4642650360215343849, guid: e41e544363cd39941aa1710af8d5a1ee, type: 3}
 --- !u!1001 &2132464792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33947,6 +36094,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder
@@ -34069,6 +36224,14 @@ PrefabInstance:
     - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Water01_A (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603725183543482109, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3416432143548107847, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
       propertyPath: m_RootOrder

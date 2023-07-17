@@ -62,15 +62,6 @@ namespace RPG.Stats {
 
         public float GetStat(StatsType stat)
         {
-            float baseStat = GetBaseStat(stat);
-            float addMod = GetAdditiveModifiers(stat);
-            float pctMod = GetPercentageModifiers(stat);
-            if (shouldUseModifiers) {
-                Debug.Log($"{stat.ToString()}: ({baseStat} + {addMod}) * {pctMod}");
-            }
-            
-
-
             return (GetBaseStat(stat) + GetAdditiveModifiers(stat)) * GetPercentageModifiers(stat);
         }
 

@@ -103,6 +103,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: 4c158c654c73d5d4b83be1bae28d0464, type: 2}
     - target: {fileID: 3296467857811399765, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: navMeshHitRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296467857811399765, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: cursorMappings.Array.size
       value: 5
       objectReference: {fileID: 0}

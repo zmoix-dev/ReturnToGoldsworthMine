@@ -3,11 +3,14 @@ using RPG.Combat;
 using RPG.Movement;
 using RPG.Stats;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
 namespace RPG.Control {
     public class PlayerController : MonoBehaviour
     {
+        [SerializeField] CursorMapping[] cursorMappings = null;
+        [SerializeField] float navMeshHitRadius = 1f;
 
         Fighter fighter;
         Mover mover;
@@ -20,7 +23,6 @@ namespace RPG.Control {
             public Texture2D texture;
         }
 
-        [SerializeField] CursorMapping[] cursorMappings = null;
 
         private void Awake() {
             fighter = GetComponent<Fighter>();
@@ -80,18 +82,38 @@ namespace RPG.Control {
 
         private bool InteractWithMovement()
         {
-            RaycastHit hit;
-            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+            Vector3 hit;
+            bool hasHit = RaycastNavMesh(out hit);
+
             if (hasHit)
             {
                 if (Input.GetMouseButton(0)) {
-                    mover.StartMoveAction(hit.point);
+                    mover.StartMoveAction(hit);
                 }
                 SetCursor(CursorType.Movement);
                 return true;
             } else {
                 return false;
             }
+        }
+
+        private bool RaycastNavMesh(out Vector3 target) {
+            target = Vector3.zero;
+            RaycastHit hit;
+            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+            if (!hasHit) return false;
+
+            NavMeshHit navMeshHit;
+            bool hasNavMeshHit = NavMesh.SamplePosition(hit.point, out navMeshHit, navMeshHitRadius, NavMesh.AllAreas);
+            if (hasNavMeshHit) {
+                target = navMeshHit.position;
+                return true;
+            }
+            else {
+                //Debug.Log(hit.point);
+                Debug.Log(hit.transform.name);
+            }
+            return false;
         }
 
         private Ray GetMouseRay()
