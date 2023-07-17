@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4168076740006864068}
   - component: {fileID: 1490265789}
-  - component: {fileID: 1490265790}
+  - component: {fileID: 7984973447445910451}
   m_Layer: 0
   m_Name: Oar
   m_TagString: Untagged
@@ -48,7 +48,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1490265790
+--- !u!114 &7984973447445910451
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,6 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 11400000, guid: a8ab4e5b9c44bd943b3df32beb9a1e89, type: 2}
+  pickupRange: 100
 --- !u!1001 &3422384562388364594
 PrefabInstance:
   m_ObjectHideFlags: 0

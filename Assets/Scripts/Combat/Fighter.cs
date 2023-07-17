@@ -118,21 +118,6 @@ namespace RPG.Combat {
             }
         }
 
-        public void EquipWeapon(WeaponPickup pickup)
-        {
-            if (pickup) {
-                if (equippedWeapon) {
-                    DestroyEquippedWeapon();
-                }
-                Weapon weapon = pickup.Weapon;
-                equippedWeapon = weapon;
-                equippedWeaponObject = weapon.Spawn(handTransform, GetComponent<Animator>());
-                Destroy(pickup.gameObject);
-            } else {
-                Debug.LogError($"No weapon equipped to Fighter on {name}.");
-            }
-        }
-
         private void DestroyEquippedWeapon() {
             Destroy(equippedWeaponObject);
         }
