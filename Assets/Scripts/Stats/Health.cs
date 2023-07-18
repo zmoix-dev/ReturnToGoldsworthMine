@@ -12,10 +12,9 @@ namespace RPG.Stats {
     public class Health : MonoBehaviour, ISaveable
     {
         [Range(0,1)]
-        [SerializeField] float levelUpMinHealthPct = 0.75f;
-        [SerializeField] UnityEvent<float> takeDamage;
+        [SerializeField] float levelUpMinHealthPct = 1f;
+        [SerializeField] UnityEvent<float> onTakeDamage;
         [SerializeField] UnityEvent onDie;
-        [SerializeField] UnityEvent onDamageTaken;
         LazyValue<float> currentHealth;
         bool isDead = false;
         public bool IsDead { get { return isDead; }}
@@ -31,12 +30,12 @@ namespace RPG.Stats {
 
         private void OnEnable() {
 
-            GetComponent<BaseStats>().onLevelUp += RegenerateHealth;  
+            GetComponent<BaseStats>().onLevelUp += RegenerateHealthOnLevelUp;  
         }
 
         private void OnDisable() {
 
-            GetComponent<BaseStats>().onLevelUp -= RegenerateHealth;  
+            GetComponent<BaseStats>().onLevelUp -= RegenerateHealthOnLevelUp;  
         }
 
         private void Start() {
@@ -49,7 +48,7 @@ namespace RPG.Stats {
 
         public void TakeDamage(GameObject attacker, float damage) {
             currentHealth.value = Mathf.Max(currentHealth.value - damage, 0);
-            takeDamage.Invoke(damage);
+            onTakeDamage.Invoke(damage);
             if (currentHealth.value == 0 && !isDead)
             {
                 onDie.Invoke();
@@ -57,8 +56,12 @@ namespace RPG.Stats {
             }
         }
 
-        public void RegenerateHealth() {
+        public void RegenerateHealthOnLevelUp() {
             currentHealth.value = Mathf.Max(GetComponent<BaseStats>().GetStat(StatsType.Health) * levelUpMinHealthPct, currentHealth.value);
+        }
+
+        public void RegenerateHealth(float value) {
+            currentHealth.value += value;
         }
 
         private void HandleDeath(GameObject attacker)

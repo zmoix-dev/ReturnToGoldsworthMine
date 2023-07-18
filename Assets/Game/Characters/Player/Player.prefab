@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 2800000, guid: 21628736160fcc9488493401da3ef621, type: 3}
     - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: levelUpMinHealthPct
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5863169880228690635, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: m_Name
@@ -218,9 +218,13 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7259230868177344542, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8745297592254594253, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}

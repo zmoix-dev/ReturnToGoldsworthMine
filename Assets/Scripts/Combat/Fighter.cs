@@ -131,6 +131,11 @@ namespace RPG.Combat {
             }
         }
 
+        public Weapon EquipWeapon(WeaponConfig weapon)
+        {
+            return EquipWeapon(weapon, weaponRotation);
+        }
+
         private void DestroyEquippedWeapon() {
             Destroy(equippedWeaponObject);
         }

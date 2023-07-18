@@ -71,6 +71,11 @@ namespace RPG.Stats {
             return (GetBaseStat(stat) + GetAdditiveModifiers(stat)) * GetPercentageModifiers(stat);
         }
 
+        public float GetStat(StatsType stat, int level)
+        {
+            return (GetBaseStat(stat) + GetAdditiveModifiers(stat)) * GetPercentageModifiers(stat);
+        }
+
         public float GetExperienceReward() {
             return 10;
         }
@@ -100,6 +105,11 @@ namespace RPG.Stats {
         private float GetBaseStat(StatsType stat)
         {
             return progression.GetStat(unitType, stat, currentLevel.value);
+        }
+
+        private float GetBaseStat(StatsType stat, int level)
+        {
+            return progression.GetStat(unitType, stat, level);
         }
 
         private float GetAdditiveModifiers(StatsType stat) {

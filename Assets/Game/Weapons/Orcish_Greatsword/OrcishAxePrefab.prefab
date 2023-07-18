@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2964603145067222562, guid: 9d11547cebce1da479736a861bae3f23, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dc5c98755448cdd48a680d017cb8ceb5, type: 3}
     - target: {fileID: 5110671717797879764, guid: 9d11547cebce1da479736a861bae3f23, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -51,9 +55,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5927258449853079910, guid: 9d11547cebce1da479736a861bae3f23, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7106811672356646273, guid: 9d11547cebce1da479736a861bae3f23, type: 3}
       propertyPath: m_Name
-      value: OrcishGreatweapon
+      value: OrcishAxePrefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d11547cebce1da479736a861bae3f23, type: 3}

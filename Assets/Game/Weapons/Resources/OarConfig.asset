@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OarConfig
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: 4c158c654c73d5d4b83be1bae28d0464, type: 2}
-  weaponPrefab: {fileID: 8757675411877502744, guid: d0644a0dc5fe55447856fb3ce89d9579, type: 3}
+  weaponPrefab: {fileID: 7888314473520953179, guid: d0644a0dc5fe55447856fb3ce89d9579, type: 3}
   weaponDamage: 5
   pctModifer: 0
   attackRange: 3

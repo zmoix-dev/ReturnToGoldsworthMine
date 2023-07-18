@@ -65,7 +65,6 @@ namespace RPG.Control {
         private bool InteractWithUI(RaycastHit[] hits)
         {
             if (EventSystem.current.IsPointerOverGameObject()) {
-                Debug.Log("True");
                 SetCursor(CursorType.UI);
                 return true;
             }   

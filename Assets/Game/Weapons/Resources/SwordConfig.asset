@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SwordConfig
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 0}
-  weaponPrefab: {fileID: 3296411628395573697, guid: b954707dd04a65d4b97adb55868607b5, type: 3}
+  weaponPrefab: {fileID: 4129338728778062210, guid: b954707dd04a65d4b97adb55868607b5, type: 3}
   weaponDamage: 3
   pctModifer: 0
   attackRange: 3.5

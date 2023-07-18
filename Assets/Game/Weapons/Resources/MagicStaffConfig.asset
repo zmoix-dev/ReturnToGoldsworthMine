@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
-  m_Name: FireballConfig
+  m_Name: MagicStaffConfig
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: 3adefcfcccb6b794cb1f812381f2ba71, type: 2}
-  weaponPrefab: {fileID: 7637529274786249917, guid: caeca6c526a54dd43b15fa98fb5ce517, type: 3}
+  weaponPrefab: {fileID: 8781574622963274240, guid: 7622681478a211b4e881f0acf437ae07, type: 3}
   weaponDamage: 12
   pctModifer: 0
   attackRange: 20

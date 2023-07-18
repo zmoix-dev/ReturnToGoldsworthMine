@@ -91,15 +91,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2106138423025096365, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 72.080185
       objectReference: {fileID: 0}
     - target: {fileID: 2106138423025096365, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 53.85123
       objectReference: {fileID: 0}
     - target: {fileID: 2106138423025096365, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 76.551125
       objectReference: {fileID: 0}
     - target: {fileID: 2106138423025096365, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -196,6 +196,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8699854a36e96f4b87d397dd50e4388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &6891320723512736650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2106138423025096365, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
