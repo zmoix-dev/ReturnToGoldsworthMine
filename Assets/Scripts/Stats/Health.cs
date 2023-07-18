@@ -4,39 +4,61 @@ using UnityEngine;
 using RPG.Game.Animation;
 using RPG.Saving;
 using RPG.Core;
+using UnityEngine.Events;
+using GameDevTV.Utils;
+using System;
 
 namespace RPG.Stats {
     public class Health : MonoBehaviour, ISaveable
     {
         [Range(0,1)]
         [SerializeField] float levelUpMinHealthPct = 0.75f;
-        float currentHealth = -1f;
+        [SerializeField] UnityEvent<float> takeDamage;
+        [SerializeField] UnityEvent onDie;
+        [SerializeField] UnityEvent onDamageTaken;
+        LazyValue<float> currentHealth;
         bool isDead = false;
         public bool IsDead { get { return isDead; }}
 
-        void Start() {
-            // Fixes race condition with RestoreState
-            GetComponent<BaseStats>().onLevelUp += RegenerateHealth;
-            if (currentHealth < 0) {
-                currentHealth = GetComponent<BaseStats>().GetStat(StatsType.Health);
-            }
-            
+        private void Awake() {
+            currentHealth = new LazyValue<float>(GetInitialHealth);
+        }
+
+        private float GetInitialHealth()
+        {
+            return GetComponent<BaseStats>().GetStat(StatsType.Health);
+        }
+
+        private void OnEnable() {
+
+            GetComponent<BaseStats>().onLevelUp += RegenerateHealth;  
+        }
+
+        private void OnDisable() {
+
+            GetComponent<BaseStats>().onLevelUp -= RegenerateHealth;  
+        }
+
+        private void Start() {
+            currentHealth.ForceInit();
         }
 
         public float GetHealthPercentage() {
-            return 100 * (currentHealth / GetComponent<BaseStats>().GetStat(StatsType.Health));
+            return currentHealth.value / GetComponent<BaseStats>().GetStat(StatsType.Health);
         }
 
         public void TakeDamage(GameObject attacker, float damage) {
-            currentHealth = Mathf.Max(currentHealth - damage, 0);
-            if (currentHealth == 0 && !isDead)
+            currentHealth.value = Mathf.Max(currentHealth.value - damage, 0);
+            takeDamage.Invoke(damage);
+            if (currentHealth.value == 0 && !isDead)
             {
+                onDie.Invoke();
                 HandleDeath(attacker);
             }
         }
 
         public void RegenerateHealth() {
-            currentHealth = Mathf.Max(GetComponent<BaseStats>().GetStat(StatsType.Health) * levelUpMinHealthPct, currentHealth);
+            currentHealth.value = Mathf.Max(GetComponent<BaseStats>().GetStat(StatsType.Health) * levelUpMinHealthPct, currentHealth.value);
         }
 
         private void HandleDeath(GameObject attacker)
@@ -62,8 +84,8 @@ namespace RPG.Stats {
 
         public void RestoreState(object state)
         {
-            currentHealth = (float) state;
-            if (currentHealth == 0) {
+            currentHealth.value = (float) state;
+            if (currentHealth.value == 0) {
                 HandleDeath(null);
             }
         }

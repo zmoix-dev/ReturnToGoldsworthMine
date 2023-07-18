@@ -25,7 +25,7 @@ namespace RPG.Combat {
             if (target == null) {
                 text = "N/A";
             } else {
-                text = string.Format("{0:0}%", target.GetComponent<Health>().GetHealthPercentage());
+                text = string.Format("{0:0}%", target.GetComponent<Health>().GetHealthPercentage() * 100);
             }
             display.text = text;
         }

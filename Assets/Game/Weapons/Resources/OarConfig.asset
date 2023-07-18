@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
-  m_Name: Orcish_Greatsword
+  m_Name: OarConfig
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 22100000, guid: 3480ffd0b322e7249bb21ebf3c2a3b11, type: 2}
-  weaponPrefab: {fileID: 6904980812396637822, guid: 565c10479b1dda0469b88a3fb4f850e6, type: 3}
-  weaponDamage: 9
-  attackRange: 3.5
-  timeBetweenAttacks: 3
+  animatorOverride: {fileID: 22100000, guid: 4c158c654c73d5d4b83be1bae28d0464, type: 2}
+  weaponPrefab: {fileID: 8757675411877502744, guid: d0644a0dc5fe55447856fb3ce89d9579, type: 3}
+  weaponDamage: 5
+  pctModifer: 0
+  attackRange: 3
+  timeBetweenAttacks: 2.5
+  projectile: {fileID: 0}

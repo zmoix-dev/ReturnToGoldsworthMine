@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using RPG.Core;
 using RPG.Stats;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RPG.Combat {
     public class Projectile : MonoBehaviour
@@ -13,6 +14,7 @@ namespace RPG.Combat {
         [SerializeField] float maxLifetime = 10f;
         [SerializeField] GameObject[] destroyOnHit = null;
         [SerializeField] float lingerAfterHit = 2f;
+        [SerializeField] UnityEvent onHit;
 
         Health target = null;
         GameObject attacker = null;
@@ -43,6 +45,8 @@ namespace RPG.Combat {
 
         void OnTriggerEnter(Collider other) {
             if (other.GetComponent<Health>() != target || target.IsDead) return;
+
+            onHit.Invoke();
             target.TakeDamage(attacker, damage);
 
             speed = 0;

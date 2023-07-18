@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
-  m_Name: Sword
+  m_Name: SwordConfig
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 0}
-  weaponPrefab: {fileID: 8572926926767590081, guid: 8d1d89981b43cf741afbfb6fbb08edf8, type: 3}
+  weaponPrefab: {fileID: 3296411628395573697, guid: b954707dd04a65d4b97adb55868607b5, type: 3}
   weaponDamage: 3
+  pctModifer: 0
   attackRange: 3.5
   timeBetweenAttacks: 3
+  projectile: {fileID: 0}

@@ -18,7 +18,7 @@ namespace RPG.Stats {
         // Update is called once per frame
         void Update()
         {
-            display.text = string.Format("{0:0}%", health.GetHealthPercentage());
+            display.text = string.Format("{0:0}%", health.GetHealthPercentage() * 100);
         }
     }
 }

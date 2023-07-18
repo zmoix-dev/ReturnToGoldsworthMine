@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
-  m_Name: Unarmed
+  m_Name: OrcishClubConfig
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 22100000, guid: ed176d095e8e3f24796f746c2e581b2c, type: 2}
-  weaponPrefab: {fileID: 0}
+  animatorOverride: {fileID: 22100000, guid: 718b2b63729b90f469cd331d183ec96d, type: 2}
+  weaponPrefab: {fileID: 7625466499856132506, guid: 6592edb581ea34141ac68d07181556e5, type: 3}
   weaponDamage: 3
-  attackRange: 2.5
-  timeBetweenAttacks: 2
+  pctModifer: 0
+  attackRange: 3
+  timeBetweenAttacks: 3
+  projectile: {fileID: 0}

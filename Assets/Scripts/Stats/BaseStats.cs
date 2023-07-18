@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Utils;
 using RPG.Core;
 using UnityEngine;
 
@@ -16,12 +17,21 @@ namespace RPG.Stats {
 
         public event Action onLevelUp;
 
-        int currentLevel = 0;
+        LazyValue<int> currentLevel;
 
         Experience experience;
 
         private void Awake() {
             experience = GetComponent<Experience>();
+            currentLevel = new LazyValue<int>(GetInitialLevel);
+        }
+
+        private int GetInitialLevel() {
+            if (unitType.Equals(UnitType.Type.PLAYER)) {
+                return CalculateLevel();
+            } else {
+                return startingLevel;
+            }
         }
 
         private void OnEnable() {
@@ -37,18 +47,14 @@ namespace RPG.Stats {
         }
 
         private void Start() {
-            if (unitType.Equals(UnitType.Type.PLAYER)) {
-                currentLevel = CalculateLevel();
-            } else {
-                currentLevel = startingLevel;
-            }
+            currentLevel.ForceInit();
         }
 
         void CheckLevel() {
             int newLevel = CalculateLevel();
-            if (newLevel > currentLevel)
+            if (newLevel > currentLevel.value)
             {
-                currentLevel = newLevel;
+                currentLevel.value = newLevel;
                 LevelUpEffect();
                 onLevelUp();
             }
@@ -70,13 +76,14 @@ namespace RPG.Stats {
         }
 
         public int GetLevel() {
-            if (currentLevel < 1) {
-                currentLevel = CalculateLevel();
+            if (currentLevel.value < 1) {
+                currentLevel.value = CalculateLevel();
             }
-            return currentLevel;
+            return currentLevel.value;
         }
 
         public int CalculateLevel() {
+            if (experience == null) return 1;
             float currentExp = experience.GetExperience();
             float expNeeded = -1;
             int level = 1;
@@ -92,7 +99,7 @@ namespace RPG.Stats {
 
         private float GetBaseStat(StatsType stat)
         {
-            return progression.GetStat(unitType, stat, currentLevel);
+            return progression.GetStat(unitType, stat, currentLevel.value);
         }
 
         private float GetAdditiveModifiers(StatsType stat) {

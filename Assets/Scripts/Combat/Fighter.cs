@@ -12,8 +12,9 @@ namespace RPG.Combat {
     public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {
         [SerializeField] Transform handTransform;
-        [SerializeField] Weapon defaultWeapon = null;
-        Weapon equippedWeapon;
+        [SerializeField] WeaponConfig defaultWeapon = null;
+        [SerializeField] Quaternion weaponRotation = Quaternion.identity;
+        WeaponConfig equippedWeapon;
         GameObject equippedWeaponObject;
        
         GameObject target = null;
@@ -26,7 +27,7 @@ namespace RPG.Combat {
 
         private void Start() {
             if (equippedWeapon == null) {
-                EquipWeapon(defaultWeapon);
+                EquipWeapon(defaultWeapon, weaponRotation);
             }
         }
 
@@ -108,11 +109,11 @@ namespace RPG.Combat {
             canAttack = true;
         }
 
-        public void EquipWeapon(Weapon weapon)
+        public void EquipWeapon(WeaponConfig weapon, Quaternion reposition)
         {
             if (weapon) {
                 equippedWeapon = weapon;
-                weapon.Spawn(handTransform, GetComponent<Animator>());
+                weapon.Spawn(handTransform, GetComponent<Animator>(), reposition);
             } else {
                 Debug.LogError($"No weapon equipped to Fighter on {name}.");
             }
@@ -129,7 +130,7 @@ namespace RPG.Combat {
 
         public void RestoreState(object state)
         {
-            EquipWeapon(Resources.Load<Weapon>(state as string));
+            EquipWeapon(Resources.Load<WeaponConfig>(state as string), weaponRotation);
         }
     }
 }

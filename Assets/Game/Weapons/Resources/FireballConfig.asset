@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
-  m_Name: Oar
+  m_Name: FireballConfig
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 22100000, guid: 4c158c654c73d5d4b83be1bae28d0464, type: 2}
-  weaponPrefab: {fileID: 4659142240262728134, guid: ee4f2ab0d07bc834f9b3727ecf8e0cee, type: 3}
-  weaponDamage: 5
-  attackRange: 3
-  timeBetweenAttacks: 2.5
+  animatorOverride: {fileID: 22100000, guid: 3adefcfcccb6b794cb1f812381f2ba71, type: 2}
+  weaponPrefab: {fileID: 7637529274786249917, guid: caeca6c526a54dd43b15fa98fb5ce517, type: 3}
+  weaponDamage: 12
+  pctModifer: 0
+  attackRange: 20
+  timeBetweenAttacks: 2
+  projectile: {fileID: 8492660159546492969, guid: caeca6c526a54dd43b15fa98fb5ce517, type: 3}

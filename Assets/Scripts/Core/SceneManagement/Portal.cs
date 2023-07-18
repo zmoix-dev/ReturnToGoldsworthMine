@@ -5,6 +5,7 @@ using RPG.Core;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
+using RPG.Control;
 
 namespace RPG.SceneManagement {
     public class Portal : MonoBehaviour
@@ -31,16 +32,23 @@ namespace RPG.SceneManagement {
                 Debug.LogError("Scene to load is not set.");
                 yield break;
             }
+            GameObject.FindWithTag(UnitType.GetType(UnitType.Type.PLAYER)).GetComponent<PlayerController>().enabled = false;
+
             TransitionFader fader = FindObjectOfType<TransitionFader>();
             yield return fader.FadeOut(fadeOutTime);
+
             FindObjectOfType<SavingWrapper>().Save();
             DontDestroyOnLoad(gameObject);
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
+
+            GameObject.FindWithTag(UnitType.GetType(UnitType.Type.PLAYER)).GetComponent<PlayerController>().enabled = false;
             FindObjectOfType<SavingWrapper>().Load();
             SpawnPlayer(GetDestinationPortal());
             FindObjectOfType<SavingWrapper>().Save();
             yield return new WaitForSeconds(fadeWaitTime);
-            yield return fader.FadeIn(fadeInTime);
+            fader.FadeIn(fadeInTime);
+            
+            GameObject.FindWithTag(UnitType.GetType(UnitType.Type.PLAYER)).GetComponent<PlayerController>().enabled = true;
             Destroy(gameObject);
         }
 

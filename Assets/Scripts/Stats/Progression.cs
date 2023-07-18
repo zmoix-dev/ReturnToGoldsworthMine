@@ -7,15 +7,16 @@ namespace RPG.Stats {
     public class Progression : ScriptableObject {
         [SerializeField] CharacterProgression[] characterProgression = null;
         Dictionary<UnitType.Type, Dictionary<StatsType, float[]>> lookupTable = null;
+        bool dictionaryBuild = false;
 
-        public float GetStat(UnitType.Type unitType, StatsType type, int level) {
+        public float GetStat(UnitType.Type unitType, StatsType statsType, int level) {
             BuildLookup();
 
             if (!lookupTable.ContainsKey(unitType)) return -1;
-            if (!lookupTable[unitType].ContainsKey(type)) return -1;
-            if (lookupTable[unitType][type].Length < level) return -1;
-
-            return lookupTable[unitType][type][level - 1];
+            if (!lookupTable[unitType].ContainsKey(statsType)) return -1;
+            if (lookupTable[unitType][statsType].Length < level) return -1;
+            
+            return lookupTable[unitType][statsType][level - 1];
         }
 
         public void BuildLookup() {

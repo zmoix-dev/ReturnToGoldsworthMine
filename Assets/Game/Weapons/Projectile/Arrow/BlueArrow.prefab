@@ -156,6 +156,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1621793572592348405, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 94fc62564eabf2e429355affe6bee585, type: 3}
     - target: {fileID: 2106138423025096365, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -200,6 +204,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2992968599146004838, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992968599146004838, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 151fa7778dc9cf14ba998127d188283b, type: 3}
+    - target: {fileID: 2992968599146004838, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992968599146004838, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3982201834370786574, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
       propertyPath: hitEffect
       value: 
@@ -216,6 +236,10 @@ PrefabInstance:
       propertyPath: destroyOnHit.Array.data[1]
       value: 
       objectReference: {fileID: 6213547394512522703}
+    - target: {fileID: 6883545271400398394, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7433864738548275809, guid: 9f4823cfad0a7e74082404ffdd6026e2, type: 3}
       propertyPath: m_Name
       value: BlueArrow

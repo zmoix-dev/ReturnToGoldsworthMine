@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
-  m_Name: Fireball
+  m_Name: OrcishAxeConfig
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 22100000, guid: 3adefcfcccb6b794cb1f812381f2ba71, type: 2}
-  weaponPrefab: {fileID: 0}
-  weaponDamage: 12
+  animatorOverride: {fileID: 22100000, guid: 3480ffd0b322e7249bb21ebf3c2a3b11, type: 2}
+  weaponPrefab: {fileID: 7621198225037056659, guid: 8c77f7fc602cf0f4593f6b1d9e3ead82, type: 3}
+  weaponDamage: 9
   pctModifer: 0
-  attackRange: 20
-  timeBetweenAttacks: 2
-  projectile: {fileID: 522347350936379566, guid: 1b1c416f0fd6e774ab2dc4deaeccffc6, type: 3}
+  attackRange: 3.5
+  timeBetweenAttacks: 3
+  projectile: {fileID: 0}
