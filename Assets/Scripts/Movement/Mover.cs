@@ -9,6 +9,7 @@ using UnityEngine.AI;
 namespace RPG.Movement {
     public class Mover : MonoBehaviour, IAction, ISaveable
     {
+        [SerializeField] float maxNavPathLength = 40f;
         NavMeshAgent navAgent;
         
         void Awake() {
@@ -37,6 +38,34 @@ namespace RPG.Movement {
             destination.z += zWander;
             StartMoveAction(destination);
             return destination;
+        }
+
+        public bool CanMoveTo(Vector3 destination) {
+            NavMeshPath path = new NavMeshPath();
+            bool hasPath = NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
+            if (!hasPath) {
+                Debug.Log($"{gameObject.name} can't find a path.");
+                return false;
+            }
+            // if (path.status == NavMeshPathStatus.PathComplete) {
+            //     Debug.Log("Incomplete path");
+            //     return false;
+            // }
+            if (GetPathLength(path) > maxNavPathLength) {
+                Debug.Log($"{gameObject.name} can't reach.");
+                return false;
+            }
+            Debug.Log($"{gameObject.name} has a path.");
+            return true;
+        }
+
+        private float GetPathLength(NavMeshPath path)
+        {
+            float totalDistance = 0f;
+            for (int i = 0; i < path.corners.Length - 1; i++) {
+                totalDistance += Vector3.Distance(path.corners[i], path.corners[i+1]);
+            }
+            return totalDistance;
         }
 
         public void MoveTo(Vector3 destination) {

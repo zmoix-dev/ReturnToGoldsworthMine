@@ -71,11 +71,6 @@ namespace RPG.Stats {
             return (GetBaseStat(stat) + GetAdditiveModifiers(stat)) * GetPercentageModifiers(stat);
         }
 
-        public float GetStat(StatsType stat, int level)
-        {
-            return (GetBaseStat(stat) + GetAdditiveModifiers(stat)) * GetPercentageModifiers(stat);
-        }
-
         public float GetExperienceReward() {
             return 10;
         }

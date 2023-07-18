@@ -17,10 +17,13 @@ namespace RPG.Combat {
         {
             if (gameObject.GetComponent<Health>() == null || gameObject.GetComponent<Health>().IsDead) return false;
 
-            if (Input.GetMouseButtonDown(0)) {
-                    caller.gameObject.GetComponent<Fighter>().SelectTarget(gameObject);
-            }
-            return true;
+            Fighter playerFighter = caller.gameObject.GetComponent<Fighter>();
+            if (playerFighter.CanChase(gameObject)) {
+                if (Input.GetMouseButtonDown(0)) {
+                        caller.gameObject.GetComponent<Fighter>().SelectTarget(gameObject);
+                }
+                return true;
+            } else return false;
         }
     }
 }

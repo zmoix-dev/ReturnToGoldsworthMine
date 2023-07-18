@@ -43,7 +43,7 @@ namespace RPG.Combat {
 
         public void LaunchProjectile(Transform hand, Health target, GameObject attacker, float damageModifier) {
             Projectile projectileInstance = Instantiate(projectile, hand.position, Quaternion.identity);
-            projectileInstance.SetTarget(target, attacker, weaponDamage * damageModifier);
+            projectileInstance.SetTarget(target, attacker, weaponDamage);
         }
     }
 }

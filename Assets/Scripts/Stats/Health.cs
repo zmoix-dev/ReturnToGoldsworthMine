@@ -13,7 +13,7 @@ namespace RPG.Stats {
     {
         [Range(0,1)]
         [SerializeField] float levelUpMinHealthPct = 1f;
-        [SerializeField] UnityEvent<float> onTakeDamage;
+        [SerializeField] UnityEvent<float, GameObject> onTakeDamage;
         [SerializeField] UnityEvent onDie;
         LazyValue<float> currentHealth;
         bool isDead = false;
@@ -48,7 +48,7 @@ namespace RPG.Stats {
 
         public void TakeDamage(GameObject attacker, float damage) {
             currentHealth.value = Mathf.Max(currentHealth.value - damage, 0);
-            onTakeDamage.Invoke(damage);
+            onTakeDamage.Invoke(damage, attacker);
             if (currentHealth.value == 0 && !isDead)
             {
                 onDie.Invoke();
@@ -61,7 +61,7 @@ namespace RPG.Stats {
         }
 
         public void RegenerateHealth(float value) {
-            currentHealth.value = Mathf.Min(currentHealth.value + value);
+            currentHealth.value = Mathf.Min(currentHealth.value + value, GetComponent<BaseStats>().GetStat(StatsType.Health));
         }
 
         private void HandleDeath(GameObject attacker)

@@ -5,7 +5,7 @@ namespace RPG.UI {
     {
         [SerializeField] DamageText damageTextPrefab = null;
 
-        public void Spawn(float damage) {
+        public void Spawn(float damage, GameObject attacker) {
             DamageText instance = Instantiate(damageTextPrefab, transform);
             instance.SetValue(damage);
             Destroy(instance, 0.5f);

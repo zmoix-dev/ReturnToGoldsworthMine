@@ -11,6 +11,7 @@ namespace RPG.Control.Enemy {
     {
         [SerializeField] float aggroRadius = 5f;
         [SerializeField] float suspicionTime = 2f;
+        [SerializeField] float aggravateTimer = 5f;
         [SerializeField] PatrolPath path;
         [SerializeField] float guardDestinationTolerance = 2f;
         [SerializeField] float patrolSpeed = 2.5f;
@@ -22,16 +23,21 @@ namespace RPG.Control.Enemy {
         int guardDestinationIndex;
         Fighter fighter;
         Mover mover;
+        Health health;
         GameObject[] enemies;
+        GameObject target;
         NavMeshAgent navMeshAgent;
         bool isChasing = false;
         bool isWaiting = false;
+        bool isAggravated = false;
+        Coroutine aggravateHandler = null;
 
         private void Awake() {
             enemies = GameObject.FindGameObjectsWithTag(UnitType.GetType(enemyFaction));
             fighter = GetComponent<Fighter>();
             mover = GetComponent<Mover>();
             navMeshAgent = GetComponent<NavMeshAgent>();
+            health = GetComponent<Health>();
         }
 
         private void Start() {
@@ -59,10 +65,29 @@ namespace RPG.Control.Enemy {
             HandleChase();
         }
 
+        public void AggravateController(float damage, GameObject aggravator) {
+            if (aggravateHandler != null) {
+                StopCoroutine(aggravateHandler);
+            }
+            target = aggravator;
+            aggravateHandler = StartCoroutine(Aggravate());
+        }
+
+        private IEnumerator Aggravate() {
+            isAggravated = true;
+            yield return new WaitForSeconds(aggravateTimer);
+            isAggravated = false;
+        }
+
         private void HandleChase()
         {
             // if engaged with something, continue engaging with that something
             if (isChasing) return; 
+
+            if (isAggravated) {
+                StartCoroutine(PursueBehavior(target));
+                return;
+            }
 
             foreach (GameObject enemy in enemies) {
                 

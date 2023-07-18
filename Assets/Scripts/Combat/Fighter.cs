@@ -96,7 +96,7 @@ namespace RPG.Combat {
 
         private void ChaseTarget()
         {
-            if (target != null) {
+            if (CanChase(target)) {
                 if (Vector3.Distance(transform.position, target.transform.position) <= currentWeaponConfig.AttackRange)
                 {
                     mover.Stop();
@@ -109,6 +109,13 @@ namespace RPG.Combat {
                     GetComponent<Animator>().SetTrigger(AnimationStates.STOP_ATTACK);
                 }
             }
+        }
+
+        public bool CanChase(GameObject combatTarget) {
+            if (combatTarget == null) return false;
+            if (!GetComponent<Mover>().CanMoveTo(combatTarget.transform.position)) return false;
+            Health enemyHealth = combatTarget.GetComponent<Health>();
+            return enemyHealth != null && !enemyHealth.IsDead;
         }
 
         private IEnumerator AttackBehavior()

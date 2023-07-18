@@ -13,12 +13,14 @@ namespace RPG.Control.Enemy {
     {
         [SerializeField] float aggroRadius = 5f;
         [SerializeField] float suspicionTime = 2f;
+        [SerializeField] float aggravateTimer = 5f;
         [SerializeField] PatrolPath path;
         [SerializeField] float guardDestinationTolerance = 2f;
         [SerializeField] float patrolSpeed = 2.5f;
         [SerializeField] float chaseSpeed = 4f;
         [SerializeField] float waitAtDestination = 4f;
         [SerializeField] float wanderRadius = 0f;
+        [SerializeField] float alertRadius = 5f;
         [SerializeField] UnitType.Type[] enemyFaction;
 
         Vector3 guardDestination;
@@ -27,9 +29,12 @@ namespace RPG.Control.Enemy {
         Fighter fighter;
         Mover mover;
         List<GameObject> enemies;
+        GameObject target;
         NavMeshAgent navMeshAgent;
         bool isChasing = false;
         bool isWaiting = false;
+        bool isAggravated = false;
+        Coroutine aggravateHandler;
 
         private void Awake() {
             fighter = GetComponent<Fighter>();
@@ -68,6 +73,13 @@ namespace RPG.Control.Enemy {
         private void HandleChase()
         {
             if (isChasing) return;
+
+
+            if (isAggravated) {
+                StartCoroutine(PursueBehavior(target));
+                return;
+            }
+
             foreach (GameObject enemy in enemies) {
                 if(CanAttack(enemy))
                 {
@@ -84,6 +96,36 @@ namespace RPG.Control.Enemy {
                     } 
                 }
             }
+        }
+
+        public void AggravateController(float damage, GameObject aggravator) {
+            if (aggravateHandler != null) {
+                StopCoroutine(aggravateHandler);
+            }
+            AggravateNearby(aggravator);
+        }
+
+        private void AggravateNearby(GameObject target)
+        {
+            RaycastHit[] hits = Physics.SphereCastAll(transform.position, alertRadius, Vector3.up, 0);
+            foreach (RaycastHit hit in hits) {
+                EnemyController enemy = hit.collider.transform.gameObject.GetComponent<EnemyController>();
+                if (enemy != null) {
+                    StartCoroutine(enemy.Aggravate(target));
+                }
+            }
+        }
+
+        private IEnumerator Aggravate(GameObject target) {
+            // if already aggravated, ignore
+            if (isChasing) yield return null;
+            else {
+                this.target = target;
+                isAggravated = true;
+                yield return new WaitForSeconds(aggravateTimer);
+                isAggravated = false;
+            }
+            
         }
 
         private bool CanAttack(GameObject enemy)
@@ -154,8 +196,8 @@ namespace RPG.Control.Enemy {
         private void OnDrawGizmos() {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, aggroRadius);
-            // Gizmos.color = Color.magenta;
-            // Gizmos.DrawWireSphere(path.GetWaypoint(0), wanderRadius);
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireSphere(transform.position, alertRadius);
         }
     }
 }

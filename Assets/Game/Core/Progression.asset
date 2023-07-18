@@ -22,13 +22,13 @@ MonoBehaviour:
       - 100
     - statsType: 2
       values:
-      - 20
-      - 50
+      - 80
+      - 160
     - statsType: 3
       values:
-      - 2
       - 3
-      - 4
+      - 5
+      - 10
   - unitType: 1
     stats:
     - statsType: 0

@@ -154,6 +154,34 @@ PrefabInstance:
       propertyPath: levelUpMinHealthPct
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 142199085043140338}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RPG.UI.DamageTextSpawner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5863169880228690635, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: m_Name
       value: Model
@@ -228,6 +256,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+--- !u!114 &142199085043140338 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3657921887285666344, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+  m_PrefabInstance: {fileID: 3691471490012161242}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7de2c5b5ea98734b965f89e7965c906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7089954656918152481 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5863169880812126715, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
