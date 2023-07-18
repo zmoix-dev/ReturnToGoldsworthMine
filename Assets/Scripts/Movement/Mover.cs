@@ -44,7 +44,6 @@ namespace RPG.Movement {
             NavMeshPath path = new NavMeshPath();
             bool hasPath = NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
             if (!hasPath) {
-                Debug.Log($"{gameObject.name} can't find a path.");
                 return false;
             }
             // if (path.status == NavMeshPathStatus.PathComplete) {
@@ -52,10 +51,8 @@ namespace RPG.Movement {
             //     return false;
             // }
             if (GetPathLength(path) > maxNavPathLength) {
-                Debug.Log($"{gameObject.name} can't reach.");
                 return false;
             }
-            Debug.Log($"{gameObject.name} has a path.");
             return true;
         }
 

@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 222209490, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1274175698017990559, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: weapon
       value: 
@@ -53,15 +57,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4244978921590169205}
+      objectReference: {fileID: 3100773377114290905}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -72,19 +76,31 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7949173769225002743}
+      objectReference: {fileID: 8252280589093974872}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 6445940471184063905}
+    - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2740451650069151836}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
@@ -96,12 +112,20 @@ PrefabInstance:
       value: Spawn
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RPG.Control.Enemy.NPCController, Assembly-CSharp
+      value: RPG.Control.AIController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: RPG.UI.DamageTextSpawner, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -109,6 +133,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856247952665567411, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6104649892051543376, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
@@ -159,11 +187,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 222209490, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
 --- !u!4 &718955394706660178 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7470096784391118967, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+  m_PrefabInstance: {fileID: 7949173769312729893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2740451650069151836 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5213243315553418105, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+  m_PrefabInstance: {fileID: 7949173769312729893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3100773377114290905 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4997038009248268796, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
   m_PrefabInstance: {fileID: 7949173769312729893}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &4244978921590169205 stripped
@@ -185,6 +224,29 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.86, z: 0}
+--- !u!114 &8252280589093974872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4244978921590169205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd54ac242ce9594ba10668340fea49c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aggroRadius: 10
+  suspicionTime: 2
+  aggravateTimer: 5
+  path: {fileID: 0}
+  guardDestinationTolerance: 2
+  patrolSpeed: 2.5
+  chaseSpeed: 4
+  waitAtDestination: 4
+  wanderRadius: 0
+  alertRadius: 5
+  enemyFaction: 02000000
 --- !u!114 &6445940471184063905 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3973784392710588036, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
@@ -194,16 +256,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7de2c5b5ea98734b965f89e7965c906, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7949173769225002743 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 222209490, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
-  m_PrefabInstance: {fileID: 7949173769312729893}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4244978921590169205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d430a6f7184214794f5ae0ac53451e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using RPG.Combat;
 using RPG.Core;
 using RPG.Movement;
@@ -6,8 +8,8 @@ using RPG.Stats;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace RPG.Control.Enemy {
-    public class NPCController : MonoBehaviour
+namespace RPG.Control {
+    public class AIController : MonoBehaviour
     {
         [SerializeField] float aggroRadius = 5f;
         [SerializeField] float suspicionTime = 2f;
@@ -16,35 +18,38 @@ namespace RPG.Control.Enemy {
         [SerializeField] float guardDestinationTolerance = 2f;
         [SerializeField] float patrolSpeed = 2.5f;
         [SerializeField] float chaseSpeed = 4f;
-        [SerializeField] float waitAtWaypoint = 4f;
-        [SerializeField] UnitType.Type enemyFaction;
+        [SerializeField] float waitAtDestination = 4f;
+        [SerializeField] float wanderRadius = 0f;
+        [SerializeField] float alertRadius = 5f;
+        [SerializeField] UnitType.Type[] enemyFaction;
 
         Vector3 guardDestination;
+        Vector3 wanderGuardDestination;
         int guardDestinationIndex;
         Fighter fighter;
         Mover mover;
-        Health health;
-        GameObject[] enemies;
+        List<GameObject> enemies;
         GameObject target;
         NavMeshAgent navMeshAgent;
         bool isChasing = false;
         bool isWaiting = false;
         bool isAggravated = false;
-        Coroutine aggravateHandler = null;
+        Coroutine aggravateHandler;
 
         private void Awake() {
-            enemies = GameObject.FindGameObjectsWithTag(UnitType.GetType(enemyFaction));
             fighter = GetComponent<Fighter>();
             mover = GetComponent<Mover>();
             navMeshAgent = GetComponent<NavMeshAgent>();
-            health = GetComponent<Health>();
         }
 
         private void Start() {
+            enemies = new List<GameObject>();
+            
             if (path != null) {
                 // Start guard at random point on path
                 guardDestinationIndex = UnityEngine.Random.Range(0, path.GetWaypointCount());
                 guardDestination = path.GetWaypoint(guardDestinationIndex);
+                wanderGuardDestination = guardDestination;
                 transform.position = guardDestination;
                 // Set next patrol destination
                 guardDestination = path.GetWaypoint(++guardDestinationIndex);
@@ -55,34 +60,21 @@ namespace RPG.Control.Enemy {
         private void Update()
         {
             if (GetComponent<Health>().IsDead) {
+                this.enabled = false;
                 fighter.enabled = false;
                 mover.enabled = false;
-                this.enabled = false;
+                return;
             }
-            if (enemies.Length == 0) {
-                enemies = GameObject.FindGameObjectsWithTag(UnitType.GetType(enemyFaction));
+            foreach (UnitType.Type type in enemyFaction) {
+                enemies.AddRange(GameObject.FindGameObjectsWithTag(UnitType.GetType(type)));    
             }
             HandleChase();
         }
 
-        public void AggravateController(float damage, GameObject aggravator) {
-            if (aggravateHandler != null) {
-                StopCoroutine(aggravateHandler);
-            }
-            target = aggravator;
-            aggravateHandler = StartCoroutine(Aggravate());
-        }
-
-        private IEnumerator Aggravate() {
-            isAggravated = true;
-            yield return new WaitForSeconds(aggravateTimer);
-            isAggravated = false;
-        }
-
         private void HandleChase()
         {
-            // if engaged with something, continue engaging with that something
-            if (isChasing) return; 
+            if (isChasing) return;
+
 
             if (isAggravated) {
                 StartCoroutine(PursueBehavior(target));
@@ -103,19 +95,49 @@ namespace RPG.Control.Enemy {
                 else {
                     if (!isWaiting) {
                         StartCoroutine(PatrolBehavior());
+                    } 
+                }
+            }
+        }
+
+        public void AggravateController(float damage, GameObject aggravator) {
+            if (aggravateHandler != null) {
+                StopCoroutine(aggravateHandler);
+            }
+            AggravateNearby(aggravator);
+        }
+
+        private void AggravateNearby(GameObject target)
+        {
+            RaycastHit[] hits = Physics.SphereCastAll(transform.position, alertRadius, Vector3.up, 0);
+            foreach (RaycastHit hit in hits) {
+                // enemies alert enemies, npcs alert npcs
+                if (hit.collider.transform.tag.Equals(gameObject.tag)) {
+                    AIController enemy = hit.collider.transform.gameObject.GetComponent<AIController>();
+                    if (enemy != null) {
+                        StartCoroutine(enemy.Aggravate(target));
                     }
                 }
             }
         }
 
-        private bool CanAttack(GameObject target)
-        {
-            return FindEnemyDistance(target) <= aggroRadius && IsTargetAlive(target);    
+        private IEnumerator Aggravate(GameObject target) {
+            // if already aggravated, ignore
+            if (isChasing) yield return null;
+            else {
+                this.target = target;
+                isAggravated = true;
+                yield return new WaitForSeconds(aggravateTimer);
+                isAggravated = false;
+            }
+            
         }
 
-        private bool IsTargetAlive(GameObject target) {
-            return target.GetComponent<Health>() != null &&
-                !target.GetComponent<Health>().IsDead;
+        private bool CanAttack(GameObject enemy)
+        {
+            return FindTargetDistance(enemy) <= aggroRadius &&
+                enemy.GetComponent<Health>() != null &&
+                !enemy.GetComponent<Health>().IsDead;
         }
 
         private IEnumerator PursueBehavior(GameObject enemy)
@@ -124,8 +146,8 @@ namespace RPG.Control.Enemy {
             fighter.SelectTarget(enemy);
             isChasing = true;
             while (isChasing) {
-                yield return new WaitForEndOfFrame();
                 isChasing = CanAttack(enemy);
+                yield return new WaitForEndOfFrame();
             }
         }
 
@@ -142,14 +164,13 @@ namespace RPG.Control.Enemy {
         {
             navMeshAgent.speed = patrolSpeed;
             if (path != null) {
-                if (AtWaypoint()) {
+                if (AtWaypoint(wanderGuardDestination)) {
                     isWaiting = true;
-                    yield return new WaitForSeconds(waitAtWaypoint);
-                    guardDestination = path.GetWaypoint(++guardDestinationIndex);
-                    isWaiting = false;
+                    yield return new WaitForSeconds(waitAtDestination);
+                    isWaiting = false;  
+                    wanderGuardDestination = mover.StartMoveAction(guardDestination, wanderRadius);
                 }
             }
-            mover.StartMoveAction(guardDestination);
         }
 
         private bool AtWaypoint()
@@ -157,18 +178,31 @@ namespace RPG.Control.Enemy {
             return Vector3.Distance(transform.position, guardDestination) <= guardDestinationTolerance;
         }
 
-        private float FindEnemyDistance(GameObject enemy)
+        private bool AtWaypoint(Vector3 waypoint, bool ignoreY = true)
         {
-            if (!enemy) {
+            if (ignoreY) {
+                Vector2 newPosition = new Vector2(transform.position.x, transform.position.z);
+                Vector2 newWaypoint = new Vector2(waypoint.x, waypoint.z);
+                return Vector2.Distance(newPosition, newWaypoint) <= guardDestinationTolerance;
+            } else {
+                return Vector3.Distance(transform.position, waypoint) <= guardDestinationTolerance;
+            }
+        }
+
+        private float FindTargetDistance(GameObject target)
+        {
+            if (!target) {
                 return float.MaxValue;
             }
-            return Vector3.Distance(transform.position, enemy.transform.position);
+            return Vector3.Distance(transform.position, target.transform.position);
         }
 
         // Called by Unity
-        private void OnDrawGizmosSelected() {
+        private void OnDrawGizmos() {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, aggroRadius);
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireSphere(transform.position, alertRadius);
         }
     }
 }
