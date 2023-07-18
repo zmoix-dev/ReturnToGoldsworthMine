@@ -96,24 +96,35 @@ namespace RPG.Combat {
 
         private void ChaseTarget()
         {
-            if (CanChase(target)) {
-                if (Vector3.Distance(transform.position, target.transform.position) <= currentWeaponConfig.AttackRange)
+            if (CanChase(target))
+            {
+                if (IsInRange(target.transform))
                 {
                     mover.Stop();
-                    if (canAttack) {
+                    if (canAttack)
+                    {
                         StartCoroutine(AttackBehavior());
                     }
                 }
-                else {
+                else
+                {
                     mover.MoveTo(target.transform.position);
                     GetComponent<Animator>().SetTrigger(AnimationStates.STOP_ATTACK);
                 }
             }
         }
 
+        private bool IsInRange(Transform targetTransform)
+        {
+            return Vector3.Distance(transform.position, targetTransform.position) <= currentWeaponConfig.AttackRange;
+        }
+
         public bool CanChase(GameObject combatTarget) {
             if (combatTarget == null) return false;
-            if (!GetComponent<Mover>().CanMoveTo(combatTarget.transform.position)) return false;
+            if (!GetComponent<Mover>().CanMoveTo(combatTarget.transform.position) &&
+                !IsInRange(combatTarget.transform)) {
+                    return false;
+            } 
             Health enemyHealth = combatTarget.GetComponent<Health>();
             return enemyHealth != null && !enemyHealth.IsDead;
         }
