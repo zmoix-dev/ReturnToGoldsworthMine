@@ -15,6 +15,7 @@ namespace RPG.Combat {
         [SerializeField] Transform handTransform;
         [SerializeField] WeaponConfig defaultWeapon = null;
         [SerializeField] Quaternion weaponRotation = Quaternion.identity;
+        [SerializeField] Vector3 weaponScale = Vector3.one;
         WeaponConfig currentWeaponConfig;
         LazyValue<Weapon> currentWeapon;
         GameObject equippedWeaponObject;
@@ -31,7 +32,7 @@ namespace RPG.Combat {
 
         private Weapon SetupCurrentWeapon()
         {
-            return EquipWeapon(currentWeaponConfig, weaponRotation);
+            return EquipWeapon(currentWeaponConfig, weaponRotation, weaponScale);
         }
 
         private void Start() {
@@ -120,11 +121,11 @@ namespace RPG.Combat {
             canAttack = true;
         }
 
-        public Weapon EquipWeapon(WeaponConfig weapon, Quaternion reposition)
+        public Weapon EquipWeapon(WeaponConfig weapon, Quaternion reposition, Vector3 weaponScale)
         {
             if (weapon) {
                 currentWeaponConfig = weapon;
-                return weapon.Spawn(handTransform, GetComponent<Animator>(), reposition);
+                return weapon.Spawn(handTransform, GetComponent<Animator>(), reposition, weaponScale);
             } else {
                 Debug.LogError($"No weapon equipped to Fighter on {name}.");
                 return null;
@@ -133,7 +134,7 @@ namespace RPG.Combat {
 
         public Weapon EquipWeapon(WeaponConfig weapon)
         {
-            return EquipWeapon(weapon, weaponRotation);
+            return EquipWeapon(weapon, weaponRotation, weaponScale);
         }
 
         private void DestroyEquippedWeapon() {
@@ -147,7 +148,7 @@ namespace RPG.Combat {
 
         public void RestoreState(object state)
         {
-            EquipWeapon(Resources.Load<WeaponConfig>(state as string), weaponRotation);
+            EquipWeapon(Resources.Load<WeaponConfig>(state as string), weaponRotation, weaponScale);
         }
     }
 }

@@ -49,9 +49,13 @@ namespace RPG.Control.Enemy {
         private void Update()
         {
             if (GetComponent<Health>().IsDead) {
+                Debug.Log($"{name} is dead. :(");
                 fighter.enabled = false;
                 mover.enabled = false;
                 this.enabled = false;
+            }
+            if (enemies.Length == 0) {
+                enemies = GameObject.FindGameObjectsWithTag(UnitType.GetType(enemyFaction));
             }
             HandleChase();
         }
@@ -59,9 +63,12 @@ namespace RPG.Control.Enemy {
         private void HandleChase()
         {
             // if engaged with something, continue engaging with that something
-            if (isChasing) { return; }
+            if (isChasing) { 
+                Debug.Log($"{name} is chasing something.");
+                return; }
 
             foreach (GameObject enemy in enemies) {
+                
                 if(CanAttack(enemy))
                 {
                     StopAllCoroutines();

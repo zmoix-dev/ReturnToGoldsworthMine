@@ -20,6 +20,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 718955394706660178}
     - target: {fileID: 1274175698017990559, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: weaponScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274175698017990559, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: weaponScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274175698017990559, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: weaponScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274175698017990559, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: weaponRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274175698017990559, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: weaponRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274175698017990559, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
+      propertyPath: weaponRotation.z
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274175698017990559, guid: ba8eb55259d19fe499b9e90ad12e4593, type: 3}
       propertyPath: defaultWeaponName
       value: Sword
       objectReference: {fileID: 0}

@@ -19,11 +19,12 @@ namespace RPG.Combat {
         public float AttackRange { get { return attackRange; }}
         public float TimeBetweenAttacks { get { return timeBetweenAttacks; }}
 
-        public Weapon Spawn(Transform handTransform, Animator animator, Quaternion reposition) {
+        public Weapon Spawn(Transform handTransform, Animator animator, Quaternion reposition, Vector3 weaponScale) {
             Weapon weapon = null;
             if (weaponPrefab) {
                 weapon = Instantiate(weaponPrefab, handTransform);
                 weapon.gameObject.transform.Rotate(reposition.eulerAngles);
+                weapon.gameObject.transform.localScale = weaponScale;
             }
             if (animatorOverride) {
                 animator.runtimeAnimatorController = animatorOverride;

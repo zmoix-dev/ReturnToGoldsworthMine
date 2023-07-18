@@ -118,6 +118,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8588579469446163729}
     - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: weaponScale.x
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: weaponScale.y
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: weaponScale.z
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: weaponRotation.w
       value: 0.5288247
       objectReference: {fileID: 0}

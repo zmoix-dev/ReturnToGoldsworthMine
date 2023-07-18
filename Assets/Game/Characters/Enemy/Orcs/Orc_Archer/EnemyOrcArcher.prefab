@@ -91,6 +91,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2504151159164262125}
     - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: weaponScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: weaponScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: weaponScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720939825287090396, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: weaponRotation.w
       value: -0.26909852
       objectReference: {fileID: 0}
@@ -148,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539219, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_Name
-      value: Enemy_Orc_Archer
+      value: EnemyOrcArcher
       objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539219, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_TagString
