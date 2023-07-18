@@ -59,16 +59,25 @@ namespace RPG.Control {
 
         private void Update()
         {
-            if (GetComponent<Health>().IsDead) {
+            if (GetComponent<Health>().IsDead)
+            {
                 this.enabled = false;
                 fighter.enabled = false;
                 mover.enabled = false;
                 return;
             }
-            foreach (UnitType.Type type in enemyFaction) {
-                enemies.AddRange(GameObject.FindGameObjectsWithTag(UnitType.GetType(type)));    
+            if (enemies.Count == 0) {
+                SearchForEnemies();
             }
             HandleChase();
+        }
+
+        private void SearchForEnemies()
+        {
+            foreach (UnitType.Type type in enemyFaction)
+            {
+                enemies.AddRange(GameObject.FindGameObjectsWithTag(UnitType.GetType(type)));
+            }
         }
 
         private void HandleChase()
@@ -166,6 +175,7 @@ namespace RPG.Control {
             if (path != null) {
                 if (AtWaypoint(wanderGuardDestination)) {
                     isWaiting = true;
+                    SearchForEnemies();
                     yield return new WaitForSeconds(waitAtDestination);
                     isWaiting = false;  
                     wanderGuardDestination = mover.StartMoveAction(guardDestination, wanderRadius);
