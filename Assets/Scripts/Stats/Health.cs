@@ -61,7 +61,7 @@ namespace RPG.Stats {
         }
 
         public void RegenerateHealth(float value) {
-            currentHealth.value += value;
+            currentHealth.value = Mathf.Min(currentHealth.value + value);
         }
 
         private void HandleDeath(GameObject attacker)
