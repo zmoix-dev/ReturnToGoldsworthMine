@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Utils;
 using RPG.Core;
 using RPG.Game.Animation;
 using RPG.Movement;
@@ -14,7 +15,8 @@ namespace RPG.Combat {
         [SerializeField] Transform handTransform;
         [SerializeField] WeaponConfig defaultWeapon = null;
         [SerializeField] Quaternion weaponRotation = Quaternion.identity;
-        WeaponConfig equippedWeapon;
+        WeaponConfig currentWeaponConfig;
+        LazyValue<Weapon> currentWeapon;
         GameObject equippedWeaponObject;
        
         GameObject target = null;
@@ -23,12 +25,17 @@ namespace RPG.Combat {
 
         private void Awake() {
             mover = GetComponent<Mover>();
+            currentWeaponConfig = defaultWeapon;
+            currentWeapon = new LazyValue<Weapon>(SetupCurrentWeapon);
+        }
+
+        private Weapon SetupCurrentWeapon()
+        {
+            return EquipWeapon(currentWeaponConfig, weaponRotation);
         }
 
         private void Start() {
-            if (equippedWeapon == null) {
-                EquipWeapon(defaultWeapon, weaponRotation);
-            }
+            currentWeapon.ForceInit();
         }
 
         private void Update() {
@@ -46,14 +53,14 @@ namespace RPG.Combat {
         public IEnumerable<float> GetAdditiveModifiers(StatsType stat)
         {
             if (stat.Equals(StatsType.Damage)) {
-                yield return equippedWeapon.WeaponDamage;
+                yield return currentWeaponConfig.WeaponDamage;
             }
         }
 
         public IEnumerable<float> GetPercentageModifiers(StatsType stat)
         {
             if (stat.Equals(StatsType.Damage)) {
-                yield return equippedWeapon.PctModifier;
+                yield return currentWeaponConfig.PctModifier;
             }
         }
 
@@ -68,24 +75,28 @@ namespace RPG.Combat {
 
         // Animation Event
         void OnAnimFrameHit() {
-            if (target != null) {
-                if (target.GetComponent<Health>().IsDead) {
-                    Stop();
-                    return;
-                }
-                float damageCalc = GetComponent<BaseStats>().GetStat(StatsType.Damage);
-                if (equippedWeapon.HasProjectile()) {
-                     equippedWeapon.LaunchProjectile(handTransform, target.GetComponent<Health>(), gameObject, damageCalc);
-                } else {
-                    target.GetComponent<Health>().TakeDamage(gameObject, equippedWeapon.WeaponDamage * damageCalc);
-                }
+            if (target == null) return;
+            if (target.GetComponent<Health>().IsDead) {
+                Stop();
+                return;
+            }
+
+            float damageCalc = GetComponent<BaseStats>().GetStat(StatsType.Damage);
+            if (currentWeapon.value != null) {
+                currentWeapon.value.OnHit();
+            }
+
+            if (currentWeaponConfig.HasProjectile()) {
+                    currentWeaponConfig.LaunchProjectile(handTransform, target.GetComponent<Health>(), gameObject, damageCalc);
+            } else {
+                target.GetComponent<Health>().TakeDamage(gameObject, currentWeaponConfig.WeaponDamage * damageCalc);
             }
         }
 
         private void ChaseTarget()
         {
             if (target != null) {
-                if (Vector3.Distance(transform.position, target.transform.position) <= equippedWeapon.AttackRange)
+                if (Vector3.Distance(transform.position, target.transform.position) <= currentWeaponConfig.AttackRange)
                 {
                     mover.Stop();
                     if (canAttack) {
@@ -105,17 +116,18 @@ namespace RPG.Combat {
             GetComponent<Animator>().ResetTrigger(AnimationStates.STOP_ATTACK);
             GetComponent<Animator>().SetTrigger(AnimationStates.ATTACK);
             canAttack = false;
-            yield return new WaitForSeconds(equippedWeapon.TimeBetweenAttacks);
+            yield return new WaitForSeconds(currentWeaponConfig.TimeBetweenAttacks);
             canAttack = true;
         }
 
-        public void EquipWeapon(WeaponConfig weapon, Quaternion reposition)
+        public Weapon EquipWeapon(WeaponConfig weapon, Quaternion reposition)
         {
             if (weapon) {
-                equippedWeapon = weapon;
-                weapon.Spawn(handTransform, GetComponent<Animator>(), reposition);
+                currentWeaponConfig = weapon;
+                return weapon.Spawn(handTransform, GetComponent<Animator>(), reposition);
             } else {
                 Debug.LogError($"No weapon equipped to Fighter on {name}.");
+                return null;
             }
         }
 
@@ -125,7 +137,7 @@ namespace RPG.Combat {
 
         public object CaptureState()
         {
-            return equippedWeapon.name;
+            return currentWeaponConfig.name;
         }
 
         public void RestoreState(object state)
