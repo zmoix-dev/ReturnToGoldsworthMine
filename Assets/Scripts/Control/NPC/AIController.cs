@@ -30,7 +30,7 @@ namespace RPG.Control {
         Fighter fighter;
         Mover mover;
         List<GameObject> enemies;
-        GameObject target;
+        [SerializeField] GameObject target;
         NavMeshAgent navMeshAgent;
         [SerializeField] bool isChasing = false;
         [SerializeField] bool isWaiting = false;
@@ -65,6 +65,8 @@ namespace RPG.Control {
                 this.enabled = false;
                 fighter.enabled = false;
                 mover.enabled = false;
+                GetComponent<ActionScheduler>().StopCurrentAction();
+                StopAllCoroutines();
                 return;
             }
             if (enemies.Count == 0) {
@@ -138,11 +140,17 @@ namespace RPG.Control {
             
         }
 
-        private bool CanAttack(GameObject enemy)
+        private bool IsTargetInRange(GameObject enemy)
         {
-            return FindTargetDistance(enemy) <= aggroRadius &&
-                enemy.GetComponent<Health>() != null &&
-                !enemy.GetComponent<Health>().IsDead;
+            return FindTargetDistance(enemy) <= aggroRadius;
+        }
+
+        private bool IsTargetDead(GameObject enemy) {
+            return enemy.GetComponent<Health>() != null && enemy.GetComponent<Health>().IsDead;
+        }
+
+        private bool CanAttack(GameObject enemy) {
+            return (IsTargetInRange(enemy) || isAggravated) && !IsTargetDead(enemy);
         }
 
         private IEnumerator PursueBehavior(GameObject enemy)
