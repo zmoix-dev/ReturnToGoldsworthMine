@@ -102,7 +102,9 @@ namespace RPG.Control {
                 StartCoroutine(ResetBehavior());
             }
             else {
-                Coroutine movement = StartCoroutine(PatrolBehavior());
+                if (!isWaiting){ 
+                    StartCoroutine(PatrolBehavior());
+                }
             }
         }
 
