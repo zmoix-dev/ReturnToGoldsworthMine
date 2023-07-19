@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1161405868838785421, guid: 9d11547cebce1da479736a861bae3f23, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: f4b85d1e14f391c4da0b33c6f8a2ebad, type: 2}
     - target: {fileID: 2964603145067222562, guid: 9d11547cebce1da479736a861bae3f23, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -63,7 +67,8 @@ PrefabInstance:
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1161405868838785421, guid: 9d11547cebce1da479736a861bae3f23, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9d11547cebce1da479736a861bae3f23, type: 3}
 --- !u!4 &5288267773241673750 stripped
 Transform:

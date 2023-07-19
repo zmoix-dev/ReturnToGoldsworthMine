@@ -54,6 +54,8 @@ namespace RPG.Control {
                 // Set next patrol destination
                 guardDestination = path.GetWaypoint(++guardDestinationIndex);
                 GetComponent<NavMeshAgent>().speed = patrolSpeed;
+            } else {
+                Debug.Log($"No path set for {name}.");
             }
         }
 
@@ -83,29 +85,27 @@ namespace RPG.Control {
         private void HandleChase()
         {
             if (isChasing) return;
-
-
             if (isAggravated) {
                 StartCoroutine(PursueBehavior(target));
                 return;
             }
 
+            Debug.Log($"{name} thinking...");
             foreach (GameObject enemy in enemies) {
                 
                 if(CanAttack(enemy))
                 {
                     StopAllCoroutines();
                     StartCoroutine(PursueBehavior(enemy));
-                    break;
+                    return;
                 }
-                else if (isChasing) {
-                    StartCoroutine(ResetBehavior());
-                }
-                else {
-                    if (!isWaiting) {
-                        StartCoroutine(PatrolBehavior());
-                    } 
-                }
+            }
+
+            if (isChasing) {
+                StartCoroutine(ResetBehavior());
+            }
+            else {
+                StartCoroutine(PatrolBehavior());
             }
         }
 
@@ -131,6 +131,7 @@ namespace RPG.Control {
         }
 
         private IEnumerator Aggravate(GameObject target) {
+            SearchForEnemies();
             // if already aggravated, ignore
             if (isChasing) yield return null;
             else {
@@ -151,6 +152,7 @@ namespace RPG.Control {
 
         private IEnumerator PursueBehavior(GameObject enemy)
         {
+            Debug.Log($"{name} entering PursuitBehavior");
             navMeshAgent.speed = chaseSpeed;
             fighter.SelectTarget(enemy);
             isChasing = true;
@@ -162,6 +164,7 @@ namespace RPG.Control {
 
         private IEnumerator ResetBehavior()
         {
+            Debug.Log($"{name} entering ResetBehavior");
             GetComponent<ActionScheduler>().StopCurrentAction();
             isChasing = false;
             yield return new WaitForSeconds(suspicionTime);
@@ -171,6 +174,7 @@ namespace RPG.Control {
 
         private IEnumerator PatrolBehavior()
         {
+            Debug.Log($"{name} entering PatrolBehavior");
             navMeshAgent.speed = patrolSpeed;
             if (path != null) {
                 if (AtWaypoint(wanderGuardDestination)) {

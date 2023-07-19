@@ -32,7 +32,6 @@ namespace RPG.Combat {
         }
 
         void OnTriggerEnter(Collider other) {
-            Debug.Log($"{other.transform.name}");
             if (other.tag.Equals(UnitType.GetType(UnitType.Type.PLAYER))) {
                 Pickup(other.gameObject);
             }
@@ -57,7 +56,6 @@ namespace RPG.Combat {
         }
 
         private void ShouldShow(bool shouldShow) {
-            Debug.Log($"Should show: {shouldShow}");
             GetComponent<Collider>().enabled = shouldShow;
             foreach (Transform child in transform) {
                 child.gameObject.SetActive(shouldShow);

@@ -170,6 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5110671717797879764}
   - component: {fileID: 8525622830711342530}
+  - component: {fileID: 1161405868838785421}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -220,3 +221,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1161405868838785421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106811672356646273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71464cc6217855348b5bc649e21fa55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
+  pickupRange: 100
+  healthRegen: 0
+  respawnTime: 5

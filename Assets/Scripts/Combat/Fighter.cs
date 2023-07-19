@@ -90,7 +90,7 @@ namespace RPG.Combat {
             if (currentWeaponConfig.HasProjectile()) {
                     currentWeaponConfig.LaunchProjectile(handTransform, target.GetComponent<Health>(), gameObject, damageCalc);
             } else {
-                target.GetComponent<Health>().TakeDamage(gameObject, currentWeaponConfig.WeaponDamage * damageCalc);
+                target.GetComponent<Health>().TakeDamage(gameObject, damageCalc);
             }
         }
 
