@@ -6528,30 +6528,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7807684616707b94fac108bd0c5b3e3e, type: 3}
---- !u!1 &249449235 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1541201518213661846, guid: 14132fc0c0003514f9667bbd7f4ce180, type: 3}
-  m_PrefabInstance: {fileID: 8577077655558992635}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &249449247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249449235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6f5dd4f36c50b740a134139ae4a0bc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  experiencePoints: 0
 --- !u!114 &249449256 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7602695614030143807, guid: 14132fc0c0003514f9667bbd7f4ce180, type: 3}
   m_PrefabInstance: {fileID: 8577077655558992635}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249449235}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fffd4e18fd477534b8f129ea9c9445cc, type: 3}
@@ -7548,7 +7530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8516227351784039333, guid: a24140a4f1bfec04db157867edbb5c28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.51
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 8516227351784039333, guid: a24140a4f1bfec04db157867edbb5c28, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8672,6 +8654,10 @@ PrefabInstance:
     - target: {fileID: 4412864156511592178, guid: 49dea26a76dd37240aa91af209e78c28, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Grass13_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4412864156511592178, guid: 49dea26a76dd37240aa91af209e78c28, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49dea26a76dd37240aa91af209e78c28, type: 3}
@@ -27955,6 +27941,10 @@ PrefabInstance:
     - target: {fileID: 7544654574076143273, guid: e30decdf9eae27141a2540dc27113db4, type: 3}
       propertyPath: m_Name
       value: Village_BG_Terrain_Grass16_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544654574076143273, guid: e30decdf9eae27141a2540dc27113db4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30decdf9eae27141a2540dc27113db4, type: 3}
@@ -48499,6 +48489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Village_BG_Terrain_Grass01_B
       objectReference: {fileID: 0}
+    - target: {fileID: 1401316903240601397, guid: 4a4de16e1daa8cd4c82c3d9c2c088a17, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1745614209931564431, guid: 4a4de16e1daa8cd4c82c3d9c2c088a17, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -54359,7 +54353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577077655108468015, guid: 14132fc0c0003514f9667bbd7f4ce180, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.953972
+      value: -22.953987
       objectReference: {fileID: 0}
     - target: {fileID: 8577077655108468015, guid: 14132fc0c0003514f9667bbd7f4ce180, type: 3}
       propertyPath: m_LocalPosition.y
@@ -54443,7 +54437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8577077656046817995, guid: 14132fc0c0003514f9667bbd7f4ce180, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.953972
+      value: -22.953987
       objectReference: {fileID: 0}
     - target: {fileID: 8577077656046817995, guid: 14132fc0c0003514f9667bbd7f4ce180, type: 3}
       propertyPath: m_LocalPosition.y

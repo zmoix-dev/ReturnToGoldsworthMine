@@ -17,8 +17,8 @@ namespace RPG.SceneManagement {
             canvas.alpha = 1;
         }
 
-        public IEnumerator FadeOut(float fadeTime) {
-            yield return FadeTo(1, fadeTime);
+        public Coroutine FadeOut(float fadeTime) {
+            return FadeTo(1, fadeTime);
         }
 
         public Coroutine FadeIn(float fadeTime) {
@@ -29,7 +29,7 @@ namespace RPG.SceneManagement {
             if (activeFade != null) {
                 StopCoroutine(activeFade);
             }
-            StartCoroutine(FadeRoutine(target, fadeTime));
+            activeFade = StartCoroutine(FadeRoutine(target, fadeTime));
             return activeFade;
         }
 
@@ -37,7 +37,9 @@ namespace RPG.SceneManagement {
             while (!Mathf.Approximately(canvas.alpha, target)) {
                 canvas.alpha = Mathf.MoveTowards(canvas.alpha, target, Time.deltaTime / fadeTime);
                 yield return new WaitForEndOfFrame();
+                Debug.Log("Ping");
             }
+            Debug.Log("Pong");
             yield return null;
         }
     }

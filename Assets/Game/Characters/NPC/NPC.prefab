@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: characterClass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 348541473260074613, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: maxHealth
       value: 40
@@ -128,34 +132,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ally
       objectReference: {fileID: 0}
+    - target: {fileID: 7259230868177344542, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8745297592254594253, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3296467857811399765, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
---- !u!1 &6104649892051543376 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5863169880812126716, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
-  m_PrefabInstance: {fileID: 425092406368036012}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &222209490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6104649892051543376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d430a6f7184214794f5ae0ac53451e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aggroRadius: 10
-  suspicionTime: 2
-  path: {fileID: 0}
-  guardDestinationTolerance: 2
-  patrolSpeed: 2.5
-  chaseSpeed: 4
-  waitAtWaypoint: 2
-  enemyFaction: 2
 --- !u!4 &6104649892051543383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5863169880812126715, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}

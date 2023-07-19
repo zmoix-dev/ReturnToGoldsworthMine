@@ -441,6 +441,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 8033885501743259750, guid: a48601458b21ecb49963cd1c66da8ff9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.521
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033885501743259750, guid: a48601458b21ecb49963cd1c66da8ff9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.535
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033885501743259750, guid: a48601458b21ecb49963cd1c66da8ff9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a48601458b21ecb49963cd1c66da8ff9, type: 3}
 --- !u!1 &430672391
@@ -1743,6 +1755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Orc_Warrior
       objectReference: {fileID: 0}
+    - target: {fileID: 1710467258915934404, guid: b424a4b541df2a64b952111e4f259221, type: 3}
+      propertyPath: uniqueIdentifier
+      value: caf9d487-1f57-440c-802c-0653e7b0cefd
+      objectReference: {fileID: 0}
     - target: {fileID: 5453934953575999006, guid: b424a4b541df2a64b952111e4f259221, type: 3}
       propertyPath: path
       value: 
@@ -1939,6 +1955,10 @@ PrefabInstance:
     - target: {fileID: 7917608746370157141, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219911773397867833, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
+      propertyPath: uniqueIdentifier
+      value: b08467bb-fb5e-476b-8c8b-d638494d927d
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12065f23df09bb24ab93a8656cf1527d, type: 3}
@@ -2627,6 +2647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8472670796610446169, guid: 59f0bb7cae2ea094f8270f02baea3faf, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 44a09430-391b-49ca-a20e-302d17432e34
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59f0bb7cae2ea094f8270f02baea3faf, type: 3}
 --- !u!1001 &2048650330
@@ -2823,6 +2847,10 @@ PrefabInstance:
       propertyPath: path
       value: 
       objectReference: {fileID: 1746925366}
+    - target: {fileID: 2952806691753560350, guid: a683ca65ed3ef174baf03f5cd1cc6a8e, type: 3}
+      propertyPath: uniqueIdentifier
+      value: b60ea83a-c6e0-42ec-9536-f8dbb97bc28c
+      objectReference: {fileID: 0}
     - target: {fileID: 4244978921590169202, guid: a683ca65ed3ef174baf03f5cd1cc6a8e, type: 3}
       propertyPath: m_RootOrder
       value: 3
