@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 using RPG.Core;
 using RPG.Saving;
 using RPG.Stats;
@@ -7,7 +8,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 namespace RPG.Movement {
-    public class Mover : MonoBehaviour, IAction, ISaveable
+    public class Mover : MonoBehaviour, IAction, IJsonSaveable
     {
         [SerializeField] float maxNavPathLength = 40f;
         NavMeshAgent navAgent;
@@ -91,6 +92,19 @@ namespace RPG.Movement {
                 transform.position = ((SerializableVector3) state).ToVector();
                 GetComponent<NavMeshAgent>().enabled = true;
             }
+        }
+
+        public JToken CaptureAsJToken()
+        {
+           return transform.position.ToToken();
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            GetComponent<NavMeshAgent>().enabled = false;
+            transform.position = state.ToVector3();
+            GetComponent<NavMeshAgent>().enabled = true;
+            GetComponent<ActionScheduler>().StopCurrentAction();
         }
     }
 }

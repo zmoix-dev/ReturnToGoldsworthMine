@@ -240,11 +240,12 @@ MonoBehaviour:
   suspicionTime: 2
   aggravateTimer: 5
   path: {fileID: 0}
-  guardDestinationTolerance: 2
+  pathStartIndex: 0
+  guardDestinationTolerance: 1
   patrolSpeed: 2.5
   chaseSpeed: 4
   waitAtDestination: 4
-  wanderRadius: 2
+  wanderRadius: 0
   alertRadius: 5
   enemyFaction: 02000000
 --- !u!114 &6445940471184063905 stripped

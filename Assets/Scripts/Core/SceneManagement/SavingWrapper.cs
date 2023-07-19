@@ -5,7 +5,7 @@ using UnityEngine;
 using RPG.Saving;
 
 namespace RPG.SceneManagement {
-    [RequireComponent(typeof(SavingSystem))]
+    [RequireComponent(typeof(JsonSavingSystem))]
     public class SavingWrapper : MonoBehaviour
     {
         [SerializeField] float fadeInTime = 1f;
@@ -18,7 +18,7 @@ namespace RPG.SceneManagement {
         private IEnumerator LoadLastScene() {
             TransitionFader fader = FindObjectOfType<TransitionFader>();
             fader.FadeOutImmediate();
-            yield return GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile);
+            yield return GetComponent<JsonSavingSystem>().LoadLastScene(defaultSaveFile);
             yield return fader.FadeIn(fadeInTime);
         }
 
@@ -37,16 +37,16 @@ namespace RPG.SceneManagement {
 
         public void Save()
         {
-            GetComponent<SavingSystem>().Save(defaultSaveFile);
+            GetComponent<JsonSavingSystem>().Save(defaultSaveFile);
         }
 
         public void Load()
         {
-            GetComponent<SavingSystem>().Load(defaultSaveFile);
+            GetComponent<JsonSavingSystem>().Load(defaultSaveFile);
         }
 
         public void Delete() {
-            GetComponent<SavingSystem>().Delete(defaultSaveFile);
+            GetComponent<JsonSavingSystem>().Delete(defaultSaveFile);
         }
     }
 }

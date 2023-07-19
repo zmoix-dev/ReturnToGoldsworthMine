@@ -89,6 +89,7 @@ namespace RPG.Saving
 
         private string GetPathFromSaveFile(string saveFile)
         {
+            print("Restoring from " + saveFile);
             return Path.Combine(Application.persistentDataPath, saveFile + ".sav");
         }
     }

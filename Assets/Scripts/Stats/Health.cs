@@ -7,9 +7,10 @@ using RPG.Core;
 using UnityEngine.Events;
 using GameDevTV.Utils;
 using System;
+using Newtonsoft.Json.Linq;
 
 namespace RPG.Stats {
-    public class Health : MonoBehaviour, ISaveable
+    public class Health : MonoBehaviour, IJsonSaveable
     {
         [Range(0,1)]
         [SerializeField] float levelUpMinHealthPct = 1f;
@@ -80,14 +81,14 @@ namespace RPG.Stats {
             
         }
 
-        public object CaptureState()
+        public JToken CaptureAsJToken()
         {
-            return currentHealth;
+            return JToken.FromObject(currentHealth.value);
         }
 
-        public void RestoreState(object state)
+        public void RestoreFromJToken(JToken state)
         {
-            currentHealth.value = (float) state;
+            currentHealth.value = state.ToObject<float>();
             if (currentHealth.value == 0) {
                 HandleDeath(null);
             }

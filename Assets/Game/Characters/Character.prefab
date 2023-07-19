@@ -177,8 +177,8 @@ GameObject:
   - component: {fileID: 1461685541518201651}
   - component: {fileID: 7641632672025237449}
   - component: {fileID: 5080870179006645279}
-  - component: {fileID: 676049706151780435}
   - component: {fileID: -5855021617509153570}
+  - component: {fileID: 4849640319423780503}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -261,7 +261,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorMappings: []
   navMeshHitRadius: 1
-  maxNavPathLength: 40
 --- !u!114 &4646360293779061266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f75fa86381699459ed76128fee16a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxNavPathLength: 40
 --- !u!114 &1461685541518201651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handTransform: {fileID: 0}
   defaultWeapon: {fileID: 0}
+  weaponRotation: {x: 0, y: 0, z: 0, w: 1}
+  weaponScale: {x: 1, y: 1, z: 1}
 --- !u!114 &7641632672025237449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,33 +315,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelUpMinHealthPct: 0.75
-  takeDamage:
+  onTakeDamage:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3657921887285666344}
-        m_TargetAssemblyTypeName: RPG.UI.DamageTextSpawner, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 13
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5602216691732176853}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onDie:
     m_PersistentCalls:
       m_Calls:
@@ -355,22 +333,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onDamageTaken:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &676049706151780435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5863169880812126716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uniqueIdentifier: 
 --- !u!114 &-5855021617509153570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,6 +350,19 @@ MonoBehaviour:
   progression: {fileID: 11400000, guid: 4743a9022f9b2fd40ac4ea43685985e6, type: 2}
   levelUpVfx: {fileID: 0}
   shouldUseModifiers: 0
+--- !u!114 &4849640319423780503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5863169880812126716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6747b811cab82a41b2cd8a022850ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!1 &7739107605163886716
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,17 +631,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a10aad0eb673dee4e988b78fd85dfbbf, type: 3}
---- !u!114 &3657921887285666344 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5088053149325390659, guid: a10aad0eb673dee4e988b78fd85dfbbf, type: 3}
-  m_PrefabInstance: {fileID: 8385678260000854379}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7de2c5b5ea98734b965f89e7965c906, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &8745297592254594253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 937417369871510950, guid: a10aad0eb673dee4e988b78fd85dfbbf, type: 3}
