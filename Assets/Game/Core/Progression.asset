@@ -22,8 +22,8 @@ MonoBehaviour:
       - 100
     - statsType: 2
       values:
-      - 80
-      - 160
+      - 100
+      - 220
     - statsType: 3
       values:
       - 3
@@ -33,9 +33,9 @@ MonoBehaviour:
     stats:
     - statsType: 0
       values:
-      - 80
-      - 80
-      - 80
+      - 25
+      - 40
+      - 55
     - statsType: 3
       values:
       - 1
@@ -45,9 +45,9 @@ MonoBehaviour:
     stats:
     - statsType: 0
       values:
-      - 80
-      - 80
-      - 80
+      - 25
+      - 40
+      - 55
     - statsType: 1
       values:
       - 10
