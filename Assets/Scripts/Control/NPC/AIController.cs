@@ -32,9 +32,9 @@ namespace RPG.Control {
         List<GameObject> enemies;
         GameObject target;
         NavMeshAgent navMeshAgent;
-        bool isChasing = false;
-        bool isWaiting = false;
-        bool isAggravated = false;
+        [SerializeField] bool isChasing = false;
+        [SerializeField] bool isWaiting = false;
+        [SerializeField] bool isAggravated = false;
         Coroutine aggravateHandler;
 
         private void Awake() {
@@ -93,18 +93,14 @@ namespace RPG.Control {
                 if(CanAttack(enemy))
                 {
                     StopAllCoroutines();
+                    isWaiting = false;
                     StartCoroutine(PursueBehavior(enemy));
                     return;
                 }
             }
 
-            if (isChasing) {
-                StartCoroutine(ResetBehavior());
-            }
-            else {
-                if (!isWaiting){ 
-                    StartCoroutine(PatrolBehavior());
-                }
+            if (!isWaiting){ 
+                StartCoroutine(PatrolBehavior());
             }
         }
 
@@ -158,6 +154,7 @@ namespace RPG.Control {
                 isChasing = CanAttack(enemy);
                 yield return new WaitForEndOfFrame();
             }
+            yield return ResetBehavior();
         }
 
         private IEnumerator ResetBehavior()
@@ -166,7 +163,7 @@ namespace RPG.Control {
             isChasing = false;
             yield return new WaitForSeconds(suspicionTime);
             navMeshAgent.speed = patrolSpeed;
-            mover.StartMoveAction(guardDestination);
+            mover.StartMoveAction(wanderGuardDestination);
         }
 
         private IEnumerator PatrolBehavior()
