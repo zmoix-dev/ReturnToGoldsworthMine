@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Utils;
+using Newtonsoft.Json.Linq;
 using RPG.Core;
 using RPG.Game.Animation;
 using RPG.Movement;
@@ -10,7 +11,7 @@ using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Combat {
-    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
+    public class Fighter : MonoBehaviour, IAction, IJsonSaveable, IModifierProvider
     {
         [SerializeField] Transform handTransform;
         [SerializeField] WeaponConfig defaultWeapon = null;
@@ -159,14 +160,14 @@ namespace RPG.Combat {
             Destroy(equippedWeaponObject);
         }
 
-        public object CaptureState()
+        public JToken CaptureAsJToken()
         {
-            return currentWeaponConfig.name;
+            return JToken.FromObject(currentWeaponConfig.name);
         }
 
-        public void RestoreState(object state)
+        public void RestoreFromJToken(JToken state)
         {
-            EquipWeapon(Resources.Load<WeaponConfig>(state as string), weaponRotation, weaponScale);
+            EquipWeapon(Resources.Load<WeaponConfig>(state.ToObject<string>()), weaponRotation, weaponScale);
         }
     }
 }

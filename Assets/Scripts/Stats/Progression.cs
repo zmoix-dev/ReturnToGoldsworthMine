@@ -7,7 +7,6 @@ namespace RPG.Stats {
     public class Progression : ScriptableObject {
         [SerializeField] CharacterProgression[] characterProgression = null;
         Dictionary<UnitType.Type, Dictionary<StatsType, float[]>> lookupTable = null;
-        bool dictionaryBuild = false;
 
         public float GetStat(UnitType.Type unitType, StatsType statsType, int level) {
             BuildLookup();

@@ -79,21 +79,6 @@ namespace RPG.Movement {
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
 
-        public object CaptureState()
-        {
-            return new SerializableVector3(transform.position);
-        }
-
-        public void RestoreState(object state)
-        {
-            SerializableVector3 vector = state as SerializableVector3;
-            if (vector != null) {
-                GetComponent<NavMeshAgent>().enabled = false;
-                transform.position = ((SerializableVector3) state).ToVector();
-                GetComponent<NavMeshAgent>().enabled = true;
-            }
-        }
-
         public JToken CaptureAsJToken()
         {
            return transform.position.ToToken();

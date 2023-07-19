@@ -37,9 +37,7 @@ namespace RPG.SceneManagement {
             while (!Mathf.Approximately(canvas.alpha, target)) {
                 canvas.alpha = Mathf.MoveTowards(canvas.alpha, target, Time.deltaTime / fadeTime);
                 yield return new WaitForEndOfFrame();
-                Debug.Log("Ping");
             }
-            Debug.Log("Pong");
             yield return null;
         }
     }
