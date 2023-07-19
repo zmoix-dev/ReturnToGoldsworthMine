@@ -26,9 +26,9 @@ MonoBehaviour:
       - 220
     - statsType: 3
       values:
-      - 3
       - 5
-      - 10
+      - 8
+      - 12
   - unitType: 1
     stats:
     - statsType: 0
@@ -39,8 +39,8 @@ MonoBehaviour:
     - statsType: 3
       values:
       - 1
-      - 1
-      - 1
+      - 2
+      - 3
   - unitType: 2
     stats:
     - statsType: 0
@@ -55,6 +55,6 @@ MonoBehaviour:
       - 20
     - statsType: 3
       values:
-      - 1
-      - 1
-      - 1
+      - 2
+      - 4
+      - 6

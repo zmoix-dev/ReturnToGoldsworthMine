@@ -68,6 +68,9 @@ namespace RPG.Stats {
 
         public float GetStat(StatsType stat)
         {
+            // if (stat.Equals(StatsType.Damage) && gameObject.tag == "Ally") {
+            //     Debug.Log($"{GetBaseStat(stat)} + {GetAdditiveModifiers(stat)} * {GetPercentageModifiers(stat)}");
+            // }
             return (GetBaseStat(stat) + GetAdditiveModifiers(stat)) * GetPercentageModifiers(stat);
         }
 
@@ -108,7 +111,6 @@ namespace RPG.Stats {
         }
 
         private float GetAdditiveModifiers(StatsType stat) {
-            if (!shouldUseModifiers) return 0;
             float total = 0;
             foreach (IModifierProvider provider in GetComponents<IModifierProvider>()) {
                 foreach (float modifier in provider.GetAdditiveModifiers(stat)) {
@@ -119,7 +121,6 @@ namespace RPG.Stats {
         }
 
         private float GetPercentageModifiers(StatsType stat) {
-            if (!shouldUseModifiers) return 1;
             float total = 1;
             foreach (IModifierProvider provider in GetComponents<IModifierProvider>()) {
                 foreach (float modifier in provider.GetPercentageModifiers(stat)) {
