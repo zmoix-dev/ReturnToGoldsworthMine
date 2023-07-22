@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: 718b2b63729b90f469cd331d183ec96d, type: 2}
   weaponPrefab: {fileID: 7625466499856132506, guid: 6592edb581ea34141ac68d07181556e5, type: 3}
-  weaponDamage: 3
+  weaponDamage: 2.5
   pctModifer: 0
   attackRange: 3
   timeBetweenAttacks: 3
