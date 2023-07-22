@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4996427201417538725}
   - component: {fileID: -5556917273897373492}
+  - component: {fileID: -8492340727458109147}
   m_Layer: 0
   m_Name: Follow Camera
   m_TagString: Untagged
@@ -130,3 +131,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followTarget: {fileID: 0}
+--- !u!114 &-8492340727458109147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4996427201417538724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948cc50619f193646b4405c0e911f818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 1
+  player: {fileID: 0}
