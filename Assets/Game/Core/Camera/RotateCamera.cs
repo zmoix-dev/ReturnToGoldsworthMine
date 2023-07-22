@@ -9,12 +9,15 @@ namespace RPG.Core.Camera {
         [SerializeField] GameObject player;
         void Update()
         {
-            if (Input.GetKey(KeyCode.Q)) {
-                transform.RotateAround(player.transform.position, Vector3.up, 90 * (rotationSpeed * Time.deltaTime));
-            } 
-            if (Input.GetKey(KeyCode.E)) {
-                transform.RotateAround(player.transform.position, Vector3.up, -90 * (rotationSpeed * Time.deltaTime));
+            if (player != null) {
+                if (Input.GetKey(KeyCode.Q)) {
+                    transform.RotateAround(player.transform.position, Vector3.up, 90 * (rotationSpeed * Time.deltaTime));
+                } 
+                if (Input.GetKey(KeyCode.E)) {
+                    transform.RotateAround(player.transform.position, Vector3.up, -90 * (rotationSpeed * Time.deltaTime));
+                }
             }
+            
         }
     }
 }
