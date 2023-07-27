@@ -13,8 +13,14 @@ namespace GameDevTV.UI.Inventories
     [RequireComponent(typeof(Image))]
     public class InventoryItemIcon : MonoBehaviour
     {
-        // PUBLIC
 
+        private void Start() {
+            if (GetItem() == null) {
+                GetComponent<Image>().enabled = false;
+            }
+        }
+
+        // PUBLIC
         public void SetItem(Sprite item)
         {
             var iconImage = GetComponent<Image>();
