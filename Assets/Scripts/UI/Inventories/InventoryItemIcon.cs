@@ -17,6 +17,8 @@ namespace GameDevTV.UI.Inventories
         private void Start() {
             if (GetItem() == null) {
                 GetComponent<Image>().enabled = false;
+            } else {
+                GetComponent<Image>().enabled = true;
             }
         }
 
