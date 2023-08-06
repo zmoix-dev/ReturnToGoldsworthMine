@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GameDevTV.Core.UI.Dragging
+namespace RPG.UI.Dragging
 {
     /// <summary>
     /// Acts both as a source and destination for dragging. If we are dragging

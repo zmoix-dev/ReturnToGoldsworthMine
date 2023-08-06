@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace GameDevTV.UI.Inventories
+namespace RPG.Inventories
 {
     /// <summary>
     /// To be put on the icon representing an inventory item. Allows the slot to
@@ -23,7 +23,7 @@ namespace GameDevTV.UI.Inventories
         }
 
         // PUBLIC
-        public void SetItem(Sprite item)
+        public void SetItem(InventoryItem item)
         {
             var iconImage = GetComponent<Image>();
             if (item == null)
@@ -33,7 +33,7 @@ namespace GameDevTV.UI.Inventories
             else
             {
                 iconImage.enabled = true;
-                iconImage.sprite = item;
+                iconImage.sprite = item.GetIcon();
             }
         }
 
