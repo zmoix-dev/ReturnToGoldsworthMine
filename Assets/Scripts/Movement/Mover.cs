@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 using RPG.Core;
+using RPG.Game.Animation;
 using RPG.Saving;
 using RPG.Stats;
 using UnityEngine;
@@ -76,7 +77,9 @@ namespace RPG.Movement {
             Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;
+            Animator animator = GetComponent<Animator>();
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
+            
         }
 
         public JToken CaptureAsJToken()
