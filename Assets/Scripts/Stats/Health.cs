@@ -18,6 +18,7 @@ namespace RPG.Stats {
         [SerializeField] UnityEvent onDie;
         LazyValue<float> currentHealth;
         bool isDead = false;
+        bool wasHitByPlayer = false;
         public bool IsDead { get { return isDead; }}
 
         private void Awake() {
@@ -50,6 +51,9 @@ namespace RPG.Stats {
         public void TakeDamage(GameObject attacker, float damage) {
             currentHealth.value = Mathf.Max(currentHealth.value - damage, 0);
             onTakeDamage.Invoke(damage, attacker);
+            if (attacker.gameObject.tag.Equals(UnitType.GetType(UnitType.Type.PLAYER))) {
+                wasHitByPlayer = true;
+            }
             if (currentHealth.value == 0 && !isDead)
             {
                 onDie.Invoke();
@@ -74,9 +78,9 @@ namespace RPG.Stats {
             }
             GetComponent<ActionScheduler>().StopCurrentAction();
 
-            if (attacker && attacker.GetComponent<Experience>()) {
+            if (wasHitByPlayer) {
                 float experience = GetComponent<BaseStats>().GetExperienceReward();
-                attacker.GetComponent<Experience>().GrantExperience(experience);    
+                GameObject.FindWithTag(UnitType.GetType(UnitType.Type.PLAYER)).GetComponent<Experience>().GrantExperience(experience);    
             }
             
         }
