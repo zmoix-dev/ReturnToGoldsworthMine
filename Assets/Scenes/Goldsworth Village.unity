@@ -59100,6 +59100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Systems UI
       objectReference: {fileID: 0}
+    - target: {fileID: 5798306326086538400, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5798306326086538428, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -59210,11 +59214,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5798306327345633384, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5798306327345633384, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5798306327345633384, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
       propertyPath: m_AnchorMin.y
@@ -59222,7 +59226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5798306327345633384, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 5798306327345633384, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
       propertyPath: m_SizeDelta.y
@@ -59234,11 +59238,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5798306327643089859, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5798306327643089859, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5798306327643089859, guid: 202afda43f7f41347ae2379c03c4a933, type: 3}
       propertyPath: m_AnchorMin.y
