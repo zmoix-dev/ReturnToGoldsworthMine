@@ -68,6 +68,18 @@ PrefabInstance:
       propertyPath: weapon
       value: 
       objectReference: {fileID: 11400000, guid: a8ab4e5b9c44bd943b3df32beb9a1e89, type: 2}
+    - target: {fileID: 2701623735767087188, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+      propertyPath: m_Height
+      value: 2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701623735767087188, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701623735767087188, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3761108350608718223, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -118,6 +130,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+--- !u!1 &4532985477996380570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8266203090780725835, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+  m_PrefabInstance: {fileID: 5503141101114106833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-2379361552611333329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4532985477996380570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b9d7b26684cda4286c71b9fd4e1d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2119388318059341232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4532985477996380570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120f876f582da9e469aaa20fe001de31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8677646700523526750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3761108350608718223, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}

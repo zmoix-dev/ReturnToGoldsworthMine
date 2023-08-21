@@ -13,7 +13,7 @@ namespace RPG.Stats {
         [SerializeField] UnitType.Type unitType;
         [SerializeField] Progression progression = null;
         [SerializeField] ParticleSystem levelUpVfx = null;
-        [SerializeField] bool shouldUseModifiers = false;
+        //[SerializeField] bool shouldUseModifiers = false;
 
         public event Action onLevelUp;
 

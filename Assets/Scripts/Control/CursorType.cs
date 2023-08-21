@@ -4,6 +4,7 @@ namespace RPG.Control {
         Pickup,
         Combat,
         UI,
-        None
+        None,
+        Unallowed
     }
 }
