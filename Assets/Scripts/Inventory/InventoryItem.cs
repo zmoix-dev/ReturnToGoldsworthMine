@@ -27,6 +27,7 @@ namespace RPG.Inventories
         [SerializeField] Pickup pickup = null;
         [Tooltip("If true, multiple items of this type can be stacked in the same inventory slot.")]
         [SerializeField] bool stackable = false;
+        Vector3 defaultRotation = Vector3.zero;
 
         // STATE
         static Dictionary<string, InventoryItem> itemLookupCache;
@@ -69,15 +70,26 @@ namespace RPG.Inventories
         /// </summary>
         /// <param name="position">Where to spawn the pickup.</param>
         /// <returns>Reference to the pickup object spawned.</returns>
-        public Pickup SpawnPickup(Transform transform)
+        public Pickup SpawnPickup(Vector3 position)
         {
-
-            Debug.Log($"Spawning item at {transform.position}");
             var pickup = Instantiate(this.pickup);
-            pickup.transform.position = transform.position;
-            pickup.transform.rotation = transform.rotation;
+            pickup.transform.position = position;
             pickup.Setup(this);
-            Debug.Log($"Spawned item at {pickup.transform.position}");
+            return pickup;
+        }
+
+        /// <summary>
+        /// Spawn the pickup gameobject into the world.
+        /// </summary>
+        /// <param name="position">Where to spawn the pickup.</param>
+        /// <param name="rotation">How to orient the pickup.</param>
+        /// <returns>Reference to the pickup object spawned.</returns>
+        public Pickup SpawnPickup(Vector3 position, Quaternion rotation)
+        {
+            var pickup = Instantiate(this.pickup);
+            pickup.transform.position = position;
+            pickup.transform.rotation = rotation;
+            pickup.Setup(this);
             return pickup;
         }
         
