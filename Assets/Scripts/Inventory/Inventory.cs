@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 namespace RPG.Inventories
 {
     /// <summary>
-    /// Provides storage for the player inventory. A configurable number of
+    /// Provides storage for the player inventory. A configurable count of
     /// slots are available.
     ///
     /// This component should be placed on the GameObject tagged "Player".
@@ -18,7 +18,27 @@ namespace RPG.Inventories
         [SerializeField] int inventorySize = 16;
 
         // STATE
-        InventoryItem[] slots;
+        InventorySlot[] slots;
+
+        
+        public struct InventorySlot {
+            public InventorySlot(InventoryItem item, int count) {
+                this.item = item;
+                this.count = count;
+            }
+            public InventoryItem item;
+            public int count;
+        }
+
+        [System.Serializable]
+        private struct InventorySlotRecord {
+            public InventorySlotRecord(string id, int count) {
+                this.itemID = id;
+                this.count = count;
+            }
+            public string itemID;
+            public int count;
+        }
 
         // PUBLIC
 
@@ -39,8 +59,9 @@ namespace RPG.Inventories
         /// <summary>
         /// Could this item fit anywhere in the inventory?
         /// </summary>
-        public bool HasSpaceFor(InventoryItem item)
+        public bool HasSpaceFor(InventoryItem item, int count = 1)
         {
+            //TODO no more space for stackables?
             return FindSlot(item) >= 0;
         }
 
@@ -52,12 +73,17 @@ namespace RPG.Inventories
             return slots.Length;
         }
 
+        public bool AddItem(InventoryItem item, int count) {
+            int index = FindSlot(item);
+            return AddItemToSlot(index, item, count);
+        }
+
         /// <summary>
         /// Attempt to add the items to the first available slot.
         /// </summary>
         /// <param name="item">The item to add.</param>
         /// <returns>Whether or not the item could be added.</returns>
-        public bool AddToFirstEmptySlot(InventoryItem item)
+        public bool AddToFirstEmptySlot(InventoryItem item, int count)
         {
             int i = FindSlot(item);
 
@@ -66,7 +92,7 @@ namespace RPG.Inventories
                 return false;
             }
 
-            slots[i] = item;
+            slots[i] = new InventorySlot(item, count);
             if (inventoryUpdated != null)
             {
                 inventoryUpdated();
@@ -77,16 +103,16 @@ namespace RPG.Inventories
         /// <summary>
         /// Is there an instance of the item in the inventory?
         /// </summary>
-        public bool HasItem(InventoryItem item)
+        public int HasItem(InventoryItem item)
         {
             for (int i = 0; i < slots.Length; i++)
             {
-                if (object.ReferenceEquals(slots[i], item))
+                if (object.ReferenceEquals(slots[i].item, item))
                 {
-                    return true;
+                    return i;
                 }
             }
-            return false;
+            return -1;
         }
 
         /// <summary>
@@ -94,15 +120,26 @@ namespace RPG.Inventories
         /// </summary>
         public InventoryItem GetItemInSlot(int slot)
         {
-            return slots[slot];
+            return slots[slot].item;
+        }
+
+        /// <summary>
+        /// Return the item count in the given slot.
+        /// </summary>
+        public int GetItemCountInSlot(int slot) {
+            return slots[slot].count;
         }
 
         /// <summary>
         /// Remove the item from the given slot.
         /// </summary>
-        public void RemoveFromSlot(int slot)
+        public void RemoveFromSlot(int slot, int count)
         {
-            slots[slot] = null;
+            slots[slot].count -= count;
+            if (slots[slot].count <= 0) {
+                slots[slot].item = null;
+                slots[slot].count = 0;
+            }
             if (inventoryUpdated != null)
             {
                 inventoryUpdated();
@@ -117,14 +154,22 @@ namespace RPG.Inventories
         /// <param name="slot">The slot to attempt to add to.</param>
         /// <param name="item">The item type to add.</param>
         /// <returns>True if the item was added anywhere in the inventory.</returns>
-        public bool AddItemToSlot(int slot, InventoryItem item)
+        public bool AddItemToSlot(int slot, InventoryItem item, int count)
         {
-            if (slots[slot] != null)
-            {
-                return AddToFirstEmptySlot(item); ;
+            if (slots[slot].item == null) {
+                slots[slot] = new InventorySlot(item, count);
             }
-
-            slots[slot] = item;
+            else if (slots[slot].item != null && slots[slot].item != item)
+            {
+                return AddToFirstEmptySlot(item, count);
+            } else if (slots[slot].item == item) {
+                if (item.IsStackable()) {
+                    slots[slot].count += count;
+                } else {
+                    AddToFirstEmptySlot(item, count);
+                }
+            }
+            
             if (inventoryUpdated != null)
             {
                 inventoryUpdated();
@@ -136,9 +181,8 @@ namespace RPG.Inventories
 
         private void Awake()
         {
-            slots = new InventoryItem[inventorySize];
-            slots[0] = InventoryItem.GetFromID("71e73607-4bac-4e42-b7d6-5e6f91e92dc4");
-            slots[1] = InventoryItem.GetFromID("0aa7c8b8-4796-42aa-89d0-9d100ea67d7b");
+            if (slots != null) return;
+            slots = new InventorySlot[inventorySize];
         }
 
         /// <summary>
@@ -147,6 +191,9 @@ namespace RPG.Inventories
         /// <returns>-1 if no slot is found.</returns>
         private int FindSlot(InventoryItem item)
         {
+            int index = HasItem(item);
+            if (index != -1) return index;
+
             return FindEmptySlot();
         }
 
@@ -158,7 +205,7 @@ namespace RPG.Inventories
         {
             for (int i = 0; i < slots.Length; i++)
             {
-                if (slots[i] == null)
+                if (slots[i].item == null)
                 {
                     return i;
                 }
@@ -168,15 +215,22 @@ namespace RPG.Inventories
 
         public JToken CaptureAsJToken()
         {
+            InventorySlotRecord[] slots = new InventorySlotRecord[this.slots.Length];
+            for(int i = 0; i < this.slots.Length; i++) {
+                if (this.slots[i].item == null) continue;
+                slots[i] = new InventorySlotRecord(this.slots[i].item.GetItemID(), this.slots[i].count);
+            }
+
             return JToken.FromObject(slots);
         }
 
         public void RestoreFromJToken(JToken state)
         {
-            var slotStrings = state.ToObject<string[]>();
+            var slots = state.ToObject<InventorySlotRecord[]>();
             for (int i = 0; i < inventorySize; i++)
             {
-                slots[i] = InventoryItem.GetFromID(slotStrings[i]);
+                if (slots[i].itemID == string.Empty) continue;
+                this.slots[i] = new InventorySlot(InventoryItem.GetFromID(slots[i].itemID), slots[i].count);
             }
             inventoryUpdated?.Invoke();
         }

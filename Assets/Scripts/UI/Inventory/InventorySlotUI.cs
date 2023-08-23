@@ -23,8 +23,10 @@ namespace RPG.Inventories
             this.inventory = inventory;
             this.index = index;
             InventoryItem item = inventory.GetItemInSlot(index);
+            int count = inventory.GetItemCountInSlot(index);
             if (item) {
-                icon.SetItem(inventory.GetItemInSlot(index));
+                icon.SetItem(item);
+                icon.SetCount(count);
             }
         }
 
@@ -37,9 +39,9 @@ namespace RPG.Inventories
             return 0;
         }
 
-        public void AddItems(InventoryItem item, int number)
+        public void AddItems(InventoryItem item, int count)
         {
-            inventory.AddItemToSlot(index, item);
+            inventory.AddItemToSlot(index, item, count);
         }
 
         public InventoryItem GetItem()
@@ -47,14 +49,14 @@ namespace RPG.Inventories
             return inventory.GetItemInSlot(index);
         }
 
-        public int GetNumber()
+        public int GetCount()
         {
             return 1;
         }
 
-        public void RemoveItems(int number)
+        public void RemoveItems(int count)
         {
-            inventory.RemoveFromSlot(index);
+            inventory.RemoveFromSlot(index, count);
         }
     }
 }

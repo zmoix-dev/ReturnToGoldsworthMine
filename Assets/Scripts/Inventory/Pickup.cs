@@ -4,12 +4,13 @@ namespace RPG.Inventories
 {
     /// <summary>
     /// To be placed at the root of a Pickup prefab. Contains the data about the
-    /// pickup such as the type of item and the number.
+    /// pickup such as the type of item and the count.
     /// </summary>
     public class Pickup : MonoBehaviour
     {
         // STATE
         InventoryItem item;
+        int count;
 
         // CACHED REFERENCE
         Inventory inventory;
@@ -28,9 +29,10 @@ namespace RPG.Inventories
         /// Set the vital data after creating the prefab.
         /// </summary>
         /// <param name="item">The type of item this prefab represents.</param>
-        public void Setup(InventoryItem item)
+        public void Setup(InventoryItem item, int count)
         {
             this.item = item;
+            this.count = count;
         }
 
         public InventoryItem GetItem()
@@ -40,7 +42,7 @@ namespace RPG.Inventories
 
         public void PickupItem()
         {
-            bool foundSlot = inventory.AddToFirstEmptySlot(item);
+            bool foundSlot = inventory.AddItem(item, count);
             if (foundSlot)
             {
                 Destroy(gameObject);
@@ -49,7 +51,7 @@ namespace RPG.Inventories
 
         public bool CanBePickedUp()
         {
-            return inventory.HasSpaceFor(item);
+            return inventory.HasSpaceFor(item, count);
         }
     }
 }

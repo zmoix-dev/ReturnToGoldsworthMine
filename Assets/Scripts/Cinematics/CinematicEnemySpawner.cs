@@ -23,7 +23,6 @@ public class CinematicEnemySpawner : MonoBehaviour
 
     private void MoveCinematicEnemies(GameObject parent) {
         foreach (Transform transform in parent.transform) {
-            Debug.Log("Move!");
             transform.gameObject.SetActive(true);
             Mover mover = transform.gameObject.GetComponent<Mover>();
             mover.MoveTo(transform.position - new Vector3(1f, 0f, 0.5f) * 20);

@@ -12,6 +12,7 @@ namespace RPG.Inventories
     {
         // CONFIG DATA
         [SerializeField] InventoryItem item = null;
+        [SerializeField] int number = 1;
 
         // LIFECYCLE METHODS
         private void Awake()
@@ -43,7 +44,7 @@ namespace RPG.Inventories
 
         private void SpawnPickup()
         {
-            var spawnedPickup = item.SpawnPickup(transform.position, transform.rotation);
+            var spawnedPickup = item.SpawnPickup(transform.position, transform.rotation, number);
             spawnedPickup.transform.SetParent(transform);
         }
 

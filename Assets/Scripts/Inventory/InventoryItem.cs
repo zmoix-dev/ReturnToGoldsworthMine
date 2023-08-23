@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 namespace RPG.Inventories
 {
@@ -70,11 +71,11 @@ namespace RPG.Inventories
         /// </summary>
         /// <param name="position">Where to spawn the pickup.</param>
         /// <returns>Reference to the pickup object spawned.</returns>
-        public Pickup SpawnPickup(Vector3 position)
+        public Pickup SpawnPickup(Vector3 position, int number = 1)
         {
             var pickup = Instantiate(this.pickup);
             pickup.transform.position = position;
-            pickup.Setup(this);
+            pickup.Setup(this, number);
             return pickup;
         }
 
@@ -84,12 +85,12 @@ namespace RPG.Inventories
         /// <param name="position">Where to spawn the pickup.</param>
         /// <param name="rotation">How to orient the pickup.</param>
         /// <returns>Reference to the pickup object spawned.</returns>
-        public Pickup SpawnPickup(Vector3 position, Quaternion rotation)
+        public Pickup SpawnPickup(Vector3 position, Quaternion rotation, int number = 1)
         {
             var pickup = Instantiate(this.pickup);
             pickup.transform.position = position;
             pickup.transform.rotation = rotation;
-            pickup.Setup(this);
+            pickup.Setup(this, number);
             return pickup;
         }
         

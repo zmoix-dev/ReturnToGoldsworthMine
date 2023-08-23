@@ -19,7 +19,7 @@ namespace RPG.UI.Dragging
         /// <summary>
         /// What is the quantity of items in this source?
         /// </summary>
-        int GetNumber();
+        int GetCount();
 
         /// <summary>
         /// Remove a given number of items from the source.
