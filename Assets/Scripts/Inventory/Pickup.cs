@@ -40,6 +40,10 @@ namespace RPG.Inventories
             return item;
         }
 
+        public int GetCount() {
+            return count;
+        }
+
         public void PickupItem()
         {
             bool foundSlot = inventory.AddItem(item, count);

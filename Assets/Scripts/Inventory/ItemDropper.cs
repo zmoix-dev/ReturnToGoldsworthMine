@@ -2,6 +2,8 @@
 using UnityEngine;
 using RPG.Saving;
 using Newtonsoft.Json.Linq;
+using UnityEngine.Playables;
+using RPG.Core.Saving;
 
 namespace RPG.Inventories
 {
@@ -20,9 +22,9 @@ namespace RPG.Inventories
         /// Create a pickup at the current position.
         /// </summary>
         /// <param name="item">The item type for the pickup.</param>
-        public void DropItem(InventoryItem item)
+        public void DropItem(InventoryItem item, int count)
         {
-            SpawnPickup(item, GetDropLocation());
+            SpawnPickup(item, count, GetDropLocation());
         }
 
         // PROTECTED
@@ -38,9 +40,9 @@ namespace RPG.Inventories
 
         // PRIVATE
 
-        public void SpawnPickup(InventoryItem item, Vector3 spawnLocation)
+        public void SpawnPickup(InventoryItem item, int count, Vector3 spawnLocation)
         {
-            var pickup = item.SpawnPickup(spawnLocation);
+            var pickup = item.SpawnPickup(spawnLocation, count);
             droppedItems.Add(pickup);
         }
 
@@ -48,7 +50,8 @@ namespace RPG.Inventories
         private struct DropRecord
         {
             public string itemID;
-            public Vector3 position;
+            public int count;
+            public SerializableVector3 position;
         }
 
         public JToken CaptureAsJToken()
@@ -57,7 +60,10 @@ namespace RPG.Inventories
             var droppedItemsList = new DropRecord[droppedItems.Count];
             for (int i = 0; i < droppedItemsList.Length; i++) {
                 droppedItemsList[i].itemID = droppedItems[i].GetItem().GetItemID();
-                droppedItemsList[i].position = droppedItems[i].gameObject.transform.position;
+                droppedItemsList[i].count = droppedItems[i].GetCount();
+                SerializableVector3 v3 = new SerializableVector3(droppedItems[i].gameObject.transform.position);
+                Debug.Log($"{v3.x},{v3.y},{v3.z}");
+                droppedItemsList[i].position = v3;
             }
             return JToken.FromObject(droppedItemsList);
         }
@@ -67,7 +73,7 @@ namespace RPG.Inventories
             var droppedItemsList = state.ToObject<DropRecord[]>();
             foreach (var item in droppedItemsList) {
                 var pickupItem = InventoryItem.GetFromID(item.itemID);
-                SpawnPickup(pickupItem, item.position);
+                SpawnPickup(pickupItem, item.count, item.position.ToVector());
             }
         }
 
