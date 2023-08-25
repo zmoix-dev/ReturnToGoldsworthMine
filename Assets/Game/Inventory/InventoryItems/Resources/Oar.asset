@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69c03fd23c3fd340823208bc2866296, type: 3}
+  m_Script: {fileID: 11500000, guid: d7e5275e61c43b345b7dd7a235dd3d59, type: 3}
   m_Name: Oar
   m_EditorClassIdentifier: 
   itemID: a14b3734-f0b5-4e71-89de-80dda90d6f5c
@@ -18,3 +18,4 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 344aa2512e791bb4693b61b07493b445, type: 3}
   pickup: {fileID: -2379361552611333329, guid: 50ecb1ddeca87e04d82422ec89107032, type: 3}
   stackable: 1
+  allowedEquipLocation: 5

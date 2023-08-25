@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69c03fd23c3fd340823208bc2866296, type: 3}
+  m_Script: {fileID: 11500000, guid: d7e5275e61c43b345b7dd7a235dd3d59, type: 3}
   m_Name: Pickup
   m_EditorClassIdentifier: 
   itemID: c3c0dae1-7892-4f60-b7e1-dec60fc7f351
@@ -18,3 +18,4 @@ MonoBehaviour:
   icon: {fileID: 0}
   pickup: {fileID: 0}
   stackable: 0
+  allowedEquipLocation: 5

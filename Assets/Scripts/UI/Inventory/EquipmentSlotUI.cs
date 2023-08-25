@@ -70,7 +70,9 @@ namespace RPG.UI.Inventories
 
         void RedrawUI()
         {
-            icon.SetItem(playerEquipment.GetItemInSlot(equipLocation));
+            if (icon && playerEquipment) {
+                icon.SetItem(playerEquipment.GetItemInSlot(equipLocation));
+            }
         }
     }
 }
