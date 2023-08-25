@@ -62,7 +62,6 @@ namespace RPG.Inventories
                 droppedItemsList[i].itemID = droppedItems[i].GetItem().GetItemID();
                 droppedItemsList[i].count = droppedItems[i].GetCount();
                 SerializableVector3 v3 = new SerializableVector3(droppedItems[i].gameObject.transform.position);
-                Debug.Log($"{v3.x},{v3.y},{v3.z}");
                 droppedItemsList[i].position = v3;
             }
             return JToken.FromObject(droppedItemsList);
