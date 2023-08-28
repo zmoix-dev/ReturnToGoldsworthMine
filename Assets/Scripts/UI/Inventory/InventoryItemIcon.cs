@@ -41,6 +41,21 @@ namespace RPG.Inventories
             }
         }
 
+        public void SetItem(InventoryItem item, int count)
+        {
+            var iconImage = GetComponent<Image>();
+            if (item == null)
+            {
+                iconImage.enabled = false;
+            }
+            else
+            {
+                iconImage.enabled = true;
+                iconImage.sprite = item.GetIcon();
+                SetCount(count);
+            }
+        }
+
         public Sprite GetItem()
         {
             var iconImage = GetComponent<Image>();
