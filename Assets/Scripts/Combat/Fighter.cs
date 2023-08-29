@@ -5,6 +5,7 @@ using GameDevTV.Utils;
 using Newtonsoft.Json.Linq;
 using RPG.Core;
 using RPG.Game.Animation;
+using RPG.Inventories;
 using RPG.Movement;
 using RPG.Saving;
 using RPG.Stats;
@@ -20,6 +21,7 @@ namespace RPG.Combat {
         WeaponConfig currentWeaponConfig;
         LazyValue<Weapon> currentWeapon;
         GameObject equippedWeaponObject;
+        Equipment equipment;
        
         GameObject target = null;
         bool canAttack = true;
@@ -29,6 +31,21 @@ namespace RPG.Combat {
             mover = GetComponent<Mover>();
             currentWeaponConfig = defaultWeapon;
             currentWeapon = new LazyValue<Weapon>(SetupCurrentWeapon);
+            equipment = GetComponent<Equipment>();
+            if (equipment) {
+                equipment.equipmentUpdated += UpdatedWeapon;
+            }
+        }
+
+        private void UpdatedWeapon()
+        {
+            WeaponConfig weapon = equipment.GetItemInSlot(EquipLocation.Weapon) as WeaponConfig;
+            if (weapon == null) {
+                EquipWeapon(defaultWeapon);
+                DestroyEquippedWeapon();
+            } else {
+                EquipWeapon(weapon);
+            }
         }
 
         private Weapon SetupCurrentWeapon()
@@ -144,9 +161,16 @@ namespace RPG.Combat {
         {
             if (weapon) {
                 currentWeaponConfig = weapon;
-                return weapon.Spawn(handTransform, GetComponent<Animator>(), reposition, weaponScale);
+                Weapon spawnedWeapon = weapon.Spawn(handTransform, GetComponent<Animator>(), reposition, weaponScale);
+                if (spawnedWeapon != null) {
+                    equippedWeaponObject = spawnedWeapon.gameObject;
+                } else {
+                    DestroyEquippedWeapon();
+                }
+                return spawnedWeapon;
             } else {
-                Debug.LogError($"No weapon equipped to Fighter on {name}.");
+                currentWeaponConfig = null;
+                EquipWeapon(defaultWeapon);
                 return null;
             }
         }

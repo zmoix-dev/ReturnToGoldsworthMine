@@ -44,7 +44,7 @@ namespace RPG.Inventories
         public void AddItem(EquipLocation slot, EquipableItem item)
         {
             Debug.Assert(item.GetAllowedEquipLocation() == slot);
-
+            
             equippedItems[slot] = item;
 
             if (equipmentUpdated != null)

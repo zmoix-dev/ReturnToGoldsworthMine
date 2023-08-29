@@ -17,6 +17,8 @@ namespace RPG.Control {
         Mover mover;
         Health health;
 
+        bool isDraggingUI = false;
+
         [System.Serializable]
         struct CursorMapping {
             public CursorType type;
@@ -95,10 +97,19 @@ namespace RPG.Control {
 
         private bool InteractWithUI(RaycastHit[] hits)
         {
+            if (Input.GetMouseButtonUp(0)) {
+                isDraggingUI = false;
+            }
             if (EventSystem.current.IsPointerOverGameObject()) {
+                if (Input.GetMouseButtonDown(0)) {
+                    isDraggingUI = true;
+                } 
                 SetCursor(CursorType.UI);
                 return true;
             }   
+            if (isDraggingUI) {
+                return true;
+            }
             return false;
         }
 
@@ -122,7 +133,7 @@ namespace RPG.Control {
 
             if (hasHit && mover.CanMoveTo(hit))
             {
-                if (Input.GetMouseButtonDown(0)) {
+                if (Input.GetMouseButton(0)) {
                     mover.StartMoveAction(hit);
                 }
                 SetCursor(CursorType.Movement);
