@@ -29,6 +29,16 @@ MonoBehaviour:
       - 6
       - 8
       - 12
+    - statsType: 4
+      values:
+      - 0
+      - 0
+      - 0
+    - statsType: 5
+      values:
+      - 0
+      - 0
+      - 0
   - unitType: 1
     stats:
     - statsType: 0
@@ -37,6 +47,16 @@ MonoBehaviour:
       - 55
       - 70
     - statsType: 3
+      values:
+      - 0
+      - 0
+      - 0
+    - statsType: 4
+      values:
+      - 0
+      - 0
+      - 5
+    - statsType: 5
       values:
       - 0
       - 0
@@ -54,6 +74,16 @@ MonoBehaviour:
       - 15
       - 20
     - statsType: 3
+      values:
+      - 0
+      - 0
+      - 0
+    - statsType: 4
+      values:
+      - 0
+      - 0
+      - 10
+    - statsType: 5
       values:
       - 0
       - 0

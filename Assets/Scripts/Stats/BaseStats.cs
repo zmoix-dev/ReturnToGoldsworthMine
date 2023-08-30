@@ -68,9 +68,6 @@ namespace RPG.Stats {
 
         public float GetStat(StatsType stat)
         {
-            // if (stat.Equals(StatsType.Damage) && gameObject.tag == "Ally") {
-            //     Debug.Log($"{GetBaseStat(stat)} + {GetAdditiveModifiers(stat)} * {GetPercentageModifiers(stat)}");
-            // }
             return (GetBaseStat(stat) + GetAdditiveModifiers(stat)) * GetPercentageModifiers(stat);
         }
 

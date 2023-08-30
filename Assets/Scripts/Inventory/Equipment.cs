@@ -64,6 +64,13 @@ namespace RPG.Inventories
                 equipmentUpdated();
             }
         }
+
+        /// <summary>
+        ///  Return all EquipLocations that currently contain items.
+        /// </summary>
+        public IEnumerable<EquipLocation> GetAllPopulatedSlots() {
+            return equippedItems.Keys;
+        }
         
         public JToken CaptureAsJToken()
         {

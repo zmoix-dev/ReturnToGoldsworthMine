@@ -48,6 +48,14 @@ namespace RPG.Stats {
             return currentHealth.value / GetComponent<BaseStats>().GetStat(StatsType.Health);
         }
 
+        public float GetCurrentHealth() {
+            return currentHealth.value;
+        }
+
+        public float GetMaxHealth() {
+            return GetComponent<BaseStats>().GetStat(StatsType.Health);
+        }
+
         public void TakeDamage(GameObject attacker, float damage) {
             currentHealth.value = Mathf.Max(currentHealth.value - damage, 0);
             onTakeDamage.Invoke(damage, attacker);

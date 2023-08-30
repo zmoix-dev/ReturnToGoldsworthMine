@@ -12,7 +12,7 @@ using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Combat {
-    public class Fighter : MonoBehaviour, IAction, IJsonSaveable, IModifierProvider
+    public class Fighter : MonoBehaviour, IAction, IJsonSaveable
     {
         [SerializeField] Transform handTransform;
         [SerializeField] WeaponConfig defaultWeapon = null;
@@ -40,12 +40,8 @@ namespace RPG.Combat {
         private void UpdatedWeapon()
         {
             WeaponConfig weapon = equipment.GetItemInSlot(EquipLocation.Weapon) as WeaponConfig;
-            if (weapon == null) {
-                EquipWeapon(defaultWeapon);
-                DestroyEquippedWeapon();
-            } else {
-                EquipWeapon(weapon);
-            }
+            DestroyEquippedWeapon();
+            EquipWeapon(weapon);
         }
 
         private Weapon SetupCurrentWeapon()
@@ -67,20 +63,6 @@ namespace RPG.Combat {
             GetComponent<Animator>().SetTrigger(AnimationStates.STOP_ATTACK);
             StopAllCoroutines();
             canAttack = true;
-        }
-
-        public IEnumerable<float> GetAdditiveModifiers(StatsType stat)
-        {
-            if (stat.Equals(StatsType.Damage)) {
-                yield return currentWeaponConfig.WeaponDamage;
-            }
-        }
-
-        public IEnumerable<float> GetPercentageModifiers(StatsType stat)
-        {
-            if (stat.Equals(StatsType.Damage)) {
-                yield return currentWeaponConfig.PctModifier;
-            }
         }
 
         public void SelectTarget(GameObject target) {
