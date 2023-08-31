@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
   m_Name: OrcishBowConfig
   m_EditorClassIdentifier: 
+  itemID: 56bc495b-8bc5-4b64-ba71-2d7403f8515b
+  displayName: Orcish Bow
+  description: Pew pew!
+  icon: {fileID: 21300000, guid: 9415af11d73bb804c8d24343e1351132, type: 3}
+  pickup: {fileID: 1963085982651507043, guid: ba70103ec3649e24d9a16022d40122dc, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: 2ec83979456188e4a995dbba4509cb8d, type: 2}
   weaponPrefab: {fileID: 4451471632552115547, guid: ce778edd9ac45df49a34f000ed189cd3, type: 3}
   weaponDamage: 4

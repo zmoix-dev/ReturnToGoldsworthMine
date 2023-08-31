@@ -24,8 +24,28 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 603222657376972370}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RandomDrop
       objectReference: {fileID: 0}
     - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -76,6 +96,10 @@ PrefabInstance:
       value: AggravateController
       objectReference: {fileID: 0}
     - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: RPG.Inventories.RandomDropper, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
@@ -86,6 +110,10 @@ PrefabInstance:
     - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: RPG.Control.AIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5080870179006645279, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: onTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -168,7 +196,6 @@ PrefabInstance:
       value: 2.75
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5863169880812126714, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
     - {fileID: 3296467857811399765, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
 --- !u!114 &3560516022299713991 stripped
@@ -218,6 +245,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5019d385599a7384d94bc076ce15debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &603222657376972370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977643499239539219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38ee6c3bcc242e40b22a9c7b0b1a8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 1
+  dropLibrary: []
 --- !u!114 &2424984919107917779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +275,7 @@ MonoBehaviour:
   suspicionTime: 2
   aggravateTimer: 5
   path: {fileID: 0}
+  pathStartIndex: 0
   guardDestinationTolerance: 2
   patrolSpeed: 2.5
   chaseSpeed: 4
@@ -241,6 +283,10 @@ MonoBehaviour:
   wanderRadius: 0
   alertRadius: 5
   enemyFaction: 0000000001000000
+  target: {fileID: 0}
+  isChasing: 0
+  isWaiting: 0
+  isAggravated: 0
 --- !u!114 &5644245487838197096
 MonoBehaviour:
   m_ObjectHideFlags: 0

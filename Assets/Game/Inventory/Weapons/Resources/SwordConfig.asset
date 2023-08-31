@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
   m_Name: SwordConfig
   m_EditorClassIdentifier: 
+  itemID: 153ad2fe-e4cb-47ca-a19b-7991fa9b1492
+  displayName: Sword
+  description: A well-honed blade.
+  icon: {fileID: 21300000, guid: 9415af11d73bb804c8d24343e1351132, type: 3}
+  pickup: {fileID: 3572669449557639826, guid: 373fcd17d63381942b15379d43bdd2c6, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: d451d70e7b44efa4a826761fe4c9be0b, type: 2}
   weaponPrefab: {fileID: 4129338728778062210, guid: b954707dd04a65d4b97adb55868607b5, type: 3}
   weaponDamage: 4

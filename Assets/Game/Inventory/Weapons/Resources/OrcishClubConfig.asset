@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
   m_Name: OrcishClubConfig
   m_EditorClassIdentifier: 
+  itemID: a40c27ed-bc7d-4872-8f9f-5ef21a6f99a1
+  displayName: Orcish Club
+  description: Simple, but effective.
+  icon: {fileID: 21300000, guid: 9415af11d73bb804c8d24343e1351132, type: 3}
+  pickup: {fileID: 5306686984220289940, guid: cabcbbc85169ba943b5b5f816ebcf8e1, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: 718b2b63729b90f469cd331d183ec96d, type: 2}
   weaponPrefab: {fileID: 7625466499856132506, guid: 6592edb581ea34141ac68d07181556e5, type: 3}
   weaponDamage: 2.5

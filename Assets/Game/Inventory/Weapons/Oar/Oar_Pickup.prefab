@@ -128,7 +128,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oar_Pickup
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2487334213532047831, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+    - {fileID: 158302391526607731, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
 --- !u!1 &4532985477996380570 stripped
 GameObject:

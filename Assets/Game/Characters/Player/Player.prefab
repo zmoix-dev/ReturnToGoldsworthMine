@@ -102,6 +102,14 @@ PrefabInstance:
       propertyPath: weaponOverride
       value: 
       objectReference: {fileID: 22100000, guid: 4c158c654c73d5d4b83be1bae28d0464, type: 2}
+    - target: {fileID: 1461685541518201651, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: weaponRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461685541518201651, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
+      propertyPath: weaponRotation.y
+      value: 0.70710677
+      objectReference: {fileID: 0}
     - target: {fileID: 3296467857811399765, guid: 9cbec893dca89eb4fb75c847e69f7171, type: 3}
       propertyPath: maxNavPathLength
       value: 50
@@ -295,19 +303,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
---- !u!114 &2887933544302224186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7089954656918152486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 547939a3843ce654eab2ce81b8f9a4fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventorySize: 8
 --- !u!114 &4816742633988641008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,7 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experiencePoints: 0
---- !u!114 &8210991250472506995
+--- !u!114 &7322398187781723620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,6 +325,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 7089954656918152486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dc275ce99c3e314aac35971941718db, type: 3}
+  m_Script: {fileID: 11500000, guid: d38ee6c3bcc242e40b22a9c7b0b1a8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 1
+  dropLibrary: []
+--- !u!114 &893759669279385967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089954656918152486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547939a3843ce654eab2ce81b8f9a4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 16
+--- !u!114 &582480131360900273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089954656918152486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c42a752f8e4da40b340e43a3726960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

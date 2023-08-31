@@ -48,9 +48,9 @@ MonoBehaviour:
       - 70
     - statsType: 3
       values:
-      - 0
-      - 0
-      - 0
+      - 4
+      - 6
+      - 8
     - statsType: 4
       values:
       - 0
@@ -75,9 +75,9 @@ MonoBehaviour:
       - 20
     - statsType: 3
       values:
-      - 0
-      - 0
-      - 0
+      - 5
+      - 8
+      - 13
     - statsType: 4
       values:
       - 0

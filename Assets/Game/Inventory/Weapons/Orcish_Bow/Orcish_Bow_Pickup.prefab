@@ -68,6 +68,18 @@ PrefabInstance:
       propertyPath: weapon
       value: 
       objectReference: {fileID: 11400000, guid: 5cfc4bc10af1d1144a28954042ff8684, type: 2}
+    - target: {fileID: 2701623735767087188, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+      propertyPath: m_Height
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701623735767087188, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701623735767087188, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+      propertyPath: m_Center.x
+      value: 0.18
+      objectReference: {fileID: 0}
     - target: {fileID: 3761108350608718223, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -116,10 +128,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orcish_Bow_Pickup
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2487334213532047831, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+    - {fileID: 158302391526607731, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
 --- !u!4 &3418001600704976215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3761108350608718223, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
   m_PrefabInstance: {fileID: 1971743510515494104}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7632046300846722707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8266203090780725835, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+  m_PrefabInstance: {fileID: 1971743510515494104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1963085982651507043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7632046300846722707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b9d7b26684cda4286c71b9fd4e1d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7794008548694671746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7632046300846722707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120f876f582da9e469aaa20fe001de31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

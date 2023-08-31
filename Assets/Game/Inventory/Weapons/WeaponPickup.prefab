@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3761108350608718223}
   - component: {fileID: -2981692054642096930}
   - component: {fileID: 2701623735767087188}
+  - component: {fileID: 2487334213532047831}
+  - component: {fileID: 158302391526607731}
   m_Layer: 0
   m_Name: WeaponPickup
   m_TagString: Untagged
@@ -63,3 +65,27 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2487334213532047831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8266203090780725835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b9d7b26684cda4286c71b9fd4e1d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &158302391526607731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8266203090780725835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120f876f582da9e469aaa20fe001de31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

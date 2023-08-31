@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8550fd5fd00174843a7600ff06f7770a, type: 3}
   m_Name: OrcishAxeConfig
   m_EditorClassIdentifier: 
+  itemID: edbd19c5-77a7-4f04-8647-b17b191990f0
+  displayName: Orcish Greataxe
+  description: Brutality is in the eye of the beholder.
+  icon: {fileID: 21300000, guid: 9415af11d73bb804c8d24343e1351132, type: 3}
+  pickup: {fileID: -976123970863876876, guid: 696663f9b94fb0341bb994242630c124, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: 3480ffd0b322e7249bb21ebf3c2a3b11, type: 2}
   weaponPrefab: {fileID: 7621198225037056659, guid: 8c77f7fc602cf0f4593f6b1d9e3ead82, type: 3}
   weaponDamage: 7

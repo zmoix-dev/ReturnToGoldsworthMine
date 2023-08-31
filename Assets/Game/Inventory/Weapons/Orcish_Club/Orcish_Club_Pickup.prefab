@@ -11,6 +11,14 @@ PrefabInstance:
       propertyPath: weapon
       value: 
       objectReference: {fileID: 11400000, guid: e94c30199ce68dc4ea83e7d1c119c99d, type: 2}
+    - target: {fileID: 2701623735767087188, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+      propertyPath: m_Height
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701623735767087188, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
+      propertyPath: m_Center.y
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 3761108350608718223, guid: 9bda99b49b27bb44cbbc77411bda7aaa, type: 3}
       propertyPath: m_RootOrder
       value: 0

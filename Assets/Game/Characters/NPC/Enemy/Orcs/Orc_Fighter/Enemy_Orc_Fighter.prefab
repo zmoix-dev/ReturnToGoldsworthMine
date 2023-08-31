@@ -93,6 +93,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 603222657376972370, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: dropLibrary.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603222657376972370, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: dropLibrary.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: e94c30199ce68dc4ea83e7d1c119c99d, type: 2}
     - target: {fileID: 777782733591290812, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: uniqueIdentifier
       value: ab781bce-30ee-49d7-b862-156a786a5ae4
@@ -185,6 +193,34 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 4983253209936693232, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983253209936693232, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983253209936693232, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4408032515512653939}
+    - target: {fileID: 4983253209936693232, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983253209936693232, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RandomDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983253209936693232, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: RPG.Inventories.RandomDropper, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983253209936693232, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5977643499239539219, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: m_Name
       value: Enemy_Orc_Fighter
@@ -271,6 +307,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+--- !u!114 &4408032515512653939 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 603222657376972370, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+  m_PrefabInstance: {fileID: 3851538621293868577}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38ee6c3bcc242e40b22a9c7b0b1a8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7460128048251384885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5977643499239539220, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
