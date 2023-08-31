@@ -74,6 +74,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 603222657376972370, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
+      propertyPath: scatterDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603222657376972370, guid: c4f472b39c8d0d540b103a57495a2171, type: 3}
       propertyPath: dropLibrary.Array.size
       value: 1
       objectReference: {fileID: 0}

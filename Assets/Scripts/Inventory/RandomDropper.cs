@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using RPG.Stats;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
@@ -9,13 +10,22 @@ namespace RPG.Inventories {
     {
         [Tooltip("How far away from the dropper the pickups can be scattered.")]
         [SerializeField] float scatterDistance = 1f;
-        [SerializeField] InventoryItem[] dropLibrary;
+        [SerializeField] DropLibrary dropLibrary;
+
+        Health health;
         
         const int ATTEMPTS = 10;
 
+        void Awake() {
+            health = GetComponent<Health>();
+        }
+
         public void RandomDrop() {
-            var item = dropLibrary[Random.Range(0, dropLibrary.Length)];
-            DropItem(item, 1);
+            var drops = dropLibrary.GetRandomDrops();
+            foreach (var drop in drops) {
+                DropItem(drop.item, drop.number);
+            }
+            
         }
 
         protected override Vector3 GetDropLocation() {

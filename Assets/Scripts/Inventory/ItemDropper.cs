@@ -4,6 +4,7 @@ using RPG.Saving;
 using Newtonsoft.Json.Linq;
 using UnityEngine.Playables;
 using RPG.Core.Saving;
+using UnityEngine.SceneManagement;
 
 namespace RPG.Inventories
 {
@@ -15,6 +16,7 @@ namespace RPG.Inventories
     {
         // STATE
         private List<Pickup> droppedItems = new List<Pickup>();
+        private List<DropRecord> otherSceneDroppedItems = new List<DropRecord>();
 
         // PUBLIC
 
@@ -52,27 +54,46 @@ namespace RPG.Inventories
             public string itemID;
             public int count;
             public SerializableVector3 position;
+            public int sceneBuildIndex;
         }
 
         public JToken CaptureAsJToken()
         {
+            Debug.Log("Capturing Dropped Items.");
             RemoveDestroyedDrops();
-            var droppedItemsList = new DropRecord[droppedItems.Count];
-            for (int i = 0; i < droppedItemsList.Length; i++) {
-                droppedItemsList[i].itemID = droppedItems[i].GetItem().GetItemID();
-                droppedItemsList[i].count = droppedItems[i].GetCount();
-                SerializableVector3 v3 = new SerializableVector3(droppedItems[i].gameObject.transform.position);
-                droppedItemsList[i].position = v3;
+            var droppedItemsList = new List<DropRecord>();
+            int buildIndex = SceneManager.GetActiveScene().buildIndex;
+            foreach (Pickup pickup in droppedItems) {
+                var droppedItem = new DropRecord();
+                droppedItem.itemID = pickup.GetItem().GetItemID();
+                droppedItem.count = pickup.GetCount();
+                SerializableVector3 v3 = new SerializableVector3(pickup.gameObject.transform.position);
+                droppedItem.position = v3;
+                droppedItem.sceneBuildIndex = buildIndex;
+                droppedItemsList.Add(droppedItem);
             }
+            droppedItemsList.AddRange(otherSceneDroppedItems);
+            Debug.Log($"Dropped items stored: {droppedItemsList.Count}");
             return JToken.FromObject(droppedItemsList);
         }
 
         public void RestoreFromJToken(JToken state)
         {
-            var droppedItemsList = state.ToObject<DropRecord[]>();
+            Debug.Log("Restoring Dropped Items.");
+            var droppedItemsList = state.ToObject<List<DropRecord>>();
+            int buildIndex = SceneManager.GetActiveScene().buildIndex;
+            otherSceneDroppedItems.Clear();
+            Debug.Log($"Items to restore: {droppedItemsList.Count}");
             foreach (var item in droppedItemsList) {
-                var pickupItem = InventoryItem.GetFromID(item.itemID);
-                SpawnPickup(pickupItem, item.count, item.position.ToVector());
+                Debug.Log($"Checking items for scene {buildIndex}.");
+                if (item.sceneBuildIndex.Equals(buildIndex)) {
+                    Debug.Log("Items belong in scene.");
+                    var pickupItem = InventoryItem.GetFromID(item.itemID);
+                    SpawnPickup(pickupItem, item.count, item.position.ToVector());
+                } else {
+                    Debug.Log("Items do not belong in scene.");
+                    otherSceneDroppedItems.Add(item);
+                }
             }
         }
 

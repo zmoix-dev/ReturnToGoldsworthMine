@@ -257,8 +257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d38ee6c3bcc242e40b22a9c7b0b1a8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scatterDistance: 1
-  dropLibrary: []
+  scatterDistance: 3
+  dropLibrary: {fileID: 11400000, guid: c4a9607736102ec4190bb3ada64574b6, type: 2}
 --- !u!114 &2424984919107917779
 MonoBehaviour:
   m_ObjectHideFlags: 0
